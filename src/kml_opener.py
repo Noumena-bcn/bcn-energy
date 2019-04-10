@@ -66,7 +66,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     listX = []
     listY = []
     listZ = []
-    
+    polylineList = []
 
     for i in range(0, len(CoordL)):
         lineString = CoordL[i]
@@ -114,18 +114,21 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
            # VTKCellArray to create cell connectivity
            lines.InsertCellPoint(j)
 
-        #Create Polygon
+        # Create Polygon
         polygon.SetPoints(points)
         polygon.SetLines(lines)
+
+        # Create a list of polygon
+        polylineList.append(polygon)
 
         # vtkPolyDataMapper is a class that maps polygonal data (i.e., vtkPolyData)
         # to graphics primitives
         polygonMapper = vtk.vtkPolyDataMapper()
         if vtk.VTK_MAJOR_VERSION <= 5:
-            polygonMapper.SetInputConnection(polygon.GetProducerPort())
+           polygonMapper.SetInputConnection(polygon.GetProducerPort())
         else:
-            polygonMapper.SetInputData(polygon)
-            polygonMapper.Update()
+           polygonMapper.SetInputData(polygon)
+           polygonMapper.Update()
 
         # Create an actor to represent the polygon. The actor orchestrates rendering of
         # the mapper's graphics primitives. An actor also refers to properties via a
