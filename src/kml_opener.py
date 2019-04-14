@@ -114,12 +114,16 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
            # VTKCellArray to create cell connectivity
            lines.InsertCellPoint(j)
 
-        # Create Polygon
-        polygon.SetPoints(points)
-        polygon.SetLines(lines)
+           # Create Polygon
+           polygon.SetPoints(points)
+           polygon.SetLines(lines)
 
-        # Create a list of polygon
-        polylineList.append(polygon)
+           # Create a list of polygon
+           polylineList.append(polygon)
+           print(polylineList)
+
+
+        #polygon.SetPolys(lines)
 
         # vtkPolyDataMapper is a class that maps polygonal data (i.e., vtkPolyData)
         # to graphics primitives
@@ -157,7 +161,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         # also set the size to be 300 pixels by 300.
         renWin = vtk.vtkRenderWindow()
         renWin.AddRenderer(ren1)
-        renWin.SetSize(300, 300)
+        renWin.SetSize(800, 800)
 
         # The vtkRenderWindowInteractor class watches for events (e.g., keypress,
         # mouse) in the vtkRenderWindow. These events are translated into
