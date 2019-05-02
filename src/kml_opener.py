@@ -4,9 +4,15 @@ import xml.etree.ElementTree as et
 import re
 import pyproj
 import vtk
+from geomeppy import IDF
 
 #DEFINE HERE THE MAIN PATH
 path = "C:\\Users\Aldo Sollazzo\Desktop\datakml"
+IDF.setiddname('C:\\EnergyPlusV9-1-0\Energy+.idd')
+#idf = IDF("C:\\Users\Aldo Sollazzo\Desktop\bcn-energy\src\db-energyPlus-ExampleFiles\Minimal.idf")
+idf = IDF("C:\\EnergyPlusV9-1-0\ExampleFiles\Minimal.idf")
+
+idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
 
 #FUNCTION TO CONVERT LON LAT INTO XYZ COORDINATES
 def gps_to_xy_pyproj(lon, lat):
@@ -78,103 +84,123 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
             result.append(cList)
             CordLen.append(int(len(cList) / 3))
 
-    # print(len(result))
+    print(result[0])
     # print(len(CordLen))
     # print(CordLen)  ##################### TO USE TO DIVIDE COORDINATES LIST
 
-    for i in range(0, len(result)):
-        pointsList = []
-        cList = result[i]
-        #print(cList)
-
-        x = [float(i) for i in cList[::3]]
-        y = [float(i) for i in cList[1::3]]
-        z = [float(i) for i in cList[2::3]]
-
-        print("//////////////////NEW POINT LIST//////////////////")
-        points = vtk.vtkPoints()
-        points.SetNumberOfPoints(len(x))
-        lines = vtk.vtkCellArray()
-        lines.InsertNextCell(len(x))
-        polygon = vtk.vtkPolyData()
-
-        for j in range(0,len(x)):
-           xyCord = gps_to_xy_pyproj(x[j], y[j])
-           LX = (xyCord[0])
-           LY = (xyCord[1])
-           listX.append(LX)
-           listY.append(LY)
-           listZ.append(z[j])
-
-           # Create the geometry of a point (the coordinate)
-           point = (LX,LY,z[j])
-           print(point)
-           points.SetPoint(j,point)
-
-           # VTKCellArray to create cell connectivity
-           lines.InsertCellPoint(j)
-
-           # Create Polygon
-           polygon.SetPoints(points)
-           polygon.SetLines(lines)
-
-           # Create a list of polygon
-           polylineList.append(polygon)
-           print(polylineList)
-
-
-        #polygon.SetPolys(lines)
-
-        # vtkPolyDataMapper is a class that maps polygonal data (i.e., vtkPolyData)
-        # to graphics primitives
-        polygonMapper = vtk.vtkPolyDataMapper()
-        if vtk.VTK_MAJOR_VERSION <= 5:
-           polygonMapper.SetInputConnection(polygon.GetProducerPort())
-        else:
-           polygonMapper.SetInputData(polygon)
-           polygonMapper.Update()
-
-        # Create an actor to represent the polygon. The actor orchestrates rendering of
-        # the mapper's graphics primitives. An actor also refers to properties via a
-        # vtkProperty instance, and includes an internal transformation matrix. We
-        # set this actor's mapper to be polygonMapper which we created above.
-        polygonActor = vtk.vtkActor()
-        polygonActor.SetMapper(polygonMapper)
-
-        # Create the Renderer and assign actors to it. A renderer is like a
-        # viewport. It is part or all of a window on the screen and it is
-        # responsible for drawing the actors it has.  We also set the
-        # background color here.
-        ren1 = vtk.vtkRenderer()
-        ren1.AddActor(polygonActor)
-        ren1.SetBackground(0.1, 0.2, 0.4)
-
-        # Automatically set up the camera based on the visible actors.
-        # The camera will reposition itself to view the center point of the actors,
-        # and move along its initial view plane normal
-        # (i.e., vector defined from camera position to focal point) so that all of the
-        # actors can be seen.
-        ren1.ResetCamera()
-
-        # Finally we create the render window which will show up on the screen
-        # We put our renderer into the render window using AddRenderer. We
-        # also set the size to be 300 pixels by 300.
-        renWin = vtk.vtkRenderWindow()
-        renWin.AddRenderer(ren1)
-        renWin.SetSize(800, 800)
-
-        # The vtkRenderWindowInteractor class watches for events (e.g., keypress,
-        # mouse) in the vtkRenderWindow. These events are translated into
-        # event invocations that VTK understands (see VTK/Common/vtkCommand.h
-        # for all events that VTK processes). Then observers of these VTK
-        # events can process them as appropriate.
-        iren = vtk.vtkRenderWindowInteractor()
-        iren.SetRenderWindow(renWin)
-        iren.Initialize()
-        iren.Start()
+    # for i in range(0, len(result)):
+    #     pointsList = []
+    #     cList = result[i]
+    #     #print(cList)
+    #
+    #     x = [float(i) for i in cList[::3]]
+    #     y = [float(i) for i in cList[1::3]]
+    #     z = [float(i) for i in cList[2::3]]
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # print("//////////////////NEW POINT LIST//////////////////")
+        # points = vtk.vtkPoints()
+        # points.SetNumberOfPoints(len(x))
+        # lines = vtk.vtkCellArray()
+        # lines.InsertNextCell(len(x))
+        # polygon = vtk.vtkPolyData()
+        #
+        # for j in range(0,len(x)):
+        #    xyCord = gps_to_xy_pyproj(x[j], y[j])
+        #    LX = (xyCord[0])
+        #    LY = (xyCord[1])
+        #    listX.append(LX)
+        #    listY.append(LY)
+        #    listZ.append(z[j])
+        #
+        #    # Create the geometry of a point (the coordinate)
+        #    point = (LX,LY,z[j])
+        #    print(point)
+        #    points.SetPoint(j,point)
+        #
+        #    # VTKCellArray to create cell connectivity
+        #    lines.InsertCellPoint(j)
+        #
+        #    # Create Polygon
+        #    polygon.SetPoints(points)
+        #    polygon.SetLines(lines)
+        #
+        #    # Create a list of polygon
+        #    polylineList.append(polygon)
+        #    print(polylineList)
+        #
+        #
+        # #polygon.SetPolys(lines)
+        #
+        # # vtkPolyDataMapper is a class that maps polygonal data (i.e., vtkPolyData)
+        # # to graphics primitives
+        # polygonMapper = vtk.vtkPolyDataMapper()
+        # if vtk.VTK_MAJOR_VERSION <= 5:
+        #    polygonMapper.SetInputConnection(polygon.GetProducerPort())
+        # else:
+        #    polygonMapper.SetInputData(polygon)
+        #    polygonMapper.Update()
+        #
+        # # Create an actor to represent the polygon. The actor orchestrates rendering of
+        # # the mapper's graphics primitives. An actor also refers to properties via a
+        # # vtkProperty instance, and includes an internal transformation matrix. We
+        # # set this actor's mapper to be polygonMapper which we created above.
+        # polygonActor = vtk.vtkActor()
+        # polygonActor.SetMapper(polygonMapper)
+        #
+        # # Create the Renderer and assign actors to it. A renderer is like a
+        # # viewport. It is part or all of a window on the screen and it is
+        # # responsible for drawing the actors it has.  We also set the
+        # # background color here.
+        # ren1 = vtk.vtkRenderer()
+        # ren1.AddActor(polygonActor)
+        # ren1.SetBackground(0.1, 0.2, 0.4)
+        #
+        # # Automatically set up the camera based on the visible actors.
+        # # The camera will reposition itself to view the center point of the actors,
+        # # and move along its initial view plane normal
+        # # (i.e., vector defined from camera position to focal point) so that all of the
+        # # actors can be seen.
+        # ren1.ResetCamera()
+        #
+        # # Finally we create the render window which will show up on the screen
+        # # We put our renderer into the render window using AddRenderer. We
+        # # also set the size to be 300 pixels by 300.
+        # renWin = vtk.vtkRenderWindow()
+        # renWin.AddRenderer(ren1)
+        # renWin.SetSize(800, 800)
+        #
+        # # The vtkRenderWindowInteractor class watches for events (e.g., keypress,
+        # # mouse) in the vtkRenderWindow. These events are translated into
+        # # event invocations that VTK understands (see VTK/Common/vtkCommand.h
+        # # for all events that VTK processes). Then observers of these VTK
+        # # events can process them as appropriate.
+        # iren = vtk.vtkRenderWindowInteractor()
+        # iren.SetRenderWindow(renWin)
+        # iren.Initialize()
+        # iren.Start()
+        #
+        #
+        #
 
 
 

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="ISO-8859-1"  ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>8722719DF2882B</name>
+      <Style id="sn_ICONO_OVC">
+		<IconStyle>
+			<color>ffb2c0ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://ovc.catastro.meh.es/Cartografia/WMS/ICONO_OVC.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	  </Style>
+      <Style id="sh_ICONO_OVC">
+		<IconStyle>
+			<color>ffb2c0ff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://ovc.catastro.meh.es/Cartografia/WMS/ICONO_OVC.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	  </Style>
+<StyleMap id="msn_ICONO_OVC">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#sn_ICONO_OVC</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#sh_ICONO_OVC</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="linea_parcela">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffa1c7ff</color>
+			<fill>0</fill>
+		</PolyStyle>
+</Style>
+  <Style id="Ladrillo">
+    <LineStyle>
+      <color>FF000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>FFAAAAFF</color>
+    </PolyStyle>
+  </Style>
+  <Style id="Gris">
+    <LineStyle>
+      <color>FF000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>FFC8C8C8</color>
+    </PolyStyle>
+  </Style>
+  <Style id="Verde">
+    <LineStyle>
+      <color>FF000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>FF97F0A9</color>
+    </PolyStyle>
+  </Style>
+  <Style id="Azul">
+    <LineStyle>
+      <color>FF000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>FFFFFFAA</color>
+    </PolyStyle>
+  </Style>
+  <Style id="Solar">
+    <LineStyle>
+      <color>FF000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>FFB9C9A0</color>
+    </PolyStyle>
+  </Style>
+  <Style id="Subparcela">
+    <LineStyle>
+      <color>FF000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>FFE1FFE1</color>
+    </PolyStyle>
+  </Style>
+<Visible>1</Visible>
+<LookAt>
+<longitude>2.14693566411239</longitude>
+<latitude>41.3861390049497</latitude>
+<range>76.8625071144509</range>
+<tilt>45</tilt>
+<heading>0</heading>
+</LookAt>
+<Placemark>
+<name>8722719DF2882B</name>
+			<styleUrl>#linea_parcela</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14703380056846,41.3862477324624,0 2.1469962147169,41.3862761427383,0 2.14695130278769,41.3862428152928,0 2.14694819927383,41.3862405133855,0 2.14687738749197,41.3861879610355,0 2.146838463571,41.3861590736052,0 2.14683056276881,41.3861532051822,0 2.14675623311021,41.3860980415192,0 2.14673152376487,41.3860796991566,0 2.14678296375897,41.3860413663436,0 2.14683606128257,41.3860015775739,0 2.14691492445607,41.386061269543,0 2.1469344658174,41.3860760426097,0 2.14694253086897,41.3860821554459,0 2.14698067768324,41.3861110190655,0 2.14701151719843,41.3861343609466,0 2.14703120046516,41.3861492611538,0 2.14706863085304,41.3861213000885,0 2.14707370371507,41.3861175095019,0 2.14714021048783,41.3861672690226,0 2.14710368163002,41.3861948855007,0 2.14708591239948,41.3862083235946,0 2.14703380056846,41.3862477324624,0 2.14703380056846,41.3862477324624,0 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Folder>
+<name>SUBPARCELAS</name>
+<Placemark>
+<name>P+I</name>
+  <styleUrl>#Ladrillo</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14687738749197,41.3861879610355,3 2.146838463571,41.3861590736052,3 2.14685525438451,41.3861472901798,3 2.14689352020003,41.3861761997478,3 2.14687738749197,41.3861879610355,3 2.14687738749197,41.3861879610355,3 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<name>ESC</name>
+  <styleUrl>#Ladrillo</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>clampToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14687268125622,41.3861225316526,.1 2.14689252884549,41.3861074741386,.1 2.14690013662436,41.3861137997676,.1 2.14692716068331,41.3860932288162,.1 2.146942946566,41.386105253772,.1 2.14691628340006,41.3861256652677,.1 2.14694230113891,41.3861445667485,.1 2.14692320685763,41.3861596388634,.1 2.14687268125622,41.3861225316526,.1 2.14687268125622,41.3861225316526,.1 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<name>I</name>
+  <styleUrl>#Ladrillo</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14703380056846,41.3862477324624,3 2.1469962147169,41.3862761427383,3 2.14695130278769,41.3862428152928,3 2.14694819927383,41.3862405133855,3 2.14702897218242,41.3861788252835,3 2.14704840189991,41.3861929940003,3 2.14706870839126,41.3861775975726,3 2.14704958224312,41.3861630798168,3 2.14703120046516,41.3861492611538,3 2.14706863085304,41.3861213000885,3 2.14707370371507,41.3861175095019,3 2.14714021048783,41.3861672690226,3 2.14710368163002,41.3861948855007,3 2.14708591239948,41.3862083235946,3 2.14703380056846,41.3862477324624,3 2.14703380056846,41.3862477324624,3 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<name>VII</name>
+  <styleUrl>#Ladrillo</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14675623311021,41.3860980415192,21 2.14673152376487,41.3860796991566,21 2.14678296375897,41.3860413663436,21 2.14680741753964,41.3860591303199,21 2.14675623311021,41.3860980415192,21 2.14675623311021,41.3860980415192,21 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<name>VIII</name>
+  <styleUrl>#Ladrillo</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14694819927383,41.3862405133855,24 2.14687738749197,41.3861879610355,24 2.14689352020003,41.3861761997478,24 2.14685525438451,41.3861472901798,24 2.146838463571,41.3861590736052,24 2.14683056276881,41.3861532051822,24 2.14675623311021,41.3860980415192,24 2.14680741753964,41.3860591303199,24 2.14678296375897,41.3860413663436,24 2.14683606128257,41.3860015775739,24 2.14691492445607,41.386061269543,24 2.1469344658174,41.3860760426097,24 2.14694253086897,41.3860821554459,24 2.14692716068331,41.3860932288162,24 2.14690013662436,41.3861137997676,24 2.14689252884549,41.3861074741386,24 2.1468850497431,41.3861022844088,24 2.14688976732259,41.3860991397366,24 2.1468658528424,41.3860812897014,24 2.14683836396128,41.3861026498525,24 2.14686185078864,41.3861193617768,24 2.14686505563304,41.3861166562647,24 2.14687268125622,41.3861225316526,24 2.14692320685763,41.3861596388634,24 2.14694230113891,41.3861445667485,24 2.14691628340006,41.3861256652677,24 2.146942946566,41.386105253772,24 2.14696571947422,41.3861225999152,24 2.14698067768324,41.3861110190655,24 2.14701151719843,41.3861343609466,24 2.14703120046516,41.3861492611538,24 2.14704958224312,41.3861630798168,24 2.14702897218242,41.3861788252835,24 2.14694819927383,41.3862405133855,24 2.14694819927383,41.3862405133855,24 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<name>P</name>
+  <styleUrl>#Solar</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>clampToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14702897218242,41.3861788252835,.1 2.14704958224312,41.3861630798168,.1 2.14706870839126,41.3861775975726,.1 2.14704840189991,41.3861929940003,.1 2.14702897218242,41.3861788252835,.1 2.14702897218242,41.3861788252835,.1 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<name>P+I</name>
+  <styleUrl>#Ladrillo</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.14687268125622,41.3861225316526,3 2.14686505563304,41.3861166562647,3 2.14686185078864,41.3861193617768,3 2.14683836396128,41.3861026498525,3 2.1468658528424,41.3860812897014,3 2.14688976732259,41.3860991397366,3 2.1468850497431,41.3861022844088,3 2.14689252884549,41.3861074741386,3 2.14687268125622,41.3861225316526,3 2.14687268125622,41.3861225316526,3 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+<Placemark>
+<name>P+I</name>
+  <styleUrl>#Ladrillo</styleUrl>
+			<Polygon>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+2.146942946566,41.386105253772,3 2.14692716068331,41.3860932288162,3 2.14694253086897,41.3860821554459,3 2.14698067768324,41.3861110190655,3 2.14696571947422,41.3861225999152,3 2.146942946566,41.386105253772,3 2.146942946566,41.386105253772,3 						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+</Folder>
+<Placemark>
+<name>CL CALABRIA, 234  BARCELONA (BARCELONA)</name>
+<Snippet>8722719DF2882B</Snippet>
+<description><![CDATA[<font size=+1>Consultar en la Sede Electrónica<br>del Catastro la parcela:</font><br><font size=+2><A href="https://www1.sedecatastro.gob.es/CYCBienInmueble/OVCListaBienes.aspx?del=8&muni=900&rc1=8722719&rc2=DF2882B">8722719DF2882B</a></font>]]></description>
+<styleUrl>#msn_ICONO_OVC</styleUrl>
+<Point>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+<coordinates>2.14693566411239,41.3861390049497,25</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
