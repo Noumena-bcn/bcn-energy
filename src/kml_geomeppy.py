@@ -102,38 +102,44 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     totIndex.pop(-1)
     #print(totIndex)
 
+
     #EXTRACT COORDINATES ONLY FIRST HORIZONTAL LINES FOR EACH GEOMETRY
     brepBaseCoord = []
     listX = []
     listY = []
     listZ = []
+    pointXY = []
+    lenPointXY = []
 
 
     for item in range(0,len(totIndex)):
         i=totIndex[item]
         brepBaseCoord.append(brepCoord[i])
+    print(brepBaseCoord)
 
 
+    for i in range(0, len(brepBaseCoord)):
+        cList = brepBaseCoord[i]
+        lenPointXY.append(len(brepBaseCoord[i]))
 
-        for i in range(0, len(brepBaseCoord)):
-            cList = brepBaseCoord[i]
-            #print(cList)
+        #print(cList)
 
-            x = [float(i) for i in cList[::3]]
-            y = [float(i) for i in cList[1::3]]
-            z = [float(i) for i in cList[2::3]]
+        x = [float(i) for i in cList[::3]]
+        y = [float(i) for i in cList[1::3]]
+        z = [float(i) for i in cList[2::3]]
 
 
         for j in range(0,len(x)):
-            print(z[j])
             xyCord = gps_to_xy_pyproj(x[j], y[j])
             LX = (xyCord[0])
             LY = (xyCord[1])
+            pointXY.extend([LX, LY])
+
             listX.append(LX)
             listY.append(LY)
             listZ.append(z[j])
 
-    print(listX)
+    print(pointXY)
 
 
 
