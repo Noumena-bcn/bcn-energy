@@ -132,8 +132,8 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
     for j in range(0,len(x)):
         xyCord = gps_to_xy_pyproj(x[j], y[j])
-        LX = (xyCord[0])
-        LY = (xyCord[1])
+        LX = round((xyCord[0]),3)
+        LY = round((xyCord[1]),3)
         pointXY.extend([LX, LY])
 
         listX.append(LX)
@@ -142,7 +142,8 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
     print(pointXY)
     print(len(pointXY))
-    
+    combolist = [pointXY[x:x+2]for x in range(0,len(pointXY),2)]
+    print(combolist)
     lenPointXY = [int(lis/3)*2 for lis in lenPointXY]  # ERASE FLAT GEOMETRIES
     print(lenPointXY)
     print(sum(lenPointXY))
