@@ -77,7 +77,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
 
 ####################################################################################################
-    #EXTRACT ONLY COORDINATES FOR 3D GEOMETRIES
+    #EXTRACT COORDINATES FOR 3D GEOMETRIES
     brepCoord = []
     BrepLenList = []
 
@@ -85,7 +85,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         if PmLen[i]>1:
             brepCoord.append(result[i])
 
-    brepCoordLen = [item for item in PmCoordLenList if(item>1)]
+    brepCoordLen = [item for item in PmCoordLenList if(item>1)] #ERASE FLAT GEOMETRIES
     #print(brepCoordLen)
 
 
@@ -115,8 +115,8 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     for item in range(0,len(totIndex)):
         i=totIndex[item]
         brepBaseCoord.append(brepCoord[i])
-    print(brepBaseCoord)
-
+    #print(brepBaseCoord)
+    print(len(brepBaseCoord))
 
     for i in range(0, len(brepBaseCoord)):
         cList = brepBaseCoord[i]
@@ -130,19 +130,22 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
 
 
-    #     for j in range(0,len(x)):
-    #         xyCord = gps_to_xy_pyproj(x[j], y[j])
-    #         LX = (xyCord[0])
-    #         LY = (xyCord[1])
-    #         pointXY.extend([LX, LY, z[j])
-    #
-    #         listX.append(LX)
-    #         listY.append(LY)
-    #         listZ.append(z[j])
-    #
-    # print(pointXY)
-    # print(lenPointXY)
+    for j in range(0,len(x)):
+        xyCord = gps_to_xy_pyproj(x[j], y[j])
+        LX = (xyCord[0])
+        LY = (xyCord[1])
+        pointXY.extend([LX, LY])
 
+        listX.append(LX)
+        listY.append(LY)
+        listZ.append(z[j])
+
+    print(pointXY)
+    print(len(pointXY))
+    
+    lenPointXY = [int(lis/3)*2 for lis in lenPointXY]  # ERASE FLAT GEOMETRIES
+    print(lenPointXY)
+    print(sum(lenPointXY))
 
     #print(brepBaseCoord)
 
