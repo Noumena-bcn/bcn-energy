@@ -7,7 +7,7 @@ import re
 import pyproj
 #from geomeppy import IDF
 
-# DEFINE HERE THE MAIN PATH
+#DEFINE HERE THE MAIN PATH
 path = "C:\\Users\Aldo Sollazzo\Desktop\datakml"
 
 # IDF.setiddname('C:\\EnergyPlusV9-1-0\Energy+.idd')
@@ -16,7 +16,7 @@ path = "C:\\Users\Aldo Sollazzo\Desktop\datakml"
 # idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
 
 ####################################################################################################
-# FUNCTION TO CONVERT LON LAT INTO XYZ COORDINATES
+#FUNCTION TO CONVERT LON LAT INTO XYZ COORDINATES
 def gps_to_xy_pyproj(lon, lat):
     crs_wgs = pyproj.Proj(init='epsg:4326')  # assuming you're using WGS84 geographic
     crs_bng = pyproj.Proj(
@@ -24,7 +24,7 @@ def gps_to_xy_pyproj(lon, lat):
     x, y = pyproj.transform(crs_wgs, crs_bng, lon, lat)
     return x, y
 
-# EXTRACT COORDINATES H BUILDINGS FROM FOLDER
+#EXTRACT COORDINATES H BUILDINGS FROM FOLDER
 ListH = []
 
 for Hbld in glob.glob(os.path.join(path, '*H.kml')):
@@ -32,7 +32,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     filePath = Hbld
     tree = et.parse(filePath)
     root = tree.getroot()
-    print(root)
+    #print(root)
 
     with open(filePath, 'rt', encoding="utf-8") as myfile:
         doc = myfile.read()
@@ -77,8 +77,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
 
 ####################################################################################################
-    # EXTRACT ONLY COORDINATES FOR 3D GEOMETRIES
-
+    #EXTRACT ONLY COORDINATES FOR 3D GEOMETRIES
     brepCoord = []
     BrepLenList = []
 
@@ -86,13 +85,12 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         if PmLen[i]>1:
             brepCoord.append(result[i])
 
-    #print(len(brepCoord))
-    #print(PmCoordLenList)
-
     brepCoordLen = [item for item in PmCoordLenList if(item>1)]
-    print(brepCoordLen)
+    #print(brepCoordLen)
+
 
     totIndex=[]
+
     for i in range(0,len(brepCoordLen)):
         if i == 0:
             totIndex.append(brepCoordLen[i])
@@ -102,39 +100,60 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
     totIndex.insert(0,0)
     totIndex.pop(-1)
-    print(totIndex)
+    #print(totIndex)
 
-
+    #EXTRACT COORDINATES ONLY FIRST HORIZONTAL LINES FOR EACH GEOMETRY
     brepBaseCoord = []
+    listX = []
+    listY = []
+    listZ = []
+
 
     for item in range(0,len(totIndex)):
         i=totIndex[item]
         brepBaseCoord.append(brepCoord[i])
+
+        for i in range(0, len(brepBaseCoord)):
+            cList = brepBaseCoord[i]
+            #print(cList)
+
+            x = [float(i) for i in cList[::3]]
+            y = [float(i) for i in cList[1::3]]
+            z = [float(i) for i in cList[2::3]]
+
+
+            for j in range(0,len(x)):
+                # print(j)
+                # print(x[j], y[j])
+                xyCord = gps_to_xy_pyproj(x[j], y[j])
+                # print(xyCord[0])
+                LX = (xyCord[0])
+                LY = (xyCord[1])
+                listX.append(LX)
+                listY.append(LY)
+                listZ.append(z[j])
+
+    print(listX)
+    # print(listX)
+    # print(listX)
+
 
 
     #print(brepBaseCoord)
 
 
 
-    # for i in range(0, len(result)):
-    #     pointsList = []
-    #     cList = result[i]
-    #     #print(cList)
+
+
+
+
+    # FloorX = [i for i in brepBaseCoord[::3]]
+    # FloorY = [item[1] for item in brepBaseCoord]
+    # FloorZ = [item[2] for item in brepBaseCoord]
     #
-    #     x = [float(i) for i in cList[::3]]
-    #     y = [float(i) for i in cList[1::3]]
-    #     z = [float(i) for i in cList[2::3]]
-
-
-
-
-    FloorX = [i for i in brepBaseCoord[::3]]
-    FloorY = [item[1] for item in brepBaseCoord]
-    FloorZ = [item[2] for item in brepBaseCoord]
-
-    print(brepBaseCoord)
-    print("///////////////////////////////////////")
-    print(brepBaseCoord[1])
+    # print(brepBaseCoord)
+    # print("///////////////////////////////////////")
+    # print(brepBaseCoord[1])
     # print(len(FloorX))
     # print(FloorY)
     # print(len(FloorY))
