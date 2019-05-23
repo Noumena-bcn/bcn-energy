@@ -113,6 +113,8 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         i=totIndex[item]
         brepBaseCoord.append(brepCoord[i])
 
+
+
         for i in range(0, len(brepBaseCoord)):
             cList = brepBaseCoord[i]
             #print(cList)
@@ -122,20 +124,16 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
             z = [float(i) for i in cList[2::3]]
 
 
-            for j in range(0,len(x)):
-                # print(j)
-                # print(x[j], y[j])
-                xyCord = gps_to_xy_pyproj(x[j], y[j])
-                # print(xyCord[0])
-                LX = (xyCord[0])
-                LY = (xyCord[1])
-                listX.append(LX)
-                listY.append(LY)
-                listZ.append(z[j])
+        for j in range(0,len(x)):
+            print(z[j])
+            xyCord = gps_to_xy_pyproj(x[j], y[j])
+            LX = (xyCord[0])
+            LY = (xyCord[1])
+            listX.append(LX)
+            listY.append(LY)
+            listZ.append(z[j])
 
     print(listX)
-    # print(listX)
-    # print(listX)
 
 
 
