@@ -129,18 +129,19 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         z = [float(i) for i in cList[2::3]]
 
 
-        for j in range(0,len(x)):
-            xyCord = gps_to_xy_pyproj(x[j], y[j])
-            LX = (xyCord[0])
-            LY = (xyCord[1])
-            pointXY.extend([LX, LY])
 
-            listX.append(LX)
-            listY.append(LY)
-            listZ.append(z[j])
-
-    print(pointXY)
-
+    #     for j in range(0,len(x)):
+    #         xyCord = gps_to_xy_pyproj(x[j], y[j])
+    #         LX = (xyCord[0])
+    #         LY = (xyCord[1])
+    #         pointXY.extend([LX, LY, z[j])
+    #
+    #         listX.append(LX)
+    #         listY.append(LY)
+    #         listZ.append(z[j])
+    #
+    # print(pointXY)
+    # print(lenPointXY)
 
 
     #print(brepBaseCoord)
