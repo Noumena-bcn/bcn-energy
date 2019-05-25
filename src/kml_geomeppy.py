@@ -79,10 +79,10 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
             PmCoordLenList.append(len(Coord))
             CoordL.append(Coord)
 
-    print(sum(LenPlanta)-32)
-    print(kml_TotDict[1])
+    #print(kml_TotDict)
 
-
+####################################################################################################
+    # EXTRACT COORDINATE VALUES
 
     result = []
     CordLen = []
@@ -112,26 +112,30 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     brepCoord = []
     BrepLenList = []
 
-    for i in range(0,len(result)):
-        if PmLen[i]>1:
-            brepCoord.append(result[i])
+    #print(PmCoordLenList)
 
-    brepCoordLen = [item for item in PmCoordLenList if(item>1)] #ERASE FLAT GEOMETRIES
-    print(brepCoordLen)
+    # ERASE ONLY FIRST PLANAR GROUP OF GEOMETRIES
+    # for i in range(0,len(result)):
+    #     if PmLen[i]>1:
+    #         brepCoord.append(result[i])
+    #
+    # brepCoordLen = [item for item in PmCoordLenList if(item>1)] #ERASE FLAT GEOMETRIES
+    # #print(brepCoordLen)
 
 
     totIndex=[]
 
-    for i in range(0,len(brepCoordLen)):
+    for i in range(0,len(PmCoordLenList)):
         if i == 0:
-            totIndex.append(brepCoordLen[i])
+            totIndex.append(PmCoordLenList[i])
         else:
-            b = brepCoordLen[i]+totIndex[i-1]
+            b = PmCoordLenList[i]+totIndex[i-1]
             totIndex.append(b)
 
     totIndex.insert(0,0)
     totIndex.pop(-1)
-    #print(totIndex)
+    print(totIndex)
+    #print(len(totIndex))
 
 
     #EXTRACT COORDINATES ONLY FIRST HORIZONTAL LINES FOR EACH GEOMETRY
@@ -145,30 +149,41 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
     for item in range(0,len(totIndex)):
         i=totIndex[item]
-        brepBaseCoord.append(brepCoord[i])
+        brepBaseCoord.append(result[i])
     #print(brepBaseCoord)
-    print(len(brepBaseCoord))
+    #print(len(brepBaseCoord))
 
     for i in range(0, len(brepBaseCoord)):
         cList = brepBaseCoord[i]
         lenPointXY.append(len(brepBaseCoord[i]))
 
-        print(cList)
+        #print(cList)
 
-        x = [float(i) for i in cList[::3]]
-        y = [float(i) for i in cList[1::3]]
-        z = [float(i) for i in cList[2::3]]
+        x = {"x": [float(i) for i in cList[::3]]}
+        y = {"y": [float(i) for i in cList[1::3]]}
+        z = {"z": [float(i) for i in cList[2::3]]}
+        #print(x)
 
-    #     for j in range(0,len(x)):
-    #         xyCord = gps_to_xy_pyproj(x[j], y[j])
-    #         LX = round((xyCord[0]),3)
-    #         LY = round((xyCord[1]),3)
-    #         pointXY.extend([LX, LY])
-    #
-    #         listX.append(LX)
-    #         listY.append(LY)
-    #         listZ.append(z[j])
-    #
+        kml_TotDict[i + 1].update(x)
+        kml_TotDict[i + 1].update(y)
+        kml_TotDict[i + 1].update(z)
+
+    print(kml_TotDict[1])
+
+         for j in range(0,len(x)):
+             xyCord = gps_to_xy_pyproj(x[j], y[j])
+             LX = round((xyCord[0]),3)
+             LY = round((xyCord[1]),3)
+             pointXY.extend([LX, LY])
+
+             kml_TotDict[i + 1].update(x)
+             kml_TotDict[i + 1].update(y)
+             kml_TotDict[i + 1].update(z)
+
+             listX.append(LX)
+             listY.append(LY)
+             listZ.append(z[j])
+
     # print("/////////////////////////////////COORDINATE XY/////////////////////////////////")
     # combolist = [pointXY[x:x+2]for x in range(0,len(pointXY),2)]
     # #print(combolist)
