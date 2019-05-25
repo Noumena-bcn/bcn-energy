@@ -24,6 +24,14 @@ def gps_to_xy_pyproj(lon, lat):
     x, y = pyproj.transform(crs_wgs, crs_bng, lon, lat)
     return x, y
 
+####################################################################################################
+#FUNCTION TO CONVERT LON LAT INTO XYZ COORDINATES
+#my_dict = {"build":, "floor":, "height":, "coord":, "len":}
+
+kml_TotDict={}
+kml_dict={} #IT HAS TO BE A NESTED DICTIONARY
+
+
 #EXTRACT COORDINATES H BUILDINGS FROM FOLDER
 ListH = []
 
@@ -43,6 +51,9 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     PmCoordLenList = []
     CoordL = []
     FolderList = []
+    PlantaList = []
+    LenPlanta = []
+    cnt = 0
 
     for Folder in root.findall(".//{http://www.opengis.net/kml/2.2}Folder"):
         current_list = []
@@ -51,19 +62,39 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         PM = Folder.findall(".//{http://www.opengis.net/kml/2.2}Placemark")
         PMList.append(len(PM))
 
+        Planta = Folder.findall(".//{http://www.opengis.net/kml/2.2}name")
+        Planta.append(PlantaList)
+        kml_dict = dict([("Floor", Planta[0].text)])
+
+        for i in range (1,len(Planta)-1):
+            cnt+=1
+            kml_dict = {cnt: {"Floor":Planta[0].text, "Name" : Planta[i].text}}
+            kml_TotDict.update(kml_dict)
+
+        LenPlanta.append(len(Planta))
+        #print(kml_dict)
+
         for Placemark in Folder.findall(".//{http://www.opengis.net/kml/2.2}Placemark"):
             Coord = Placemark.findall(".//{http://www.opengis.net/kml/2.2}coordinates")
             PmCoordLenList.append(len(Coord))
             CoordL.append(Coord)
 
+    print(sum(LenPlanta)-32)
+    print(kml_TotDict)
+
+
+
     result = []
     CordLen = []
     PmLen = []
+
+    #print(CoordL[0])
 
     for i in range(0, len(CoordL)):
         lineString = CoordL[i]
         # print(lineString)
         for x in lineString:
+            #print(x)
             coordinates = x.text
             coordSpl = re.split(';|,| |\n| \n', coordinates)
             cList = list(filter(None, coordSpl))
@@ -128,27 +159,25 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         y = [float(i) for i in cList[1::3]]
         z = [float(i) for i in cList[2::3]]
 
-
-
-    for j in range(0,len(x)):
-        xyCord = gps_to_xy_pyproj(x[j], y[j])
-        LX = round((xyCord[0]),3)
-        LY = round((xyCord[1]),3)
-        pointXY.extend([LX, LY])
-
-        listX.append(LX)
-        listY.append(LY)
-        listZ.append(z[j])
-
-    print(pointXY)
-    print(len(pointXY))
-    combolist = [pointXY[x:x+2]for x in range(0,len(pointXY),2)]
-    print(combolist)
-    lenPointXY = [int(lis/3)*2 for lis in lenPointXY]  # ERASE FLAT GEOMETRIES
-    print(lenPointXY)
-    print(sum(lenPointXY))
-
-    #print(brepBaseCoord)
+    #     for j in range(0,len(x)):
+    #         xyCord = gps_to_xy_pyproj(x[j], y[j])
+    #         LX = round((xyCord[0]),3)
+    #         LY = round((xyCord[1]),3)
+    #         pointXY.extend([LX, LY])
+    #
+    #         listX.append(LX)
+    #         listY.append(LY)
+    #         listZ.append(z[j])
+    #
+    # print("/////////////////////////////////COORDINATE XY/////////////////////////////////")
+    # combolist = [pointXY[x:x+2]for x in range(0,len(pointXY),2)]
+    # #print(combolist)
+    # lenPointXY = [int(lis/3)*2 for lis in lenPointXY]  # LEN LIST OF X Y WITHOUT Z
+    # print(combolist[0])
+    # print(lenPointXY)
+    # print(len(lenPointXY))
+    #
+    # #print(brepBaseCoord)
 
 
 
