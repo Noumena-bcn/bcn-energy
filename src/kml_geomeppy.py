@@ -80,7 +80,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
             CoordL.append(Coord)
 
     print(sum(LenPlanta)-32)
-    print(kml_TotDict)
+    print(kml_TotDict[1])
 
 
 
@@ -117,7 +117,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
             brepCoord.append(result[i])
 
     brepCoordLen = [item for item in PmCoordLenList if(item>1)] #ERASE FLAT GEOMETRIES
-    #print(brepCoordLen)
+    print(brepCoordLen)
 
 
     totIndex=[]
@@ -153,7 +153,7 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         cList = brepBaseCoord[i]
         lenPointXY.append(len(brepBaseCoord[i]))
 
-        #print(cList)
+        print(cList)
 
         x = [float(i) for i in cList[::3]]
         y = [float(i) for i in cList[1::3]]
