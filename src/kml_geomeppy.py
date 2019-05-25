@@ -134,15 +134,12 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
     totIndex.insert(0,0)
     totIndex.pop(-1)
-    print(totIndex)
+    #print(totIndex)
     #print(len(totIndex))
 
 
     #EXTRACT COORDINATES ONLY FIRST HORIZONTAL LINES FOR EACH GEOMETRY
     brepBaseCoord = []
-    listX = []
-    listY = []
-    listZ = []
     pointXY = []
     lenPointXY = []
 
@@ -159,41 +156,23 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
         #print(cList)
 
-        x = {"x": [float(i) for i in cList[::3]]}
-        y = {"y": [float(i) for i in cList[1::3]]}
-        z = {"z": [float(i) for i in cList[2::3]]}
+        x = [float(i) for i in cList[::3]]
+        y = [float(i) for i in cList[1::3]]
+        z = [float(i) for i in cList[2::3]]
         #print(x)
-
-        kml_TotDict[i + 1].update(x)
-        kml_TotDict[i + 1].update(y)
-        kml_TotDict[i + 1].update(z)
 
         for j in range(0, len(x)):
             xyCord = gps_to_xy_pyproj(x[j], y[j])
-            LX = round((xyCord[0]), 3)
-            LY = round((xyCord[1]), 3)
-            pointXY.extend([LX, LY])
+            LX = {"x": round((xyCord[0]), 3)}
+            LY = {"y": round((xyCord[1]), 3)}
+            LZ = {"z": z[j]}
+            #pointXY.extend([LX, LY])
 
-            kml_TotDict[i + 1].update(x)
-            kml_TotDict[i + 1].update(y)
-            kml_TotDict[i + 1].update(z)
+            kml_TotDict[i + 1].update(LX)
+            kml_TotDict[i + 1].update(LY)
+            kml_TotDict[i + 1].update(LZ)
 
-            listX.append(LX)
-            listY.append(LY)
-            listZ.append(z[j])
-
-    print(kml_TotDict[1])
-
-
-# print("/////////////////////////////////COORDINATE XY/////////////////////////////////")
-    # combolist = [pointXY[x:x+2]for x in range(0,len(pointXY),2)]
-    # #print(combolist)
-    # lenPointXY = [int(lis/3)*2 for lis in lenPointXY]  # LEN LIST OF X Y WITHOUT Z
-    # print(combolist[0])
-    # print(lenPointXY)
-    # print(len(lenPointXY))
-    #
-    # #print(brepBaseCoord)
+    print(kml_TotDict)
 
 
 
@@ -201,161 +180,3 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
 
 
-    # FloorX = [i for i in brepBaseCoord[::3]]
-    # FloorY = [item[1] for item in brepBaseCoord]
-    # FloorZ = [item[2] for item in brepBaseCoord]
-    #
-    # print(brepBaseCoord)
-    # print("///////////////////////////////////////")
-    # print(brepBaseCoord[1])
-    # print(len(FloorX))
-    # print(FloorY)
-    # print(len(FloorY))
-    # print(FloorZ)
-    # print(len(FloorZ))
-
-
-
-
-
-
-
-
-
-
-
-    # #new_list = [expression(i) for i in old_list if filter(i)]
-    # my_list[:] = [sublist for sublist in my_list if
-    # # for i in range(0,len(my_list)):
-    # #     my_list_len.append(len(my_list[i]))
-    # print(my_list_len)
-    #
-    #
-    # print(len(my_list[0]))
-    # x = [my_list_len.append(len(my_list[i])) for i in range(0,len(my_list))]
-    # print(x)
-    # min_value = 3
-    # max_value = 100
-
-    # my_list[:] = [sublist for sublist in my_list if all(my_list_len[sublist]<=4 for x in sublist)]
-    # print(my_list_len)
-    # print(my_list)
-    #print(result)
-    #print(CordLen)
-
-    # ##################### TO USE TO DIVIDE COORDINATES LIST
-
-    # for i in range(0, len(result)):
-    #     pointsList = []
-    #     cList = result[i]
-    #     #print(cList)
-    #
-    #     x = [float(i) for i in cList[::3]]
-    #     y = [float(i) for i in cList[1::3]]
-    #     z = [float(i) for i in cList[2::3]]
-
-# if __name__ == "__main__":
-#     main()
-
-
-# print("//////////////////NEW POINT LIST//////////////////")
-# points = vtk.vtkPoints()
-# points.SetNumberOfPoints(len(x))
-# lines = vtk.vtkCellArray()
-# lines.InsertNextCell(len(x))
-# polygon = vtk.vtkPolyData()
-#
-# for j in range(0,len(x)):
-#    xyCord = gps_to_xy_pyproj(x[j], y[j])
-#    LX = (xyCord[0])
-#    LY = (xyCord[1])
-#    listX.append(LX)
-#    listY.append(LY)
-#    listZ.append(z[j])
-#
-#    # Create the geometry of a point (the coordinate)
-#    point = (LX,LY,z[j])
-#    print(point)
-#    points.SetPoint(j,point)
-#
-#    # VTKCellArray to create cell connectivity
-#    lines.InsertCellPoint(j)
-#
-#    # Create Polygon
-#    polygon.SetPoints(points)
-#    polygon.SetLines(lines)
-#
-#    # Create a list of polygon
-#    polylineList.append(polygon)
-#    print(polylineList)
-#
-#
-# #polygon.SetPolys(lines)
-#
-# # vtkPolyDataMapper is a class that maps polygonal data (i.e., vtkPolyData)
-# # to graphics primitives
-# polygonMapper = vtk.vtkPolyDataMapper()
-# if vtk.VTK_MAJOR_VERSION <= 5:
-#    polygonMapper.SetInputConnection(polygon.GetProducerPort())
-# else:
-#    polygonMapper.SetInputData(polygon)
-#    polygonMapper.Update()
-#
-# # Create an actor to represent the polygon. The actor orchestrates rendering of
-# # the mapper's graphics primitives. An actor also refers to properties via a
-# # vtkProperty instance, and includes an internal transformation matrix. We
-# # set this actor's mapper to be polygonMapper which we created above.
-# polygonActor = vtk.vtkActor()
-# polygonActor.SetMapper(polygonMapper)
-#
-# # Create the Renderer and assign actors to it. A renderer is like a
-# # viewport. It is part or all of a window on the screen and it is
-# # responsible for drawing the actors it has.  We also set the
-# # background color here.
-# ren1 = vtk.vtkRenderer()
-# ren1.AddActor(polygonActor)
-# ren1.SetBackground(0.1, 0.2, 0.4)
-#
-# # Automatically set up the camera based on the visible actors.
-# # The camera will reposition itself to view the center point of the actors,
-# # and move along its initial view plane normal
-# # (i.e., vector defined from camera position to focal point) so that all of the
-# # actors can be seen.
-# ren1.ResetCamera()
-#
-# # Finally we create the render window which will show up on the screen
-# # We put our renderer into the render window using AddRenderer. We
-# # also set the size to be 300 pixels by 300.
-# renWin = vtk.vtkRenderWindow()
-# renWin.AddRenderer(ren1)
-# renWin.SetSize(800, 800)
-#
-# # The vtkRenderWindowInteractor class watches for events (e.g., keypress,
-# # mouse) in the vtkRenderWindow. These events are translated into
-# # event invocations that VTK understands (see VTK/Common/vtkCommand.h
-# # for all events that VTK processes). Then observers of these VTK
-# # events can process them as appropriate.
-# iren = vtk.vtkRenderWindowInteractor()
-# iren.SetRenderWindow(renWin)
-# iren.Initialize()
-# iren.Start()
-#
-#
-#
-
-
-# ListL = []
-#
-# for Lbld in glob.glob(os.path.join(path, '*L.kml')):
-#     Lbldname = os.path.basename(Lbld)
-#     ListL.append(Lbldname)
-#
-#     # READ KML FILE TREE AND EXTRACT DATA IN COORDINATES BRANCH
-#     filePath = Lbld
-#     tree = et.parse(filePath)
-#     lineStrings = tree.findall('.//{http://www.opengis.net/kml/2.2}coordinates')
-#     #print(lineStrings)
-
-
-# print(ListH)
-# print(ListL)
