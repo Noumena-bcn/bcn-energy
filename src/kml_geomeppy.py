@@ -161,16 +161,29 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
         z = [float(i) for i in cList[2::3]]
         #print(x)
 
+        ListX = []
+        ListY = []
+        ListZ = []
+
         for j in range(0, len(x)):
             xyCord = gps_to_xy_pyproj(x[j], y[j])
-            LX = {"x": round((xyCord[0]), 3)}
-            LY = {"y": round((xyCord[1]), 3)}
-            LZ = {"z": z[j]}
+            LX = round((xyCord[0]), 3)
+            LY = round((xyCord[1]), 3)
+            LZ = z[j]
             #pointXY.extend([LX, LY])
 
-            kml_TotDict[i + 1].update(LX)
-            kml_TotDict[i + 1].update(LY)
-            kml_TotDict[i + 1].update(LZ)
+            ListX.append(LX)
+            ListY.append(LY)
+            ListZ.append(LZ)
+
+        X = {"x": ListX}
+        Y = {"y": ListY}
+        Z = {"z": ListZ}
+        kml_TotDict[i + 1].update(X)
+        kml_TotDict[i + 1].update(Y)
+        kml_TotDict[i + 1].update(Z)
+
+        #TO FIX: ADD ALL X Y Z VALUES CREATE A LIST OUTSIDE THE LOOP AND APPEND THERE ACCORDING TO THAT
 
     print(kml_TotDict)
 
