@@ -10,17 +10,11 @@ import pyproj
 #DEFINE HERE THE MAIN PATH
 path = "C:\\Users\Aldo Sollazzo\Desktop\datakml"
 
-# IDF.setiddname('C:\\EnergyPlusV9-1-0\Energy+.idd')
-# # idf = IDF("C:\\Users\Aldo Sollazzo\Desktop\bcn-energy\src\db-energyPlus-ExampleFiles\Minimal.idf")
-# idf = IDF("C:\\EnergyPlusV9-1-0\ExampleFiles\Minimal.idf")
-# idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
-
 ####################################################################################################
 #FUNCTION TO CONVERT LON LAT INTO XYZ COORDINATES
 def gps_to_xy_pyproj(lon, lat):
     crs_wgs = pyproj.Proj(init='epsg:4326')  # assuming you're using WGS84 geographic
-    crs_bng = pyproj.Proj(
-        init='epsg:5649')  # use a locally appropriate projected CRS https://epsg.io/map#srs=5649&x=31431725.375401&y=4583225.826214&z=13&layer=streets
+    crs_bng = pyproj.Proj(init='epsg:5649')  # use a locally appropriate projected CRS https://epsg.io/map#srs=5649&x=31431725.375401&y=4583225.826214&z=13&layer=streets
     x, y = pyproj.transform(crs_wgs, crs_bng, lon, lat)
     return x, y
 
@@ -167,8 +161,8 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
 
         for j in range(0, len(x)):
             xyCord = gps_to_xy_pyproj(x[j], y[j])
-            LX = round((xyCord[0]), 3)
-            LY = round((xyCord[1]), 3)
+            LX = round((xyCord[0]), 4)
+            LY = round((xyCord[1]), 4)
             LZ = z[j]
             #pointXY.extend([LX, LY])
 
