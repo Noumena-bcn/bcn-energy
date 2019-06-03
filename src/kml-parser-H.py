@@ -87,7 +87,7 @@ for i in range(0,len(result)):
         # print(j)
         # print(x[j], y[j])
         xyCord = gps_to_xy_pyproj(x[j], y[j])
-        # print(xyCord[0])
+        #print(xyCord[0])
         LX = (xyCord[0])
         LY = (xyCord[1])
         listX.append(LX)
