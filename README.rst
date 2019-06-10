@@ -76,9 +76,9 @@ conda update conda
 Update any packages if necessary by typing y to proceed.
 
 - Create a virtual environment for your project
-In the terminal client enter the following where ìyourenvnameî is the name you want to call your environment, and replace ìx.xî with the Python version you wish to use. (To see a list of available python versions first, type conda search "^python$" and press enter.)
+In the terminal client enter the following where ‚Äúyourenvname‚Äù is the name you want to call your environment, and replace ‚Äúx.x‚Äù with the Python version you wish to use. (To see a list of available python versions first, type conda search "^python$" and press enter.)
 conda create -n yourenvname python=x.x anaconda
-Press y to proceed. This will install the Python version and all the associated anaconda packaged libraries at ìpath_to_your_anaconda_location/anaconda/envs/yourenvnameî
+Press y to proceed. This will install the Python version and all the associated anaconda packaged libraries at ‚Äúpath_to_your_anaconda_location/anaconda/envs/yourenvname‚Äù
 
 - Activate your virtual environment.
 To activate or switch into your virtual environment, simply type the following where yourenvname is the name you gave to your environment at creation.
@@ -86,18 +86,26 @@ source activate yourenvname
 Activating a conda environment modifies the PATH and shell variables to point to the specific isolated Python setup you created. The command prompt will change to indicate which conda environment you are currently in by prepending (yourenvname). To see a list of all your environments, use the command conda info -e.
 
 - Install additional Python packages to a virtual environment.
-To install additional packages only to your virtual environment, enter the following command where yourenvname is the name of your environment, and [package] is the name of the package you wish to install. Failure to specify ì-n yourenvnameî will install the package to the root Python installation.
+To install additional packages only to your virtual environment, enter the following command where yourenvname is the name of your environment, and [package] is the name of the package you wish to install. Failure to specify ‚Äú-n yourenvname‚Äù will install the package to the root Python installation.
 conda install -n yourenvname [package]
 
 Otherwise install the needed libraries through the PIP Install.
 Libraries list: 
+
 Regular Expressions: pip install regex
+
 Lxml: pip install lxml
+
 Pyproj: pip install pyproj==1.9.6
+
 Glob: pip install glob3
+
 Os: pip install os-win
+
 Vtk: pip install vtk
+
 Python-Git: pip install python-git  
+
 
 (-) Deactivate your virtual environment.
 To end a session in the current environment, enter the following. There is no need to specify the envname - whichever is currently active will be deactivated, and the PATH and shell variables will be returned to normal.
