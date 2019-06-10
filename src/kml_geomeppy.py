@@ -5,7 +5,7 @@ import os
 import xml.etree.ElementTree as et
 import re
 import pyproj
-#from geomeppy import IDF
+from geomeppy import IDF
 
 #DEFINE HERE THE MAIN PATH
 path = "C:\\Users\Aldo Sollazzo\Desktop\datakml"
@@ -19,9 +19,7 @@ def gps_to_xy_pyproj(lon, lat):
     return x, y
 
 ####################################################################################################
-#FUNCTION TO CONVERT LON LAT INTO XYZ COORDINATES
-#my_dict = {"build":, "floor":, "height":, "coord":, "len":}
-
+#READ KML FILES
 kml_TotDict={}
 kml_dict={} #IT HAS TO BE A NESTED DICTIONARY
 
@@ -73,8 +71,6 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
             PmCoordLenList.append(len(Coord))
             CoordL.append(Coord)
 
-    #print(kml_TotDict)
-
 ####################################################################################################
     # EXTRACT COORDINATE VALUES
 
@@ -105,18 +101,6 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     #EXTRACT COORDINATES FOR 3D GEOMETRIES
     brepCoord = []
     BrepLenList = []
-
-    #print(PmCoordLenList)
-
-    # ERASE ONLY FIRST PLANAR GROUP OF GEOMETRIES
-    # for i in range(0,len(result)):
-    #     if PmLen[i]>1:
-    #         brepCoord.append(result[i])
-    #
-    # brepCoordLen = [item for item in PmCoordLenList if(item>1)] #ERASE FLAT GEOMETRIES
-    # #print(brepCoordLen)
-
-
     totIndex=[]
 
     for i in range(0,len(PmCoordLenList)):
@@ -182,8 +166,11 @@ for Hbld in glob.glob(os.path.join(path, '*H.kml')):
     print(kml_TotDict)
 
 
+####################################################################################################
+#GEOMEPPY
 
-
-
+# IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
+# idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
+# idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
 
 
