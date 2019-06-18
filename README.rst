@@ -4,10 +4,15 @@ Software setup for running ENERGY-BCN files
 
 Index: 
 1 - Download and install the following software, plugins and libraries
+
 2 - Setup an environment with Anaconda
+
 3 - Detailed instruction to install Ladybug + Honeybee
+
 4 - Download the folder with the files
+
 5 - Open the files and adjust the paths
+
 6 - Resources
 
 ____________________________________________________________________________
