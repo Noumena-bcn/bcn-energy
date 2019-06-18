@@ -22,24 +22,21 @@ Ladybug & Honeybee
 Version:  Ladybug 0.0.67 and Honeybee 0.0.64 [Legacy Plugins]
 How to install: (please follow the detailed instructions to install it) 
 
+
 Anemone
 Version: Anemone 0.4 2015-Dec-14
 How to install: (classical installation) 
+
 
 GH_CPython 
 Version: GH_CPython v0.1-alpha 2017-Nov-28
 How to install: (classical installation) 
 Extra: github
 
+
 TTtoolbox
 Version: TT Toolbox 1.9 2017-May-25
 How to install: (classical installation) 
-
-
-
-
-
-
 
 
 __________________________________________________________________________
