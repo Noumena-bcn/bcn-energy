@@ -28,6 +28,7 @@ Plugins:
 Ladybug & Honeybee 
 
 https://www.food4rhino.com/app/ladybug-tools
+
 Version:  Ladybug 0.0.67 and Honeybee 0.0.64 [Legacy Plugins]
 How to install: (please follow the detailed instructions to install it) 
 
@@ -35,6 +36,7 @@ How to install: (please follow the detailed instructions to install it)
 Anemone
 
 https://www.food4rhino.com/app/anemone
+
 Version: Anemone 0.4 2015-Dec-14
 How to install: (classical installation) 
 
@@ -42,6 +44,7 @@ How to install: (classical installation)
 GH_CPython 
 
 https://www.food4rhino.com/app/ghcpython
+
 Version: GH_CPython v0.1-alpha 2017-Nov-28
 How to install: (classical installation) 
 Extra: github
@@ -50,6 +53,7 @@ Extra: github
 TTtoolbox
 
 https://www.food4rhino.com/app/tt-toolbox
+
 Version: TT Toolbox 1.9 2017-May-25
 How to install: (classical installation) 
 
