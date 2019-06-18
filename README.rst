@@ -68,27 +68,29 @@ A virtual environment is a named, isolated, working copy of Python that that mai
 
 Resume:
 
-Download Anaconda
+- Download Anaconda
 
-Check conda is installed and available
+- Check conda is installed and available
 
-Update conda if necessary
+- Update conda if necessary
 
-Create a virtual environment
+- Create a virtual environment
 
-Activate a virtual environment
+- Activate a virtual environment
 
-Install additional python packages
+- Install additional python packages
 
-Deactivate a virtual environment
+- Deactivate a virtual environment
 
-Delete a virtual environment
+- Delete a virtual environment
 
 
-- Download Anaconda 
+
+Download Anaconda 
+
  https://docs.continuum.io/anaconda/install/windows/
 
-- Check conda is installed and in your PATH
+Check conda is installed and in your PATH
 Open a terminal client.
 Enter conda -V into the terminal command line and press enter.
 If conda is installed you should see something like the following.
