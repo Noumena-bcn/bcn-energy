@@ -125,12 +125,18 @@ Open Rhino and type "Grasshopper" into the command line (without quotations). Wa
 [ONLY FOR RHINO 5] Install GHPython 0.6.0.3 by downloading the file here and drag the .gha file onto the Grasshopper canvas.
 Select and drag all of the userObject files (downloaded from Food4Rhino) onto your Grasshopper canvas. You should see Ladybug and Honeybee appear as tabs on the grasshopper tool bar.
 Restart Rhino and Grasshopper. You now have a fully-functioning Ladybug. For Honeybee, continue to the following:
+
 HONEYBEE
 Install Radiance to C:\Radiance by downloading it from this link and running the exe. NOTE: The default installation path for Radiance is set to C:\Program Files(x86)\Radiance which should be modified to C:\Radiance.
+
 Install Daysim 4.0 for Windows to C:\DAYSIM by downloading it at this link and running the exe.
+
 Install the Latest OpenStudio by downloading and running the .exe file from this link.
+
 Install Berkeley Therm by downloading and running the .exe file from this link.
+
 Finally, copy falsecolor2.exe to C:\Radiance\bin
+
 You now have a fully-working version of Ladybug + Honeybee. Get started visualizing weather data with these video tutorials.
 
 
