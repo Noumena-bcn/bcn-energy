@@ -67,14 +67,23 @@ How to setup a virtual environments using conda for the Anaconda Python distribu
 A virtual environment is a named, isolated, working copy of Python that that maintains its own files, directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects. Virtual environments make it easy to cleanly separate different projects and avoid problems with different dependencies and version requirements across components. The conda command is the preferred interface for managing installations and virtual environments with the Anaconda Python distribution. 
 
 Resume:
+
 Download Anaconda
+
 Check conda is installed and available
+
 Update conda if necessary
+
 Create a virtual environment
+
 Activate a virtual environment
+
 Install additional python packages
+
 Deactivate a virtual environment
+
 Delete a virtual environment
+
 
 - Download Anaconda 
  https://docs.continuum.io/anaconda/install/windows/
@@ -134,7 +143,9 @@ conda remove -n yourenvname -all
 ____________________________________________________________________________
 
 3 - Detailed instruction to install Ladybug + Honeybee
+
 LADYBUG
+
 If you have an old version of LB+HB, download the file here and open it in Grasshopper to remove your old Ladybug and Honeybee version otherwise download the latest version of Ladybug + Honeybee from Food4Rhino and follow steps below.
 Make sure that you have a working copy of both Rhino and Grasshopper installed.
 Open Rhino and type "Grasshopper" into the command line (without quotations). Wait for grasshopper to load.
@@ -143,6 +154,7 @@ Select and drag all of the userObject files (downloaded from Food4Rhino) onto yo
 Restart Rhino and Grasshopper. You now have a fully-functioning Ladybug. For Honeybee, continue to the following:
 
 HONEYBEE
+
 Install Radiance to C:\Radiance by downloading it from this link and running the exe. NOTE: The default installation path for Radiance is set to C:\Program Files(x86)\Radiance which should be modified to C:\Radiance.
 
 Install Daysim 4.0 for Windows to C:\DAYSIM by downloading it at this link and running the exe.
@@ -161,8 +173,8 @@ ____________________________________________________________________________
 
 4 - Download the folder with the files: 
 
-
 Drive: https://drive.google.com/open?id=1SDm9r7wPmKvXGWQHFNT1yIEfxHvAOhhP
+
 ____________________________________________________________________________
 
 5 - Open the files and adjust the paths: 
@@ -174,7 +186,7 @@ Follow the instructions in the grasshopper file.
  
 ____________________________________________________________________________
 
-6 - Original Resources: 
+6 - Resources: 
 
 https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
