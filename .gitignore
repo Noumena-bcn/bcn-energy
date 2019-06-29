@@ -1,4 +1,12 @@
 src/__pycache__
+*.py[cod]
+*$py.class
+# C extensions
+*.so
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
 # ============ #
 # OS generated #
 # ============ #
@@ -11,3 +19,4 @@ src/__pycache__
 Icon?
 ehthumbs.db
 Thumbs.db
+
