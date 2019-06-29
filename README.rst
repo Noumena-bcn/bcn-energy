@@ -1,3 +1,5 @@
+ATTENTION: DOC NOT VALIDATED FOR THIS NEW BRANCH energy-plus-test
+
 BCN ENERGY - Data Analytics
 
 Software setup for running ENERGY-BCN files
