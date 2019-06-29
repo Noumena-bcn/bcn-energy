@@ -1,5 +1,9 @@
 ATTENTION: DOC NOT VALIDATED FOR THIS NEW BRANCH energy-plus-test
 
+DOCKERFILE
+
+docker build -t bcn-energy .
+
 BCN ENERGY - Data Analytics
 
 Software setup for running ENERGY-BCN files
