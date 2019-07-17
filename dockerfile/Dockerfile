@@ -16,9 +16,9 @@ ARG DOWNLOAD_PREFIX=""
 # Set the version of OpenStudio when building the container. For example `docker build --build-arg
 # OPENSTUDIO_VERSION=2.6.0 --build-arg OPENSTUDIO_SHA=e3cb91f98a .` in the .travis.yml. Set with the ENV keyword to
 # inherit the variables into child containers
-ARG OPENSTUDIO_VERSION
+ENV OPENSTUDIO_VERSION 2.6.0
 ARG OPENSTUDIO_VERSION_EXT
-ARG OPENSTUDIO_SHA
+ENV OPENSTUDIO_SHA e3cb91f98a
 ARG OS_BUNDLER_VERSION=1.17.1
 ENV OPENSTUDIO_VERSION=$OPENSTUDIO_VERSION
 ENV OPENSTUDIO_VERSION_EXT=$OPENSTUDIO_VERSION_EXT
