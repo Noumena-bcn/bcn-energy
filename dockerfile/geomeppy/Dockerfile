@@ -4,14 +4,14 @@ MAINTAINER info@noumena.io
 
 # PYTHON
 RUN apt-get update \
-  && apt-get install -y python3-pip python3-dev \
+  && apt-get install -y python3-pip python3-dev python3-tk \
   && cd /usr/local/bin \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
 
 # EPPY AND GEOMEPPY
-RUN apt-get install -y python-pyproj python-numpy python-shapely
-RUN pip install six
+#RUN apt-get install -y python-pyproj python-numpy python-shapely
+RUN pip install six pyproj shapely numpy
 RUN pip3 install eppy \
     && pip3 install geomeppy
 
@@ -27,7 +27,7 @@ ENV ENERGYPLUS_SHA=$ENERGYPLUS_SHA
 ENV ENERGYPLUS_INSTALL_VERSION=$ENERGYPLUS_INSTALL_VERSION
 
 # Downloading from Github
-# e.g. https://github.com/NREL/EnergyPlus/releases/download/v8.3.0/EnergyPlus-8.3.0-6d97d074ea-Linux-x86_64.sh
+# e.g. https://github.com/NREL/EnergyPlus/releases/download/v9.0.1/EnergyPlus-9.0.1-bb7ca4f0da-Linux-x86_64.sh
 ENV ENERGYPLUS_DOWNLOAD_BASE_URL https://github.com/NREL/EnergyPlus/releases/download/$ENERGYPLUS_TAG
 ENV ENERGYPLUS_DOWNLOAD_FILENAME EnergyPlus-$ENERGYPLUS_VERSION-$ENERGYPLUS_SHA-Linux-x86_64.sh
 ENV ENERGYPLUS_DOWNLOAD_URL $ENERGYPLUS_DOWNLOAD_BASE_URL/$ENERGYPLUS_DOWNLOAD_FILENAME
@@ -42,9 +42,8 @@ RUN apt-get update && apt-get install -y ca-certificates curl \
     && chmod +x $ENERGYPLUS_DOWNLOAD_FILENAME \
     && echo "y\r" | ./$ENERGYPLUS_DOWNLOAD_FILENAME \
     && rm $ENERGYPLUS_DOWNLOAD_FILENAME \
-    && cd /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION \
-    && rm -rf DataSets Documentation ExampleFiles WeatherData MacroDataSets PostProcess/convertESOMTRpgm \
-    PostProcess/EP-Compare PreProcess/FMUParser PreProcess/ParametricPreProcessor PreProcess/IDFVersionUpdater
+    && cd /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION
+
 
 # Remove the broken symlinks
 RUN cd /usr/local/bin \
@@ -55,7 +54,7 @@ ADD test /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION/test_run
 RUN cp /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION/Energy+.idd \
         /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION/test_run/
 
-#VOLUME /var/simdata
-#WORKDIR /var/simdata
+VOLUME /var/bcn-energy-dev
+WORKDIR /var/bcn-energy-dev
 
 #CMD [ "/bin/bash" ]

@@ -1,7 +1,9 @@
+# !/usr/bin/python
 # NOUMENA
 """
 This module contains the implementation of `BCNEnergy module`.
 """
+import os
 import json
 import xml.etree.ElementTree as ET
 import re
@@ -12,9 +14,9 @@ from eppy.iddcurrent import iddcurrent
 from geomeppy import IDF
 
 
-class BCNEnergy:
+class BcnEnergy:
 
-    def __init__(self, file_path):
+    def __init__(self, file_path=None, os_system="win"):
         """"""
 
         self._api_opengis = ".//{http://www.opengis.net/kml/2.2}"
@@ -24,17 +26,23 @@ class BCNEnergy:
         self._opengis_name = "%sname" % self._api_opengis
         self._opengis_coordinates = "%scoordinates" % self._api_opengis
 
+        self._slash = BcnEnergy._set_os_system(os_system)
+
+        # file handle
+        self._file_path = file_path
+        self._xml_document = None
+
+        if file_path:
+            self._file_name = os.path.basename(file_path)
+            self._open_file()
+            self._idf_filename = self._file_name
+
         # energy plus
         self.idd_file = None
         self.epw = None
         self.idf_path = None
         self._idf = None
-        self._idf_filename = None
 
-        # file handle
-        self._file_path = file_path
-        self._xml_document = None
-        self._open_file()
 
         # build a json describing the geometry form xml
         self._json = {}
@@ -61,7 +69,8 @@ class BCNEnergy:
         self._json[self._DB] = []
 
         # get the necessary markups to rebuild the geometry
-        self._get_markups()
+        if file_path:
+            self._get_markups()
 
         self._error_exception = []
 
@@ -75,7 +84,7 @@ class BCNEnergy:
         """
 
         # joing the json path with the file name. the extension of the file is implement here
-        json_path = '%s\\%s.json' % (json_path, json_file_name)
+        json_path = '%s%s%s.json' % (json_path, self._slash, json_file_name)
 
         # if path is not empty write or overwrite the JSON file with the given name and path
         try:
@@ -95,6 +104,18 @@ class BCNEnergy:
         get_log() is a public method
         """
         return self._error_exception
+
+    @staticmethod
+    def _set_os_system(os):
+        if os == "win":
+            return "\\"
+        elif os == "osx":
+            return "/"
+        elif os == "unix":
+            return "/"
+
+        else:
+            return None
 
     def _open_file(self):
         """
@@ -262,7 +283,7 @@ class BCNEnergy:
                     xy_coordinates.append(tuple(coordinates[i][0:2]))
 
         if is_clean_of_duplicates:
-            xy_coordinates = BCNEnergy._clean_duplicates(xy_coordinates)
+            xy_coordinates = BcnEnergy._clean_duplicates(xy_coordinates)
 
         if is_close:
             xy_coordinates.append(xy_coordinates[0])
@@ -270,11 +291,10 @@ class BCNEnergy:
         return xy_coordinates, z_min, z_max
 
     def construct_idf(self):
-        self._idf_filename = "test"
         try:
             IDF.setiddname(self.idd_file)
             self._idf = IDF()
-            self._idf.new(fname=("%s\\%s.idf" % (self.idf_path, self._idf_filename)))
+            self._idf.new(fname=('%s%s%s.idf' % (self.idf_path, self._slash, self._idf_filename)))
             self._idf.epw = self.epw
 
             for i in range(len(self._json[self._DB])):
@@ -288,11 +308,37 @@ class BCNEnergy:
                                 name=name, coordinates=coordinates_xy, height=height
                             )
                             self._idf.set_default_constructions()
-                            # self._idf.intersect_match()
-                            self._idf.to_obj("%s\\%s_%s.obj" % (self.idf_path, self._idf_filename, name))
-                            self._idf.run()
+                            self._idf.intersect_match()
+                            self._idf.to_obj('%s%s%s_%s.obj' % (self.idf_path, self._slash, self._idf_filename, name))
+                            print('%s%s%s_%s.obj' % (self.idf_path, self._slash,  self._idf_filename, name))
+                            # self._idf.run()
 
                     except Exception as e:
                         self._error_exception.append(e)
+        except Exception as e:
+            self._error_exception.append(e)
+
+    def run_examples_files(self, output_path, docker=True):
+        """
+        Open the kml or xml file to be parse.
+
+        :param output_path: A path to Minimal.idf test file
+        :param docker:
+        """
+        if docker:
+            minimal_idf = '/usr/local/EnergyPlus-9-0-1/ExampleFiles/Minimal.idf'
+        else:
+            minimal_idf = ''
+        try:
+            IDF.setiddname(self.idd_file)
+            self._idf = IDF(minimal_idf)
+            self._idf.epw = self.epw
+            self._idf.add_block(name='Minimal', coordinates=[(10, 0), (10, 10), (0, 10), (0, 0)], height=3.5)
+            self._idf.set_default_constructions()
+            self._idf.intersect_match()
+            self._idf.set_wwr(wwr=0.25)
+            self._idf.to_obj('%s%s%s%s.obj' % (self._slash, output_path, self._slash, 'Minimal'))
+            self._idf.run()
+
         except Exception as e:
             self._error_exception.append(e)

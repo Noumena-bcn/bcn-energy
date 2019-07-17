@@ -1,3 +1,3 @@
-# -*- coding: utf-8 -*-
+# !/usr/bin/python
 # NOUMENA
-# from BCNEnergy.BCNEnergy import BCNEnergy
+from src.bcn_energy import BcnEnergy
