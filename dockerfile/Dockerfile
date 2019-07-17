@@ -4,58 +4,105 @@ MAINTAINER info@noumena.io
 
 # PYTHON
 RUN apt-get update \
-  && apt-get install -y python3-pip python3-dev \
+  && apt-get install -y python3-pip python3-dev python3-tk \
   && cd /usr/local/bin \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
 
-# EPPY AND GEOMEPPY
-RUN apt-get install -y python-pyproj python-numpy python-shapely
-RUN pip install six
-RUN pip3 install eppy \
-    && pip3 install geomeppy
+# If installing a CI build version of OpenStudio, then pass in the CI path into the build command. For example:
+#   docker build --build-arg DOWNLOAD_PREFIX="_CI/OpenStudio"
+ARG DOWNLOAD_PREFIX=""
 
-# ENERGY PLUS
-ENV ENERGYPLUS_VERSION 9.0.1
-ENV ENERGYPLUS_SHA bb7ca4f0da
-ENV ENERGYPLUS_INSTALL_VERSION 9-0-1
-ENV ENERGYPLUS_VERSION=9.0.1
-ENV ENERGYPLUS_TAG=v$ENERGYPLUS_VERSION
-ENV ENERGYPLUS_SHA=$ENERGYPLUS_SHA
-
-# This should be x.y.z, but EnergyPlus convention is x-y-z
-ENV ENERGYPLUS_INSTALL_VERSION=$ENERGYPLUS_INSTALL_VERSION
-
-# Downloading from Github
-# e.g. https://github.com/NREL/EnergyPlus/releases/download/v8.3.0/EnergyPlus-8.3.0-6d97d074ea-Linux-x86_64.sh
-ENV ENERGYPLUS_DOWNLOAD_BASE_URL https://github.com/NREL/EnergyPlus/releases/download/$ENERGYPLUS_TAG
-ENV ENERGYPLUS_DOWNLOAD_FILENAME EnergyPlus-$ENERGYPLUS_VERSION-$ENERGYPLUS_SHA-Linux-x86_64.sh
-ENV ENERGYPLUS_DOWNLOAD_URL $ENERGYPLUS_DOWNLOAD_BASE_URL/$ENERGYPLUS_DOWNLOAD_FILENAME
+# Set the version of OpenStudio when building the container. For example `docker build --build-arg
+# OPENSTUDIO_VERSION=2.6.0 --build-arg OPENSTUDIO_SHA=e3cb91f98a .` in the .travis.yml. Set with the ENV keyword to
+# inherit the variables into child containers
+ARG OPENSTUDIO_VERSION
+ARG OPENSTUDIO_VERSION_EXT
+ARG OPENSTUDIO_SHA
+ARG OS_BUNDLER_VERSION=1.17.1
+ENV OPENSTUDIO_VERSION=$OPENSTUDIO_VERSION
+ENV OPENSTUDIO_VERSION_EXT=$OPENSTUDIO_VERSION_EXT
+ENV OPENSTUDIO_SHA=$OPENSTUDIO_SHA
+ENV OS_BUNDLER_VERSION=$OS_BUNDLER_VERSION
 
 
-# Collapse the update of packages, download and installation into one command
-# to make the container smaller & remove a bunch of the auxiliary apps/files
-# that are not needed in the container
-RUN apt-get update && apt-get install -y ca-certificates curl \
+# Modify the OPENSTUDIO_VERSION and OPENSTUDIO_SHA for new versions
+ENV RUBY_VERSION=2.2.4 \
+    RUBY_SHA=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153cc0cdcb761
+
+# Don't combine with above since ENV vars are not initialized until after the above call
+ENV OPENSTUDIO_DOWNLOAD_FILENAME=OpenStudio-$OPENSTUDIO_VERSION$OPENSTUDIO_VERSION_EXT.$OPENSTUDIO_SHA-Linux.deb
+
+# Install gdebi, then download and install OpenStudio, then clean up.
+# gdebi handles the installation of OpenStudio's dependencies including Qt5,
+# Boost, and Ruby 2.2.4.
+# OpenStudio 2.4.3 requires libwxgtk3.0-0 -- install manually for now
+
+# install locales and set to en_US.UTF-8. This is needed for running the CLI on some machines
+# such as singularity.
+RUN apt-get update && apt-get install -y autoconf \
+        build-essential \
+        ca-certificates \
+        curl \
+        gdebi-core \
+        git \
+        libfreetype6 \
+        libjpeg8 \
+        libdbus-glib-1-2 \
+        libfontconfig1 \
+        libglu1 \
+        libreadline-dev \
+        libsm6 \
+        libssl-dev \
+        libtool \
+        libwxgtk3.0-0v5 \
+        libxi6 \
+        libxml2-dev \
+	   locales \
+        sudo \
+        zlib1g-dev \
+    && curl -sL https://raw.githubusercontent.com/NREL/OpenStudio-server/develop/docker/deployment/scripts/install_ruby.sh -o /usr/local/bin/install_ruby.sh \
+    && chmod +x /usr/local/bin/install_ruby.sh \
+    && /usr/local/bin/install_ruby.sh $RUBY_VERSION $RUBY_SHA \
+    && if [ -z "${DOWNLOAD_PREFIX}" ]; then \
+            export OPENSTUDIO_DOWNLOAD_URL=https://openstudio-builds.s3.amazonaws.com/$OPENSTUDIO_VERSION/OpenStudio-$OPENSTUDIO_VERSION$OPENSTUDIO_VERSION_EXT.$OPENSTUDIO_SHA-Linux.deb; \
+       else \
+            export OPENSTUDIO_DOWNLOAD_URL=https://openstudio-builds.s3.amazonaws.com/$DOWNLOAD_PREFIX/OpenStudio-$OPENSTUDIO_VERSION$OPENSTUDIO_VERSION_EXT.$OPENSTUDIO_SHA-Linux.deb; \
+       fi \
+    && echo "OpenStudio Package Download URL is ${OPENSTUDIO_DOWNLOAD_URL}" \
+    && curl -SLO $OPENSTUDIO_DOWNLOAD_URL \
+    # Verify that the download was successful (not access denied XML from s3)
+    && grep -v -q "<Code>AccessDenied</Code>" ${OPENSTUDIO_DOWNLOAD_FILENAME} \
+    && gdebi -n $OPENSTUDIO_DOWNLOAD_FILENAME \
+    # Cleanup
+    && rm -f /usr/local/bin/install_ruby.sh \
+    && rm -f $OPENSTUDIO_DOWNLOAD_FILENAME \
     && rm -rf /var/lib/apt/lists/* \
-    && curl -SLO $ENERGYPLUS_DOWNLOAD_URL \
-    && chmod +x $ENERGYPLUS_DOWNLOAD_FILENAME \
-    && echo "y\r" | ./$ENERGYPLUS_DOWNLOAD_FILENAME \
-    && rm $ENERGYPLUS_DOWNLOAD_FILENAME \
-    && cd /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION \
-    && rm -rf DataSets Documentation ExampleFiles WeatherData MacroDataSets PostProcess/convertESOMTRpgm \
-    PostProcess/EP-Compare PreProcess/FMUParser PreProcess/ParametricPreProcessor PreProcess/IDFVersionUpdater
+    && if dpkg --compare-versions "${OPENSTUDIO_VERSION}" "gt" "2.5.1"; then \
+            rm -rf /usr/local/openstudio-${OPENSTUDIO_VERSION}/SketchUpPlugin; \
+       else \
+            rm -rf /usr/SketchUpPlugin; \
+       fi \
+    && locale-gen en_US en_US.UTF-8 \
+    && dpkg-reconfigure locales
 
-# Remove the broken symlinks
-RUN cd /usr/local/bin \
-    && find -L . -type l -delete
 
-# Add in the test files
-ADD test /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION/test_run
-RUN cp /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION/Energy+.idd \
-        /usr/local/EnergyPlus-$ENERGYPLUS_INSTALL_VERSION/test_run/
+## Add RUBYLIB link for openstudio.rb. Support new location and old location.
+ENV RUBYLIB=/usr/local/openstudio-${OPENSTUDIO_VERSION}/Ruby:/usr/Ruby
+ENV ENERGYPLUS_EXE_PATH=/usr/local/openstudio-${OPENSTUDIO_VERSION}/EnergyPlus/energyplus
 
-#VOLUME /var/simdata
-#WORKDIR /var/simdata
+# The OpenStudio Gemfile contains a fixed bundler version, so you have to install and run specific to that version
+RUN gem install bundler -v $OS_BUNDLER_VERSION && \
+    mkdir /var/oscli && \
+    cp /usr/local/openstudio-${OPENSTUDIO_VERSION}/Ruby/Gemfile /var/oscli/ && \
+    cp /usr/local/openstudio-${OPENSTUDIO_VERSION}/Ruby/Gemfile.lock /var/oscli/ && \
+    cp /usr/local/openstudio-${OPENSTUDIO_VERSION}/Ruby/openstudio-gems.gemspec /var/oscli/
+WORKDIR /var/oscli
+RUN bundle _${OS_BUNDLER_VERSION}_ install --path=gems --jobs=4 --retry=3
 
-#CMD [ "/bin/bash" ]
+# Configure the bootdir & confirm that openstudio is able to load the bundled gem set in /var/gemdata
+VOLUME /var/simdata/openstudio
+WORKDIR /var/simdata/openstudio
+RUN openstudio --verbose --bundle /var/oscli/Gemfile --bundle_path /var/oscli/gems openstudio_version
+
+CMD [ "/bin/bash" ]

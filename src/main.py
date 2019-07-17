@@ -14,7 +14,7 @@ def main():
         bcn_energy.epw = 'C:\\Users\\starsky\\stealingfired\\bcn-energy\\epw\\ESP_Barcelona.081810_IWEC.epw'
         bcn_energy.idf_path = '%s\\idf' % os.path.normpath(os.getcwd() + os.sep + os.pardir)
         bcn_energy.construct_idf()
-        json = bcn_energy.get_db(json_path='%s\\json' % os.path.normpath(os.getcwd() + os.sep + os.pardir))
+        json = bcn_energy.gett_db(json_path='%s\\json' % os.path.normpath(os.getcwd() + os.sep + os.pardir))
 
 
 if __name__ == '__main__':
