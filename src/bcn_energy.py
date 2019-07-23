@@ -4,6 +4,7 @@
 This module contains the implementation of `BCNEnergy module`.
 """
 import os
+import sys
 import json
 import xml.etree.ElementTree as ET
 import re
@@ -318,27 +319,16 @@ class BcnEnergy:
         except Exception as e:
             self._error_exception.append(e)
 
-    def run_examples_files(self, output_path, docker=True):
-        """
-        Open the kml or xml file to be parse.
+    @staticmethod
+    def run_examples_files(epw_file_example):
+        # pathnameto_eppy = '../'
+        # sys.path.append(pathnameto_eppy)
+        idd_file = '/usr/local/EnergyPlus-9-0-1/Energy+.idd'
+        IDF.setiddname(idd_file)
 
-        :param output_path: A path to Minimal.idf test file
-        :param docker:
-        """
-        if docker:
-            minimal_idf = '/usr/local/EnergyPlus-9-0-1/ExampleFiles/Minimal.idf'
-        else:
-            minimal_idf = ''
-        try:
-            IDF.setiddname(self.idd_file)
-            self._idf = IDF(minimal_idf)
-            self._idf.epw = self.epw
-            self._idf.add_block(name='Minimal', coordinates=[(10, 0), (10, 10), (0, 10), (0, 0)], height=3.5)
-            self._idf.set_default_constructions()
-            self._idf.intersect_match()
-            self._idf.set_wwr(wwr=0.25)
-            self._idf.to_obj('%s%s%s%s.obj' % (self._slash, output_path, self._slash, 'Minimal'))
-            self._idf.run()
+        idd_file = "/usr/local/EnergyPlus-9-0-1/ExampleFiles/BasicsFiles/Exercise1A.idf"
+        epw_file = epw_file_example
 
-        except Exception as e:
-            self._error_exception.append(e)
+        idf = IDF(idd_file, epw_file)
+        idf.epw=epw_file
+        idf.run()

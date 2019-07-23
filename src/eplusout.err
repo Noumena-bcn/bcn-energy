@@ -1,24 +1,13 @@
-Program Version,EnergyPlus, Version 9.0.1-bb7ca4f0da, YMD=2019.07.04 22:50,
-   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
-   **   ~~~   ** ..Location object=DENVER_STAPLETON_CO_USA_WMO_724690
-   **   ~~~   ** ..Weather File Location=BARCELONA - ESP IWEC Data WMO#=081810
-   **   ~~~   ** ..due to location differences, Latitude difference=[1.51] degrees, Longitude difference=[106.94] degrees.
-   **   ~~~   ** ..Time Zone difference=[8.0] hour(s), Elevation difference=[99.63] percent, [1605.00] meters.
-   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=83411 differs by more than 10% from Standard Barometric Pressure=101253.
-   **   ~~~   ** ...occurs in DesignDay=DENVER_STAPLETON ANN HTG 99.6% CONDNS DB, Standard Pressure (based on elevation) will be used.
-   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
-   **   ~~~   ** Found first in surface=BLOCK MINIMAL STOREY 0 FLOOR 0001
-   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
-   ** Severe  ** FenestrationSurface:Detailed="BLOCK MINIMAL STOREY 0 WALL 0001 WINDOW", invalid Construction Name="NONE".
-   ** Severe  ** FenestrationSurface:Detailed="BLOCK MINIMAL STOREY 0 WALL 0002 WINDOW", invalid Construction Name="NONE".
-   ** Severe  ** FenestrationSurface:Detailed="BLOCK MINIMAL STOREY 0 WALL 0003 WINDOW", invalid Construction Name="NONE".
-   ** Severe  ** FenestrationSurface:Detailed="BLOCK MINIMAL STOREY 0 WALL 0004 WINDOW", invalid Construction Name="NONE".
-   **  Fatal  ** GetSurfaceData: Errors discovered, program terminates.
-   ...Summary of Errors that led to program termination:
-   ..... Reference severe error count=4
-   ..... Last severe error=FenestrationSurface:Detailed="BLOCK MINIMAL STOREY 0 WALL 0004 WINDOW", invalid Construction Name="NONE".
-   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).
-   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.
+Program Version,EnergyPlus, Version 9.0.1-bb7ca4f0da, YMD=2019.07.17 19:51,
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Terminated--Fatal Error Detected. 3 Warning; 4 Severe Errors; Elapsed Time=00hr 00min  0.23sec
+   ************* EnergyPlus Completed Successfully-- 0 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  0.55sec
