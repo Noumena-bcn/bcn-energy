@@ -127,11 +127,11 @@ Pyproj: pip install pyproj==1.9.6
 
 Glob: pip install glob3
 
-Os: pip install os-win
+~~Os: pip install os-win~~
 
 Vtk: pip install vtk
 
-Python-Git: pip install python-git  
+~~Python-Git: pip install python-git~~
 
 
 (-) Deactivate your virtual environment.
