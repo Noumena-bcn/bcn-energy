@@ -125,14 +125,12 @@ Lxml: pip install lxml
 
 Pyproj: pip install pyproj==1.9.6
 
-Glob: pip install glob3
-
-~~Os: pip install os-win~~
-
 Vtk: pip install vtk
 
+DEPRECATED LIBRARIES -
+~~Glob: pip install glob3~~
+~~Os: pip install os-win~~
 ~~Python-Git: pip install python-git~~
-
 
 (-) Deactivate your virtual environment.
 To end a session in the current environment, enter the following. There is no need to specify the envname - whichever is currently active will be deactivated, and the PATH and shell variables will be returned to normal.
