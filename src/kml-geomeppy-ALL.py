@@ -87,8 +87,10 @@ def make_L_blocks(polygon_coordinates):
         for point in polygon_coordinates[index]:
             polygon_xy.append((point[0],point[1]))
             polygon_z.append(point[2])
-        idf.add_block(
-            name=block_name, coordinates=polygon_xy, height=polygon_z[0]
+        idf.add_shading_block(
+            name=block_name,
+            coordinates=polygon_xy,
+            height=polygon_z[0]
         )
 
 
@@ -153,60 +155,56 @@ for slab in slabs_groups:
 floor_coordinates = []
 floor_heights = []
 floor_z = []
+apartments.reverse()
 for apartment in apartments:
     floor_coordinates.append(apartment[0])
     z_value = apartment[1][0][2] - apartment[0][0][2]
     floor_heights.append(z_value)
     floor_z.append(apartment[0][0][2])
 
-# creating groups based on floor z values so the polygons in the same height will be in the same group and then they will all move up together
-floor_index = []
-dup = {}
+# creating groups based on floor z values so the polygons in the same height will be in the same group
+# so they will all move up together
+z = floor_z[0]
+level = []
+levels = []
 for i in range(len(floor_z)):
-    if floor_z[i] not in dup.values():
-        if len(dup) > 0:
-            floor_index.append(dup)
-        dup = []
-        dup.append(i)
-    if floor_z
-        dup.append(i)
+    if floor_z[i] == z:
+        level.append(i)
+    if floor_z[i] != z:
+        z = floor_z[i]
+        levels.append(level)
+        level = []
 
-print (floor_index)
-
-
-
-
-
-
-# for i in range(len(apartments)):
-#     idf.add_block(
-#         name = 'Storey' + str(i),
-#         coordinates = floor_coordinates[i],
-#         height = floor_heights[i]
-#     )
+for level in levels:
+    for i in level:
+        idf.add_block(
+            name = 'Storey' + str(i),
+            coordinates = floor_coordinates[i],
+            height = floor_heights[i]
+        )
+    idf.translate([0,0,3])
 
 #######################################################################################################################
 # Making L blocks
 
-# paths_L = find_paths('L')
-# L_roots = get_roots(paths_L)
-#
-# L_elements = []
-# for root in L_roots:
-#     L_elements.append(extract_polygon_elements(root))
-#
-# L_polygons = []
-# for i in L_elements:
-#     for j in i:
-#         for k in j:
-#             L_polygons.append(element_to_coordinates(k[0]))
-# # print (L_polygons[:2])
-# make_L_blocks(L_polygons[:1])
+paths_L = find_paths('L')
+L_roots = get_roots(paths_L)
+
+L_elements = []
+for root in L_roots:
+    L_elements.append(extract_polygon_elements(root))
+
+L_polygons = []
+for i in L_elements:
+    for j in i:
+        for k in j:
+            L_polygons.append(element_to_coordinates(k[0]))
+
+make_L_blocks(L_polygons)
 
 #######################################################################################################################
-
-# idf.translate_to_origin()
-# idf.set_default_constructions()
-# idf.intersect_match()
-# idf.view_model()
-# idf.run()
+idf.translate_to_origin()
+idf.set_default_constructions()
+idf.intersect_match()
+idf.view_model()
+idf.run()
