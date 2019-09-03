@@ -93,7 +93,6 @@ def make_L_blocks(polygon_coordinates):
             height=polygon_z[0]
         )
 
-
 IDF.setiddname('C:\EnergyPlusV9-1-0\Energy+.idd')
 idf = IDF('C:\EnergyPlusV9-1-0\ExampleFiles\Minimal.idf')
 idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
@@ -124,7 +123,6 @@ for elements in surface_elements:
         points = element_to_coordinates(element)
         surface_coordinates.append(points)
     group_surface.append(surface_coordinates)
-
 
 # Extracting the slabs from each block
 slabs_groups = []
@@ -162,7 +160,7 @@ for apartment in apartments:
     floor_heights.append(z_value)
     floor_z.append(apartment[0][0][2])
 
-# creating groups based on floor z values so the polygons in the same height will be in the same group
+# sorting groups based on floor z values so the polygons in the same height will be in the same group
 # so they will all move up together
 z = floor_z[0]
 level = []
@@ -175,6 +173,7 @@ for i in range(len(floor_z)):
         levels.append(level)
         level = []
 
+# making the idf blocks
 for level in levels:
     for i in level:
         idf.add_block(
@@ -206,5 +205,7 @@ make_L_blocks(L_polygons)
 idf.translate_to_origin()
 idf.set_default_constructions()
 idf.intersect_match()
-idf.view_model()
+idf.set_wwr(0.6, construction="Project External Window")
+idf.to_obj("boring_hut.obj")
+# idf.view_model()
 idf.run()
