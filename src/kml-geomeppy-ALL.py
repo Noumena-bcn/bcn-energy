@@ -6,7 +6,7 @@ import pyproj
 from geomeppy import IDF
 
 # DEFINE HERE THE MAIN PATH
-path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
+path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
 
 def find_paths(res):  # block resolution, 'H' for High or 'L' for Low resolution
     list = []
@@ -93,8 +93,8 @@ def make_L_blocks(polygon_coordinates):
             height=polygon_z[0]
         )
 
-IDF.setiddname('C:\EnergyPlusV9-1-0\Energy+.idd')
-idf = IDF('C:\EnergyPlusV9-1-0\ExampleFiles\Minimal.idf')
+IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
+idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
 idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
 
 #######################################################################################################################
@@ -182,6 +182,7 @@ for level in levels:
             height = floor_heights[i]
         )
     idf.translate([0,0,3])
+idf.translate([0,0,-3])
 
 #######################################################################################################################
 # Making L blocks
@@ -202,10 +203,65 @@ for i in L_elements:
 make_L_blocks(L_polygons)
 
 #######################################################################################################################
-idf.translate_to_origin()
-idf.set_default_constructions()
-idf.intersect_match()
-idf.set_wwr(0.6, construction="Project External Window")
-idf.to_obj("boring_hut.obj")
+
+def move_to_origin():
+    n = 0
+    h_center = [0,0,0]
+    for i in floor_coordinates:
+        for j in i:
+            n = n+1
+            h_center[0] = h_center[0] + j[0]
+            h_center[1] = h_center[1] + j[1]
+    for k in range(2):
+        h_center[k] = h_center[k]/(-n)
+
+    idf.translate(h_center)
+
+move_to_origin()
+# idf.set_default_constructions()
+# idf.intersect_match()
+
+#######################################################################################################################
+def get_centroid(coords): # coords is a list of coordinates of surface
+    srf_center = [0, 0, 0]
+    for coord in coords:
+        srf_center[0] = srf_center[0] + coord[0]
+        srf_center[1] = srf_center[1] + coord[1]
+        srf_center[2] = srf_center[2] + coord[2]
+    for i in range(3):
+        srf_center[i] = srf_center[i] / 4
+    return srf_center
+#
+# idf.set_wwr(
+#     wwr=0.4,
+#     construction="Project External Window"
+# )
+#
+# shading_srfs = idf.getshadingsurfaces()
+# block_srfs = idf.getsurfaces("Wall")
+#
+# shading_centers = []
+# for i in shading_srfs:
+#     srf_coords = i.coords
+#     center = get_centroid(srf_coords)
+#     shading_centers.append(center)
+#
+# srf_centers = []
+# for i in block_srfs:
+#     srf_coords = i.coords
+#     center = get_centroid(srf_coords)
+#     srf_centers.append(center)
+#
+# x = 0
+# for i in range(len(srf_centers)):
+#     for shading in shading_centers:
+#         if srf_centers[i] == shading:
+#             idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-x)
+#             x += 1
+#             break
+
+#######################################################################################################################
+
+idf.to_obj("allblocks.obj")
 # idf.view_model()
-idf.run()
+# idf.run()
