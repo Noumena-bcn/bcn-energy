@@ -1,5 +1,7 @@
 from geomeppy import IDF
-from geomeppy import extractor
+from geomeppy.geom import surfaces
+from geomeppy.geom.polygons import Polygon3D
+from geomeppy.utilities import almostequal
 
 IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
 idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
@@ -16,56 +18,51 @@ idf.add_block(
 idf.add_shading_block(
     name='shading',
     coordinates=[(20,0),(20,10),(10,10),(10,0)],
-    height=3.5)
+    height=10)
 idf.add_shading_block(
-    name='shading2',
-    coordinates=[(10,10),(10,20),(00,20),(00,10)],
-    height=3.5)
+    name='shading',
+    coordinates=[(10,10),(10,20),(0,20),(0,10)],
+    height=10)
 
 idf.set_default_constructions()
-idf.intersect_match()
+idf.match()
 idf.set_wwr(
     wwr=0.4,
     construction="Project External Window"
     )
 
-# I need to find the duplicated surfaces from blocks surfaces and shading surfaces, then get the windows on those wall and remove them
-# To find the duplicated surfaces I can use vertices (i.coords) but the order of points in a surface can be different, so I can use average or center point!
-
-def get_centroid(coords): # coords is a list of coordinates of surface
-    srf_center = [0, 0, 0]
-    for coord in coords:
-        srf_center[0] = srf_center[0] + coord[0]
-        srf_center[1] = srf_center[1] + coord[1]
-        srf_center[2] = srf_center[2] + coord[2]
-    for i in range(3):
-        srf_center[i] = srf_center[i] / 4
-    return srf_center
-
 shading_srfs = idf.getshadingsurfaces()
 block_srfs = idf.getsurfaces("Wall")
 
-shading_centers = []
+shading_coords = []
 for i in shading_srfs:
-    srf_coords = i.coords
-    center = get_centroid(srf_coords)
-    shading_centers.append(center)
+    shading_coords.append(i.coords)
 
-srf_centers = []
+srf_coords = []
 for i in block_srfs:
-    srf_coords = i.coords
-    center = get_centroid(srf_coords)
-    srf_centers.append(center)
+    srf_coords.append(i.coords)
 
-x = 0
-for i in range(len(srf_centers)):
-    for shading in shading_centers:
-        if srf_centers[i] == shading:
-            idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-x)
-            x += 1
-idf.intersect_match()
+all = block_srfs + shading_srfs
+a = surfaces.get_adjacencies(all)
+b = a.keys()
+c = list(b)
+
+shadows = []
+for i in range(len(c)):
+    for j in c[i]:
+        if "Storey" in j:
+            x = int(j.split()[-1]) - 1
+            # print (x[-1])
+            print (j,x)
+            shadows.append(x)
+m = 0
+for i in shadows:
+    idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-m)
+    m += 1
+
+# idf.intersect_match()
 # idf.printidf()
-idf.to_obj("test04.obj")
+# idf.to_obj("test05.obj")
 
-# idf.view_model()
+idf.view_model()
 # idf.run()

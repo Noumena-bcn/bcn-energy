@@ -4,6 +4,10 @@ import xml.etree.ElementTree as et
 from xml.etree.ElementTree import tostring
 import pyproj
 from geomeppy import IDF
+from geomeppy.geom.polygons import intersect, unique, Polygon3D
+from collections import defaultdict
+from geomeppy.utilities import almostequal
+
 
 # DEFINE HERE THE MAIN PATH
 path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
@@ -82,6 +86,7 @@ def add_H_block (block_coordinates):
 def make_L_blocks(polygon_coordinates):
     for index in range(len(polygon_coordinates)):
         block_name = 'L_block' + str(index)
+        roof_name = 'Shading' + str(index)
         polygon_xy = []
         polygon_z = []
         for point in polygon_coordinates[index]:
@@ -92,6 +97,11 @@ def make_L_blocks(polygon_coordinates):
             coordinates=polygon_xy,
             height=polygon_z[0]
         )
+        shading_roof = idf.newidfobject(
+            'SHADING:SITE:DETAILED',
+            Name = roof_name
+        )
+        shading_roof.setcoords(polygon_coordinates[index])
 
 IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
 idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
@@ -177,7 +187,7 @@ for i in range(len(floor_z)):
 for level in levels:
     for i in level:
         idf.add_block(
-            name = 'Storey' + str(i),
+            name = str(i),
             coordinates = floor_coordinates[i],
             height = floor_heights[i]
         )
@@ -218,8 +228,8 @@ def move_to_origin():
     idf.translate(h_center)
 
 move_to_origin()
-# idf.set_default_constructions()
-# idf.intersect_match()
+idf.set_default_constructions()
+idf.match()
 
 #######################################################################################################################
 def get_centroid(coords): # coords is a list of coordinates of surface
@@ -231,37 +241,71 @@ def get_centroid(coords): # coords is a list of coordinates of surface
     for i in range(3):
         srf_center[i] = srf_center[i] / 4
     return srf_center
-#
-# idf.set_wwr(
-#     wwr=0.4,
-#     construction="Project External Window"
-# )
-#
-# shading_srfs = idf.getshadingsurfaces()
-# block_srfs = idf.getsurfaces("Wall")
-#
-# shading_centers = []
-# for i in shading_srfs:
-#     srf_coords = i.coords
-#     center = get_centroid(srf_coords)
-#     shading_centers.append(center)
-#
-# srf_centers = []
-# for i in block_srfs:
-#     srf_coords = i.coords
-#     center = get_centroid(srf_coords)
-#     srf_centers.append(center)
-#
-# x = 0
-# for i in range(len(srf_centers)):
-#     for shading in shading_centers:
-#         if srf_centers[i] == shading:
-#             idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-x)
-#             x += 1
-#             break
 
-#######################################################################################################################
+idf.set_wwr(
+    wwr=0.4,
+    construction="Project External Window"
+)
 
-idf.to_obj("allblocks.obj")
-# idf.view_model()
-# idf.run()
+shading_srfs = idf.getshadingsurfaces()
+block_srfs = idf.getsurfaces("Wall")
+
+adj = defaultdict(list)
+
+def populate_adjacencies(adjacencies, s1, s2):
+    poly1 = Polygon3D(s1.coords)
+    poly2 = Polygon3D(s2.coords)
+    if not almostequal(abs(poly1.distance), abs(poly2.distance), 7):
+        print("not equal distance")
+        return adjacencies
+    if not almostequal(poly1.normal_vector, poly2.normal_vector, 7):
+        if not almostequal(poly1.normal_vector, -poly2.normal_vector, 7):
+            print("not equal vector")
+            return adjacencies
+
+
+    intersection = poly1.intersect(poly2)
+    if intersection:
+        new_surfaces = intersect(poly1, poly2)
+        new_s1 = [
+            s
+            for s in new_surfaces
+            if almostequal(s.normal_vector, poly1.normal_vector, 7)
+        ]
+        new_s2 = [
+            s
+            for s in new_surfaces
+            if almostequal(s.normal_vector, poly2.normal_vector, 7)
+        ]
+        adjacencies[(s1.key, s1.Name)] += new_s1
+        adjacencies[(s2.key, s2.Name)] += new_s2
+    return adjacencies
+
+for i in block_srfs:
+    for j in shading_srfs:
+        print (i.Name, j.Name)
+        # ad = (populate_adjacencies(adj,i,j))
+        # for surface in ad:
+        #     ad[surface] = unique(ad[surface])
+#
+# keys_list = ad.keys()
+# print(keys_list)
+# intersecting_walls = []
+# for a in keys_list:
+#     for b in a:
+#         if "Storey" in b:
+#             intersecting_walls.append(b)
+#
+# print (intersecting_walls)
+
+
+# m = 0
+# for i in shadows:
+#     idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-m)
+#     m += 1
+#
+# #######################################################################################################################
+#
+# idf.to_obj("allblocks.obj")
+# # idf.view_model()
+# # idf.run()
