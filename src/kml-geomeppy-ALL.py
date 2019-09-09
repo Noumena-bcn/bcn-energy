@@ -4,13 +4,12 @@ import xml.etree.ElementTree as et
 from xml.etree.ElementTree import tostring
 import pyproj
 from geomeppy import IDF
-from geomeppy.geom.polygons import intersect, unique, Polygon3D
-from collections import defaultdict
+from geomeppy.geom.polygons import Polygon3D
 from geomeppy.utilities import almostequal
 
 # DEFINE HERE THE MAIN PATH
-# path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
-path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
+path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
+# path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
 
 def find_paths(res):  # block resolution, 'H' for High or 'L' for Low resolution
     list = []
@@ -18,7 +17,6 @@ def find_paths(res):  # block resolution, 'H' for High or 'L' for Low resolution
     for i in files:
         list.append(i)
     return list
-
 
 def get_roots(paths):  # Reads the paths and returns the list of the kml file as et elements
     roots = []
@@ -28,14 +26,12 @@ def get_roots(paths):  # Reads the paths and returns the list of the kml file as
         roots.append(root)
     return roots
 
-
 def gps_to_xy(lon, lat, z):
     crs_wgs = pyproj.Proj(init='epsg:4326')  # assuming you're using WGS84 geographic
     crs_bng = pyproj.Proj(
         init='epsg:5649')  # use a locally appropriate projected CRS https://epsg.io/map#srs=5649&x=31431725.375401&y=4583225.826214&z=13&layer=streets
     x, y = pyproj.transform(crs_wgs, crs_bng, lon, lat)
     return x, y, z
-
 
 def extract_polygon_elements(root):
     elements = []
@@ -56,7 +52,6 @@ def extract_polygon_elements(root):
         elements.append((placemark_elements))
     return elements
 
-
 def element_to_coordinates(coords):
     coords_str = tostring(coords, encoding='utf8', method='xml').decode("utf-8")  # converts the element to a string
     coords_str = coords_str.replace('<', '>')
@@ -76,7 +71,6 @@ def element_to_coordinates(coords):
             coordinates_list.append(num)
     return coordinates_list
 
-
 def add_H_block(block_coordinates):
     for i in block_coordinates:
         polygon_xy = []
@@ -87,7 +81,6 @@ def add_H_block(block_coordinates):
         idf.add_block(
             name="block_name", coordinates=polygon_xy, height=polygon_z[0]
         )
-
 
 def make_L_blocks(polygon_coordinates):
     for index in range(len(polygon_coordinates)):
@@ -110,10 +103,10 @@ def make_L_blocks(polygon_coordinates):
         shading_roof.setcoords(polygon_coordinates[index])
 
 
-# IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
-# idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
-IDF.setiddname("C:/EnergyPlusV9-1-0/Energy+.idd")
-idf = IDF("C:/EnergyPlusV9-1-0/ExampleFiles/Minimal.idf")
+IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
+idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
+# IDF.setiddname("C:/EnergyPlusV9-1-0/Energy+.idd")
+# idf = IDF("C:/EnergyPlusV9-1-0/ExampleFiles/Minimal.idf")
 idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
 
 #######################################################################################################################
@@ -239,20 +232,19 @@ def move_to_origin():
 
 move_to_origin()
 idf.set_default_constructions()
-idf.match()
+idf.intersect_match()
 
 #######################################################################################################################
 def populate_adjacencies(s1, s2):
     poly1 = Polygon3D(s1.coords)
     poly2 = Polygon3D(s2.coords)
-    if almostequal(abs(poly1.distance), abs(poly2.distance), 2):
-        if almostequal(poly1.normal_vector, poly2.normal_vector, 2) or almostequal(poly1.normal_vector, -poly2.normal_vector, 2):
-                return True
+    if almostequal(abs(poly1.distance), abs(poly2.distance), 3):
+        if almostequal(poly1.normal_vector, poly2.normal_vector, 3) or almostequal(poly1.normal_vector, -poly2.normal_vector, 3):
+            return True
 
 idf.set_wwr(
     wwr=0.4,
-    construction="Project External Window"
-)
+    construction="Project External Window")
 
 shading_srfs = idf.getshadingsurfaces()
 block_srfs = idf.getsurfaces("Wall")
@@ -271,14 +263,13 @@ for i in range(len(windows)):
     a = windows[i]
     for b in adj_walls:
         if b.Name in a.Name:
+            # print(b.Name)
             idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-m)
             m += 1
             break
 
 ########################################################################################################################
 
-idf.set_default_constructions()
-idf.match()
 idf.to_obj("allblocks.obj")
 # idf.view_model()
 idf.run()

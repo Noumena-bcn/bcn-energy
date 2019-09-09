@@ -20,7 +20,7 @@ idf.add_shading_block(
     coordinates=[(20,0),(20,10),(10,10),(10,0)],
     height=10)
 idf.add_shading_block(
-    name='shading',
+    name='shading2',
     coordinates=[(10,10),(10,20),(0,20),(0,10)],
     height=10)
 
@@ -64,5 +64,5 @@ for i in shadows:
 # idf.printidf()
 # idf.to_obj("test05.obj")
 
-idf.view_model()
-# idf.run()
+# idf.view_model()
+idf.run()
