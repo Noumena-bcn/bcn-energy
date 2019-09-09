@@ -255,12 +255,22 @@ adj = defaultdict(list)
 def populate_adjacencies(adjacencies, s1, s2):
     poly1 = Polygon3D(s1.coords)
     poly2 = Polygon3D(s2.coords)
-    if not almostequal(abs(poly1.distance), abs(poly2.distance), 7):
-        print("not equal distance")
+
+    file.write(str(poly1))
+    file.write('\n')
+    file.write(str(poly2))
+    file.write('\n')
+    file.write(str(poly1.distance))
+    file.write('\n')
+    file.write(str(poly2.distance))
+    file.write('\n')
+
+    if not almostequal(abs(poly1.distance), abs(poly2.distance), 4):
+        # print("not equal distance")
         return adjacencies
-    if not almostequal(poly1.normal_vector, poly2.normal_vector, 7):
-        if not almostequal(poly1.normal_vector, -poly2.normal_vector, 7):
-            print("not equal vector")
+    if not almostequal(poly1.normal_vector, poly2.normal_vector, 4):
+        if not almostequal(poly1.normal_vector, -poly2.normal_vector, 4):
+            # print("not equal vector")
             return adjacencies
 
 
@@ -281,13 +291,25 @@ def populate_adjacencies(adjacencies, s1, s2):
         adjacencies[(s2.key, s2.Name)] += new_s2
     return adjacencies
 
+
+file = open('coordinates.txt','w')
+
 for i in block_srfs:
-    for j in shading_srfs:
-        print (i.Name, j.Name)
+    poly1 = Polygon3D(i.coords)
+    file.write(str(poly1))
+    file.write('\n')
+    # for j in shading_srfs:
+    #     poly2 = Polygon3D(j.coords)
+        # print (poly1.is_coplanar(poly2))
+        # print (i.Name, j.Name)
         # ad = (populate_adjacencies(adj,i,j))
         # for surface in ad:
         #     ad[surface] = unique(ad[surface])
-#
+
+file.close()
+
+# print(ad)
+
 # keys_list = ad.keys()
 # print(keys_list)
 # intersecting_walls = []
