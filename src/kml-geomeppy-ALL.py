@@ -15,6 +15,7 @@ def find_paths(res):  # block resolution, 'H' for High or 'L' for Low resolution
         list.append(i)
     return list
 
+
 def get_roots(paths):  # Reads the paths and returns the list of the kml file as et elements
     roots = []
     for i in paths:
@@ -23,12 +24,14 @@ def get_roots(paths):  # Reads the paths and returns the list of the kml file as
         roots.append(root)
     return roots
 
+
 def gps_to_xy(lon, lat, z):
     crs_wgs = pyproj.Proj(init='epsg:4326')  # assuming you're using WGS84 geographic
     crs_bng = pyproj.Proj(
         init='epsg:5649')  # use a locally appropriate projected CRS https://epsg.io/map#srs=5649&x=31431725.375401&y=4583225.826214&z=13&layer=streets
     x, y = pyproj.transform(crs_wgs, crs_bng, lon, lat)
     return x, y, z
+
 
 def extract_polygon_elements(root):
     elements = []
@@ -49,6 +52,7 @@ def extract_polygon_elements(root):
         elements.append((placemark_elements))
     return elements
 
+
 def element_to_coordinates(coords):
     coords_str = tostring(coords, encoding='utf8', method='xml').decode("utf-8")  # converts the element to a string
     coords_str = coords_str.replace('<', '>')
@@ -68,16 +72,6 @@ def element_to_coordinates(coords):
             coordinates_list.append(num)
     return coordinates_list
 
-def add_H_block(block_coordinates):
-    for i in block_coordinates:
-        polygon_xy = []
-        polygon_z = []
-        for point in i:
-            polygon_xy.append((point[0], point[1]))
-            polygon_z.append(point[2])
-        idf.add_block(
-            name="block_name", coordinates=polygon_xy, height=polygon_z[0]
-        )
 
 def make_L_blocks(polygon_coordinates):
     for index in range(len(polygon_coordinates)):
@@ -99,12 +93,14 @@ def make_L_blocks(polygon_coordinates):
         )
         shading_roof.setcoords(polygon_coordinates[index])
 
+
 def populate_adjacencies(s1, s2):
     poly1 = Polygon3D(s1.coords)
     poly2 = Polygon3D(s2.coords)
     if almostequal(abs(poly1.distance), abs(poly2.distance), 3):
-        if almostequal(poly1.normal_vector, poly2.normal_vector, 3) or almostequal(poly1.normal_vector, -poly2.normal_vector, 3):
+        if almostequal(poly1.normal_vector, poly2.normal_vector, 3) or almostequal(poly1.normal_vector,-poly2.normal_vector, 3):
             return True
+
 
 #######################################################################################################################
 # DEFINE HERE THE MAIN PATH
@@ -255,25 +251,28 @@ shading_srfs = idf.getshadingsurfaces()
 block_srfs = idf.getsurfaces("Wall")
 windows = idf.getsubsurfaces("window")
 
-adj_walls = []
-for i in range(len(block_srfs)):
-    for j in shading_srfs:
-        ad = (populate_adjacencies(block_srfs[i],j))
-        if ad:
-            adj_walls.append (block_srfs[i])
-            break
+print (idf.getsurfaces())
 
-m = 0
-for i in range(len(windows)):
-    a = windows[i]
-    for b in adj_walls:
-        if b.Name in a.Name:
-            idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-m)
-            m += 1
-            break
 
-########################################################################################################################
+# adj_walls = []
+# for i in range(len(block_srfs)):
+#     for j in shading_srfs:
+#         ad = (populate_adjacencies(block_srfs[i],j))
+#         if ad:
+#             adj_walls.append (block_srfs[i])
+#             break
+#
+# m = 0
+# for i in range(len(windows)):
+#     a = windows[i]
+#     for b in adj_walls:
+#         if b.Name in a.Name:
+#             idf.popidfobject("FENESTRATIONSURFACE:DETAILED",i-m)
+#             m += 1
+#             break
 
-idf.to_obj("allblocks.obj")
-idf.view_model()
-idf.run()
+# ########################################################################################################################
+#
+# idf.to_obj("allblocks.obj")
+# idf.view_model()
+# idf.run()
