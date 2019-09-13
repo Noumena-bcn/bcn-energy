@@ -7,6 +7,8 @@ from geomeppy import IDF
 from geomeppy.geom.polygons import Polygon3D
 from geomeppy.utilities import almostequal
 
+#######################################################################################################################
+
 def find_paths(res):  # block resolution, 'H' for High or 'L' for Low resolution
     list = []
     files = glob.glob(os.path.join(path, '*%s.kml' % res))
@@ -219,7 +221,8 @@ for i in range(len(windows)):
             break
 
 #######################################################################################################################
-
-idf.to_obj("newblocks2.obj")
-idf.view_model()
-idf.run()
+print (idf.idfobjects['MATERIAL'])
+# idf.save('test_zones.idf')
+# idf.to_obj("newblocks2.obj")
+# idf.view_model()
+# idf.run()
