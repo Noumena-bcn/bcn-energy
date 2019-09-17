@@ -262,8 +262,8 @@ for i in range(len(windows)):
 
 ########################################################################################################################
 
-idf.to_obj("allblocks.obj")
-idf.view_model()
+# idf.to_obj("allblocks.obj")
+# idf.view_model()
 idf.run()
 
 

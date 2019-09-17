@@ -139,7 +139,7 @@ idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
 # Extracting the elements
 paths_H = find_paths('H')
 H_root = get_roots(paths_H)[0]
-polygons = extract_polygon_elements(H_root)[1:-1]
+polygons = extract_polygon_elements(H_root)[1:]
 polygons.reverse()
 
 folders = []
@@ -189,7 +189,7 @@ make_L_blocks(L_polygons)
 # Move to origin, default construction and intersect match
 
 move_to_origin(coordinates)
-idf.set_default_constructions()
+idf.set_default_constructions() # INSTEAD OF THIS I NEED TO ASSIGN MATERIALS FOR EACH SURFACE
 idf.match()
 
 #######################################################################################################################
@@ -197,8 +197,8 @@ idf.match()
 
 idf.set_wwr(
     wwr=0.4,
-    construction="Project External Window")
-
+    construction="Project External Window"
+)
 shading_srfs = idf.getshadingsurfaces()
 block_srfs = idf.getsurfaces("Wall")
 windows = idf.getsubsurfaces("window")
@@ -224,6 +224,6 @@ for i in range(len(windows)):
 
 print (idf.idfobjects['MATERIAL'])
 # idf.save('test_zones.idf')
-# idf.to_obj("newblocks2.obj")
+# idf.to_obj("newblocks3.obj")
 # idf.view_model()
 # idf.run()

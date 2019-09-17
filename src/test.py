@@ -3,6 +3,7 @@ import os
 import xml.etree.ElementTree as et
 from xml.etree.ElementTree import tostring
 import pyproj
+from geomeppy import recipes
 from geomeppy import IDF
 from geomeppy.geom.polygons import Polygon3D
 from geomeppy.utilities import almostequal
@@ -168,6 +169,14 @@ for folder in range(len(folders)):
     idf.translate([0,0,3])
 idf.translate([0,0,-3])
 
+move_to_origin(coordinates)
+idf.set_default_constructions() # INSTEAD OF THIS I NEED TO ASSIGN MATERIALS FOR EACH SURFACE
+idf.match()
+
+idf.set_wwr(
+    wwr=0.4,
+    construction="Project External Window")
+
 #######################################################################################################################
 
 newmaterial = idf.newidfobject("MATERIAL")
@@ -178,5 +187,12 @@ newmaterial = idf.newidfobject("MATERIAL")
 newmaterial.Name = "Glass"
 newmaterial.Roughness = 0.2
 
+idf.set_default_constructions()
+windows = idf.getobject('CONSTRUCTION','Project External Window').Outside_Layer
 
-print (idf.idfobjects["MATERIAL"])
+# wall1 = windows[0]
+# print (wall1)
+
+print (windows)
+
+# idf.view_model()
