@@ -134,6 +134,20 @@ idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
 
 idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
 
+
+idf.newidfobject(
+    "MATERIAL",
+    Name="A2 - 4 IN DENSE FACE BRICK",
+    Roughness="Rough",
+    Thickness=0.1014984,
+    Conductivity=1.245296,
+    Density=2082.4,
+    Specific_Heat=920.48,
+    Thermal_Absorptance = 0.90,
+    Solar_Absorptance = 0.93,
+    Visible_Absorptance = 0.93
+)
+
 #######################################################################################################################
 # Making H building
 
@@ -170,8 +184,12 @@ for folder in range(len(folders)):
 idf.translate([0,0,-3])
 
 move_to_origin(coordinates)
-idf.set_default_constructions() # INSTEAD OF THIS I NEED TO ASSIGN MATERIALS FOR EACH SURFACE
 idf.match()
+idf.set_default_constructions() # INSTEAD OF THIS I NEED TO ASSIGN MATERIALS FOR EACH SURFACE
+
+for i in idf.model.dt['CONSTRUCTION']:
+    if i[1] == "Project Wall":
+        i[2] = "A2 - 4 IN DENSE FACE BRICK"
 
 idf.set_wwr(
     wwr=0.4,
@@ -179,20 +197,5 @@ idf.set_wwr(
 
 #######################################################################################################################
 
-newmaterial = idf.newidfobject("MATERIAL")
-newmaterial.Name = "Concrete"
-newmaterial.Roughness = 1
-
-newmaterial = idf.newidfobject("MATERIAL")
-newmaterial.Name = "Glass"
-newmaterial.Roughness = 0.2
-
-idf.set_default_constructions()
-windows = idf.getobject('CONSTRUCTION','Project External Window').Outside_Layer
-
-# wall1 = windows[0]
-# print (wall1)
-
-print (windows)
-
-# idf.view_model()
+idf.to_obj('test.obj')
+idf.view_model()

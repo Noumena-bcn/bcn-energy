@@ -222,8 +222,6 @@ for i in range(len(windows)):
 
 #######################################################################################################################
 
-print (idf.idfobjects['MATERIAL'])
-# idf.save('test_zones.idf')
-# idf.to_obj("newblocks3.obj")
+idf.to_obj('test-zones.obj')
 # idf.view_model()
 # idf.run()
