@@ -3,7 +3,7 @@ import os
 import xml.etree.ElementTree as et
 from xml.etree.ElementTree import tostring
 import pyproj
-from geomeppy import recipes
+from geomeppy import builder
 from geomeppy import IDF
 from geomeppy.geom.polygons import Polygon3D
 from geomeppy.utilities import almostequal
@@ -193,9 +193,12 @@ for i in idf.model.dt['CONSTRUCTION']:
 
 idf.set_wwr(
     wwr=0.4,
-    construction="Project External Window")
+    construction="Project External Window"
+)
 
 #######################################################################################################################
 
-idf.to_obj('test.obj')
-idf.view_model()
+# idf.printidf()
+idf.saveas('test.idf')
+# idf.to_obj('test.obj')
+# idf.view_model()

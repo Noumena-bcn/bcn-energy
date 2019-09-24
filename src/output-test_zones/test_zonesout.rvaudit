@@ -1,0 +1,13 @@
+ ReadVarsESO
+ processing:/Users/soroush/Desktop/Noumena/bcn-energy/src/test_zones.rvi
+ input file:/Users/soroush/Desktop/Noumena/bcn-energy/src/output-test_zones/test_zonesout.eso
+ output file:/Users/soroush/Desktop/Noumena/bcn-energy/src/output-test_zones/test_zonesout.csv
+ getting all vars from:/Users/soroush/Desktop/Noumena/bcn-energy/src/output-test_zones/test_zonesout.eso
+  number variables requested for output=           7
+ ReadVars Run Time=00hr 00min  0.03sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:/Users/soroush/Desktop/Noumena/bcn-energy/src/test_zones.mvi
+ Requested ESO file=/Users/soroush/Desktop/Noumena/bcn-energy/src/output-test_zones/test_zonesout.mtr
+ does not exist.  ReadVarsESO program terminated.
+ ReadVarsESO program terminated.
