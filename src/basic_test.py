@@ -63,7 +63,27 @@ idf.set_wwr(
     wwr=0.4,
     construction="Project External Window")
 
+
+# Adjusting Simulation Control Parameters
+simulation_control = idf.idfobjects["SIMULATIONCONTROL"][0]
+simulation_control.Do_Zone_Sizing_Calculation = "Yes"
+simulation_control.Do_System_Sizing_Calculation = "Yes"
+simulation_control.Do_Plant_Sizing_Calculation = "Yes"
+simulation_control.Run_Simulation_for_Sizing_Periods = "No"
+simulation_control.Run_Simulation_for_Weather_File_Run_Periods = "Yes"
+
+# Adjusting Global Geometry Rules
+geometry_rules = idf.idfobjects["GLOBALGEOMETRYRULES"][0]
+geometry_rules.Starting_Vertex_Position = "LowerLeftCorner"
+geometry_rules.Vertex_Entry_Direction = "ConterClockWise"
+geometry_rules.Coordinate_System = "Relative"
+geometry_rules.Daylighting_Reference_Point_Coordinate_System = "Relative"
+geometry_rules.Rectangular_Surface_Coordinate_System = "Relative"
+
+# 
+
+
 # idf.view_model()
 idf.printidf()
-idf.saveas("basic_test.idf")
+# idf.saveas("basic_test.idf")
 
