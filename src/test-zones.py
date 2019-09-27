@@ -222,6 +222,6 @@ for i in range(len(windows)):
 
 #######################################################################################################################
 
-idf.to_obj('test-zones.obj')
+# idf.to_obj('test-zones.obj')
 # idf.view_model()
-# idf.run()
+idf.run()
