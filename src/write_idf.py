@@ -209,7 +209,7 @@ def add_zone_infiltration (zone_name):
                          Schedule_Name="Retail Infil Half On",
                          Design_Flow_Rate_Calculation_Method="Flow/Area",
                          Flow_per_Zone_Floor_Area=0.00022656844600000002)
-
+#######################################################################################################################
 zone_names = ["vivienda0","comercio0"]
 
 idf.add_block(
@@ -247,5 +247,5 @@ for i in zone_names:
     add_zone_infiltration(i)
 
 # idf.view_model()
-# idf.printidf()
-idf.run()
+idf.printidf()
+# idf.run()

@@ -132,6 +132,75 @@ idf = IDF('/Applications/EnergyPlus-8-8-0/ExampleFiles/Minimal.idf')
 # idf = IDF("C:/EnergyPlusV9-1-0/ExampleFiles/Minimal.idf")
 
 idf.epw = 'USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw'
+#######################################################################################################################
+
+def add_electric_equipment (zone_name):
+    if "vivienda" in zone_name:
+        idf.newidfobject("ELECTRICEQUIPMENT",
+                        Name = zone_name + "ElectricEquipment",
+                        Zone_or_ZoneList_Name = zone_name,
+                        Schedule_Name = "MidriseApartment Apartment Equip",
+                        Design_Level_Calculation_Method = "Watts/Area",
+                        Watts_per_Zone_Floor_Area = 3.8750276284180103,
+                        EndUse_Subcategory = "ElectricEquipment")
+
+    elif "comercio" in zone_name:
+        idf.newidfobject("ELECTRICEQUIPMENT",
+                         Name = zone_name + "ElectricEquipment",
+                         Zone_or_ZoneList_Name = zone_name,
+                         Schedule_Name = "Retail Bldg Equip",
+                         Design_Level_Calculation_Method = "Watts/Area",
+                         Watts_per_Zone_Floor_Area = 2.368072439588784,
+                         EndUse_Subcategory = "ElectricEquipment")
+def add_light (zone_name):
+    if "vivienda" in zone_name:
+        idf.newidfobject("LIGHTS",
+                            Name = zone_name + "Lights",
+                            Zone_or_ZoneList_Name = zone_name,
+                            Schedule_Name = "MidriseApartment Apartment Light",
+                            Design_Level_Calculation_Method = "Watts/Area",
+                            Watts_per_Zone_Floor_Area = 11.8403571)
+    elif "comercio" in zone_name:
+        idf.newidfobject("LIGHTS",
+                         Name=zone_name + "Lights",
+                         Zone_or_ZoneList_Name=zone_name,
+                         Schedule_Name="Retail Bldg Light",
+                         Design_Level_Calculation_Method="Watts/Area",
+                         Watts_per_Zone_Floor_Area=18.2987337)
+def add_people (zone_name):
+    if "vivienda" in zone_name:
+        idf.newidfobject("PEOPLE",
+                        Name = zone_name + "People",
+                        Zone_or_ZoneList_Name = zone_name ,
+                        Number_of_People_Schedule_Name = "MidriseApartment Apartment Occ",
+                        Number_of_People_Calculation_Method = "People/Area",
+                        People_per_Zone_Floor_Area = 0.028309217430000002,
+                        Fraction_Radiant = 0.3,
+                        Activity_Level_Schedule_Name = "MidriseApartment Activity")
+    if "comercio" in zone_name:
+        idf.newidfobject("PEOPLE",
+                        Name = zone_name + "People",
+                        Zone_or_ZoneList_Name = zone_name ,
+                        Number_of_People_Schedule_Name = "Retail Bldg Occ",
+                        Number_of_People_Calculation_Method = "People/Area",
+                        People_per_Zone_Floor_Area = 0.161459415,
+                        Fraction_Radiant = 0.3,
+                        Activity_Level_Schedule_Name = "Retail Activity")
+def add_zone_infiltration (zone_name):
+    if "vivienda" in zone_name:
+        idf.newidfobject("ZONEINFILTRATION:DESIGNFLOWRATE",
+                        Name = zone_name + "ZoneInfiltration",
+                        Zone_or_ZoneList_Name = zone_name ,
+                        Schedule_Name = "MidriseApartment Infil",
+                        Design_Flow_Rate_Calculation_Method = "Flow/Area",
+                        Flow_per_Zone_Floor_Area = 0.00022656844600000002)
+    if "comercio" in zone_name:
+        idf.newidfobject("ZONEINFILTRATION:DESIGNFLOWRATE",
+                         Name=zone_name + "ZoneInfiltration",
+                         Zone_or_ZoneList_Name=zone_name,
+                         Schedule_Name="Retail Infil Half On",
+                         Design_Flow_Rate_Calculation_Method="Flow/Area",
+                         Flow_per_Zone_Floor_Area=0.00022656844600000002)
 
 #######################################################################################################################
 # Making H building
@@ -144,29 +213,51 @@ polygons.reverse()
 
 folders = []
 coordinates = []
+zone_folder = []
 
 for folder in polygons:
     placemarks = []
+    zone_names = []
     for placemark in folder:
         if placemark [0] != "Terraza":
             placemark[2] = element_to_coordinates(placemark[2])
             placemark[2] = [row [0:2] for row in placemark[2]]
             if placemark[0:3] not in placemarks:
                 placemarks.append(placemark[0:3])
+                if "COMUN" in placemark[0]:
+                    zone_names.append("comun")
+                elif "Vivienda" in placemark[0]:
+                    zone_names.append("vivienda")
+                elif "Local" in placemark[0]:
+                    zone_names.append("comercio")
                 for i in placemark[2]:
                     coordinates.append(i)
     folders.append(placemarks)
+    zone_folder.append(zone_names)
 
 for folder in range(len(folders)):
     for placemark in range(len(folders[folder])):
-        b_name = "level " + str(len(folders)-folder) + " unit " + str(placemark)
+        zone_name = zone_folder[folder][placemark]
+        b_name = zone_name + str(len(folders)-folder) + '-' + str(placemark)
         idf.add_block(
             name=b_name,
             coordinates=folders[folder][placemark][2],
-            height=3
-        )
+            height=3)
     idf.translate([0,0,3])
 idf.translate([0,0,-3])
+
+zones = idf.idfobjects["ZONE"]
+for i in zones:
+    a = i.Name.split()[1]
+    a = a.upper()
+    i.Name = a
+    print (i.Name)
+
+srfs = idf.getsurfaces()
+for i in srfs:
+    name = (i.Zone_Name)
+    name = name.split()
+    i.Zone_Name = name[1]
 
 #######################################################################################################################
 # Making L blocks
@@ -197,8 +288,8 @@ idf.match()
 
 idf.set_wwr(
     wwr=0.4,
-    construction="Project External Window"
-)
+    construction="Project External Window")
+
 shading_srfs = idf.getshadingsurfaces()
 block_srfs = idf.getsurfaces("Wall")
 windows = idf.getsubsurfaces("window")
@@ -222,6 +313,7 @@ for i in range(len(windows)):
 
 #######################################################################################################################
 
+# idf.printidf()
 # idf.to_obj('test-zones.obj')
 # idf.view_model()
 idf.run()
