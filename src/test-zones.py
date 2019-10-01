@@ -120,19 +120,6 @@ def populate_adjacencies(s1, s2):
                                                                                    -poly2.normal_vector, 3):
             return True
 
-#######################################################################################################################
-# DEFINE HERE THE MAIN PATH
-
-path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
-# path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
-
-IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
-idf = IDF('/Users/soroush/Desktop/Noumena/bcn-energy/src/gh_template.idf')
-# IDF.setiddname("C:/EnergyPlusV9-1-0/Energy+.idd")
-# idf = IDF("C:/EnergyPlusV9-1-0/ExampleFiles/Minimal.idf")
-
-idf.epw = '/Users/soroush/Desktop/Noumena/bcn-energy/src/ESP_Barcelona.081810_IWEC.epw'
-#######################################################################################################################
 
 def add_electric_equipment (zone_name):
     if "vivienda" in zone_name:
@@ -224,12 +211,27 @@ def add_outdoor_air (zone_name):
                          Outdoor_Air_Method="Sum",
                          Outdoor_Air_Flow_per_Person=0,
                          Outdoor_Air_Flow_per_Zone_Floor_Area=0.0003048006)
+        print ("added outdoor air")
     elif "comercio" in zone_name:
         idf.newidfobject("DESIGNSPECIFICATION:OUTDOORAIR",
                          Name=zone_name + "OutdoorAirCntrl",
                          Outdoor_Air_Method="Sum",
                          Outdoor_Air_Flow_per_Person=0.00353925,
                          Outdoor_Air_Flow_per_Zone_Floor_Area=0.0006096012)
+
+#######################################################################################################################
+# DEFINE HERE THE MAIN PATH
+
+path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
+# path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
+
+IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
+idf = IDF('/Users/soroush/Desktop/Noumena/bcn-energy/src/gh_template.idf')
+
+# IDF.setiddname("C:/EnergyPlusV8-8-0/Energy+.idd")
+# idf = IDF("C:/EnergyPlusV8-8-0/ExampleFiles/Minimal.idf")
+
+idf.epw = '/Users/soroush/Desktop/Noumena/bcn-energy/src/ESP_Barcelona.081810_IWEC.epw'
 
 #######################################################################################################################
 # Making H building
@@ -289,10 +291,12 @@ for i in srfs:
 
 for zone in zones:
     i = zone.Name
+    i = i.lower()
     add_electric_equipment(i)
     add_light(i)
     add_people(i)
     add_zone_infiltration(i)
+    add_outdoor_air(i)
 
 #######################################################################################################################
 # Making L blocks
@@ -351,5 +355,5 @@ for i in range(len(windows)):
 # idf.printidf()
 # idf.to_obj('test-zones.obj')
 # idf.view_model()
-idf.saveas("test-zones.idf")
+# idf.saveas("test-zones.idf")
 idf.run()
