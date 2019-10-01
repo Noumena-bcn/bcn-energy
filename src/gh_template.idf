@@ -921,7 +921,97 @@ Construction,
   EXTERIOR ROOF,   !- name
   M11 100mm lightweight concrete,   !- - Layer 1
   F05 Ceiling air space resistance,   !- - Layer 2
-  F16 Acoustic tile;   !- 
+  F16 Acoustic tile;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT CORRIDOR HTGSETP,   !- name
+  Temperature 60,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {0d8856fd-91da-458f-a267-76a1bf4a4f94},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT CORRIDOR LIGHT,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {cbc3552e-49ed-41b8-a399-ecd5e7aecdb9},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT CORRIDOR CLGSETP,   !- name
+  Temperature 61,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {b8d879bb-1900-4581-a760-14c6e59cf715},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT INFIL,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {1b2951d3-8a6d-40b0-a578-f54d283818bd},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT APARTMENT OCC,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {4e5573de-4297-45a0-9d21-9559a796cc95},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT APARTMENT HTGSETP,   !- name
+  Temperature 25,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {2f6130a9-5b56-4db1-a7bb-6bba8a5cdab1},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT APARTMENT LIGHT,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {9c0406d9-e4d3-4426-bf7f-223e9201c084},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT APARTMENT CLGSETP,   !- name
+  Temperature 18,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {bf63bc49-6f10-4661-a249-d45af0e9ad42},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT APARTMENT EQUIP,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {209dd2e3-012e-4d8d-9bec-2729f2339963},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
+
+Schedule:Year,
+  MIDRISEAPARTMENT ACTIVITY,   !- name
+  ActivityLevel 1,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {fdb76ec8-7c93-4e32-825e-2e157afa2a94},   !- - Schedule:Week Name 1
+  1,   !- - Start Month 1
+  1,   !- - Start Day 1
+  12,   !- - End Month 1
+  31;   !-
 
 Schedule:Year,
   RETAIL BLDG OCC,   !- name
@@ -935,7 +1025,7 @@ Schedule:Year,
   1,   !- - Start Month 2
   4,   !- - Start Day 2
   12,   !- - End Month 2
-  31;   !- 
+  31;   !-
 
 Schedule:Year,
   RETAIL HTGSETP,   !- name
@@ -949,7 +1039,7 @@ Schedule:Year,
   1,   !- - Start Month 2
   4,   !- - Start Day 2
   12,   !- - End Month 2
-  31;   !- 
+  31;   !-
 
 Schedule:Year,
   RETAIL BLDG LIGHT,   !- name
@@ -963,7 +1053,7 @@ Schedule:Year,
   1,   !- - Start Month 2
   4,   !- - Start Day 2
   12,   !- - End Month 2
-  31;   !- 
+  31;   !-
 
 Schedule:Year,
   RETAIL CLGSETP,   !- name
@@ -977,7 +1067,7 @@ Schedule:Year,
   1,   !- - Start Month 2
   4,   !- - Start Day 2
   12,   !- - End Month 2
-  31;   !- 
+  31;   !-
 
 Schedule:Year,
   RETAIL BLDG EQUIP,   !- name
@@ -991,7 +1081,7 @@ Schedule:Year,
   1,   !- - Start Month 2
   4,   !- - Start Day 2
   12,   !- - End Month 2
-  31;   !- 
+  31;   !-
 
 Schedule:Year,
   RETAIL ACTIVITY,   !- name
@@ -1000,7 +1090,7 @@ Schedule:Year,
   1,   !- - Start Month 1
   1,   !- - Start Day 1
   12,   !- - End Month 1
-  31;   !- 
+  31;   !-
 
 Schedule:Year,
   RETAIL INFIL HALF ON,   !- name
@@ -1014,355 +1104,157 @@ Schedule:Year,
   1,   !- - Start Month 2
   4,   !- - Start Day 2
   12,   !- - End Month 2
-  31;   !- 
+  31;   !-
 
 Schedule:Year,
-  MIDRISEAPARTMENT APARTMENT OCC,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  Schedule:Week:Daily {4e5573de-4297-45a0-9d21-9559a796cc95},   !- - Schedule:Week Name 1
+  ALWAYS ON,   !- name
+  On/Off,   !- - Schedule Type Limits Name
+  Schedule:Week:Daily {c1fbc509-bd2c-4eac-bbfe-959d5c6e26d5},   !- - Schedule:Week Name 1
   1,   !- - Start Month 1
   1,   !- - Start Day 1
   12,   !- - End Month 1
-  31;   !- 
+  31;   !-
 
-Schedule:Year,
-  MIDRISEAPARTMENT APARTMENT HTGSETP,   !- name
-  Temperature 25,   !- - Schedule Type Limits Name
-  Schedule:Week:Daily {2f6130a9-5b56-4db1-a7bb-6bba8a5cdab1},   !- - Schedule:Week Name 1
-  1,   !- - Start Month 1
-  1,   !- - Start Day 1
-  12,   !- - End Month 1
-  31;   !- 
+Schedule:Day:Interval,
+  Retail ClgSetp Default Schedule,        !- Name
+  Temperature 6,                          !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  06:00,                                  !- Time 1 {hh:mm}
+  30,                                     !- Value Until Time 1
+  21:00,                                  !- Time 2 {hh:mm}
+  24,                                     !- Value Until Time 2
+  24:00,                                  !- Time 3 {hh:mm}
+  30;                                     !- Value Until Time 3
 
-Schedule:Year,
-  MIDRISEAPARTMENT APARTMENT LIGHT,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  Schedule:Week:Daily {9c0406d9-e4d3-4426-bf7f-223e9201c084},   !- - Schedule:Week Name 1
-  1,   !- - Start Month 1
-  1,   !- - Start Day 1
-  12,   !- - End Month 1
-  31;   !- 
+Schedule:Day:Interval,
+  Retail ClgSetp Rule 1 Day Schedule,     !- Name
+  Temperature 6,                          !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  08:00,                                  !- Time 1 {hh:mm}
+  30,                                     !- Value Until Time 1
+  19:00,                                  !- Time 2 {hh:mm}
+  24,                                     !- Value Until Time 2
+  24:00,                                  !- Time 3 {hh:mm}
+  30;                                     !- Value Until Time 3
 
-Schedule:Year,
-  MIDRISEAPARTMENT APARTMENT CLGSETP,   !- name
-  Temperature 18,   !- - Schedule Type Limits Name
-  Schedule:Week:Daily {bf63bc49-6f10-4661-a249-d45af0e9ad42},   !- - Schedule:Week Name 1
-  1,   !- - Start Month 1
-  1,   !- - Start Day 1
-  12,   !- - End Month 1
-  31;   !- 
+Schedule:Day:Interval,
+  Retail ClgSetp Rule 2 Day Schedule,     !- Name
+  Temperature 6,                          !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  06:00,                                  !- Time 1 {hh:mm}
+  30,                                     !- Value Until Time 1
+  22:00,                                  !- Time 2 {hh:mm}
+  24,                                     !- Value Until Time 2
+  24:00,                                  !- Time 3 {hh:mm}
+  30;                                     !- Value Until Time 3
 
-Schedule:Year,
-  MIDRISEAPARTMENT APARTMENT EQUIP,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  Schedule:Week:Daily {209dd2e3-012e-4d8d-9bec-2729f2339963},   !- - Schedule:Week Name 1
-  1,   !- - Start Month 1
-  1,   !- - Start Day 1
-  12,   !- - End Month 1
-  31;   !- 
+Schedule:Day:Interval,
+  Retail ClgSetp Summer Design Day,       !- Name
+  Temperature 6,                          !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  06:00,                                  !- Time 1 {hh:mm}
+  30,                                     !- Value Until Time 1
+  21:00,                                  !- Time 2 {hh:mm}
+  24,                                     !- Value Until Time 2
+  24:00,                                  !- Time 3 {hh:mm}
+  30;                                     !- Value Until Time 3
 
-Schedule:Year,
-  MIDRISEAPARTMENT ACTIVITY,   !- name
-  ActivityLevel 1,   !- - Schedule Type Limits Name
-  Schedule:Week:Daily {fdb76ec8-7c93-4e32-825e-2e157afa2a94},   !- - Schedule:Week Name 1
-  1,   !- - Start Month 1
-  1,   !- - Start Day 1
-  12,   !- - End Month 1
-  31;   !- 
+Schedule:Day:Interval,
+  Retail ClgSetp Winter Design Day,       !- Name
+  Temperature 6,                          !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  24:00,                                  !- Time 1 {hh:mm}
+  30;                                     !- Value Until Time 1
 
-Schedule:Year,
-  MIDRISEAPARTMENT INFIL,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  Schedule:Week:Daily {1b2951d3-8a6d-40b0-a578-f54d283818bd},   !- - Schedule:Week Name 1
-  1,   !- - Start Month 1
-  1,   !- - Start Day 1
-  12,   !- - End Month 1
-  31;   !- 
+Schedule:Day:Interval,
+  Retail Bldg Equip Default Schedule,     !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  07:00,                                  !- Time 1 {hh:mm}
+  0.2,                                    !- Value Until Time 1
+  08:00,                                  !- Time 2 {hh:mm}
+  0.4,                                    !- Value Until Time 2
+  09:00,                                  !- Time 3 {hh:mm}
+  0.7,                                    !- Value Until Time 3
+  18:00,                                  !- Time 4 {hh:mm}
+  0.9,                                    !- Value Until Time 4
+  20:00,                                  !- Time 5 {hh:mm}
+  0.8,                                    !- Value Until Time 5
+  21:00,                                  !- Time 6 {hh:mm}
+  0.7,                                    !- Value Until Time 6
+  22:00,                                  !- Time 7 {hh:mm}
+  0.4,                                    !- Value Until Time 7
+  24:00,                                  !- Time 8 {hh:mm}
+  0.2;                                    !- Value Until Time 8
 
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {45F111D1-E0F8-4F38-8FE1-FECE9DDE4FE4},   !- name
-  Retail Bldg Occ Default Schedule,   !- - Sunday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Bldg Occ Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Bldg Occ Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Bldg Occ Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Bldg Occ Default Schedule;   !- 
+Schedule:Day:Interval,
+  Retail Bldg Equip Rule 2 Day Schedule,  !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  07:00,                                  !- Time 1 {hh:mm}
+  0.15,                                   !- Value Until Time 1
+  08:00,                                  !- Time 2 {hh:mm}
+  0.3,                                    !- Value Until Time 2
+  09:00,                                  !- Time 3 {hh:mm}
+  0.5,                                    !- Value Until Time 3
+  10:00,                                  !- Time 4 {hh:mm}
+  0.8,                                    !- Value Until Time 4
+  18:00,                                  !- Time 5 {hh:mm}
+  0.9,                                    !- Value Until Time 5
+  19:00,                                  !- Time 6 {hh:mm}
+  0.7,                                    !- Value Until Time 6
+  21:00,                                  !- Time 7 {hh:mm}
+  0.5,                                    !- Value Until Time 7
+  22:00,                                  !- Time 8 {hh:mm}
+  0.3,                                    !- Value Until Time 8
+  24:00,                                  !- Time 9 {hh:mm}
+  0.15;                                   !- Value Until Time 9
 
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {FBC49BAB-6A7C-4ED1-BD58-B3B60E4278EC},   !- name
-  Retail Bldg Occ Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Bldg Occ Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Bldg Occ Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Bldg Occ Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Bldg Occ Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Bldg Occ Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {5E160C4F-94FB-4CEF-81F0-9748DA7D29CA},   !- name
-  Retail HtgSetp Default Schedule,   !- - Sunday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Monday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Friday Schedule:Day Name
-  Retail HtgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail HtgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail HtgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail HtgSetp Default Schedule;   !- 
 
 Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {2E39F5DD-828D-43BB-B458-A0FAF9A92E8F},   !- name
-  Retail HtgSetp Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Monday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Friday Schedule:Day Name
-  Retail HtgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail HtgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail HtgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail HtgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail HtgSetp Default Schedule;   !- 
+  SCHEDULE:WEEK:DAILY {0D8856FD-91DA-458F-A267-76A1BF4A4F94},   !- name
+  Schedule Day 1,   !- - Sunday Schedule:Day Name
+  Schedule Day 1,   !- - Monday Schedule:Day Name
+  Schedule Day 1,   !- - Tuesday Schedule:Day Name
+  Schedule Day 1,   !- - Wednesday Schedule:Day Name
+  Schedule Day 1,   !- - Thursday Schedule:Day Name
+  Schedule Day 1,   !- - Friday Schedule:Day Name
+  Schedule Day 1,   !- - Saturday Schedule:Day Name
+  Schedule Day 1,   !- - Holiday Schedule:Day Name
+  Schedule Day 8,   !- - SummerDesignDay Schedule:Day Name
+  Schedule Day 7,   !- - WinterDesignDay Schedule:Day Name
+  Schedule Day 1,   !- - CustomDay1 Schedule:Day Name
+  Schedule Day 1;   !-
 
 Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {11A29B8F-5E9E-410B-A522-B0CB5DA8A86C},   !- name
-  Retail Bldg Light Default Schedule,   !- - Sunday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Bldg Light Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Bldg Light Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Bldg Light Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Bldg Light Default Schedule;   !- 
+  SCHEDULE:WEEK:DAILY {CBC3552E-49ED-41B8-A399-ECD5E7AECDB9},   !- name
+  MidriseApartment Corridor Light Default Schedule,   !- - Sunday Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - Monday Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - Tuesday Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - Wednesday Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - Thursday Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - Friday Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - Saturday Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - Holiday Schedule:Day Name
+  MidriseApartment Corridor Light Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  MidriseApartment Corridor Light Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  MidriseApartment Corridor Light Default Schedule;   !-
 
 Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {A80E466F-323F-4812-BC86-E5BCCB1AF104},   !- name
-  Retail Bldg Light Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Bldg Light Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Bldg Light Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Bldg Light Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Bldg Light Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Bldg Light Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {0F05FD2C-8433-4BE4-A970-1FB925EAD863},   !- name
-  Retail ClgSetp Default Schedule,   !- - Sunday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Monday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Friday Schedule:Day Name
-  Retail ClgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail ClgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail ClgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail ClgSetp Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {ECD5075E-FEEA-48EB-A89C-C9E2A29CCC9C},   !- name
-  Retail ClgSetp Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Monday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Friday Schedule:Day Name
-  Retail ClgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail ClgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail ClgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail ClgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail ClgSetp Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {EDE86DBD-AF2F-4A7A-AFF4-26BA35BF11E3},   !- name
-  Retail Bldg Equip Default Schedule,   !- - Sunday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Bldg Equip Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Bldg Equip Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Bldg Equip Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Bldg Equip Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {8E155032-F190-443D-B29E-FBBD2255B34D},   !- name
-  Retail Bldg Equip Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Bldg Equip Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Bldg Equip Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Bldg Equip Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Bldg Equip Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Bldg Equip Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {C6404C75-CC6F-4577-8093-3149B12904C4},   !- name
-  Retail Activity Default Schedule,   !- - Sunday Schedule:Day Name
-  Retail Activity Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Activity Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Activity Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Activity Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Activity Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Activity Default Schedule,   !- - Saturday Schedule:Day Name
-  Retail Activity Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Activity Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Activity Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Activity Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Activity Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {D62AB6BF-5EE9-47D3-9350-0C549515A3CF},   !- name
-  Retail Infil Half On Default Schedule,   !- - Sunday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Infil Half On Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Infil Half On Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Infil Half On Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Infil Half On Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {4627193A-7A55-4082-AD61-69FAC76CBDF3},   !- name
-  Retail Infil Half On Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Monday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Tuesday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Wednesday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Thursday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Friday Schedule:Day Name
-  Retail Infil Half On Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - Holiday Schedule:Day Name
-  Retail Infil Half On Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  Retail Infil Half On Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  Retail Infil Half On Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  Retail Infil Half On Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {4E5573DE-4297-45A0-9D21-9559A796CC95},   !- name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Sunday Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Monday Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Tuesday Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Wednesday Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Thursday Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Friday Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Saturday Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - Holiday Schedule:Day Name
-  MidriseApartment Apartment Occ Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  MidriseApartment Apartment Occ Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  MidriseApartment Apartment Occ Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {2F6130A9-5B56-4DB1-A7BB-6BBA8A5CDAB1},   !- name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Sunday Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Monday Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Thursday Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Friday Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Saturday Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Holiday Schedule:Day Name
-  Schedule Day 5,   !- - SummerDesignDay Schedule:Day Name
-  Schedule Day 4,   !- - WinterDesignDay Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  MidriseApartment Apartment HtgSetp Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {9C0406D9-E4D3-4426-BF7F-223E9201C084},   !- name
-  MidriseApartment Apartment Light Default Schedule,   !- - Sunday Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - Monday Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - Tuesday Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - Wednesday Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - Thursday Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - Friday Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - Saturday Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - Holiday Schedule:Day Name
-  MidriseApartment Apartment Light Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  MidriseApartment Apartment Light Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  MidriseApartment Apartment Light Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {BF63BC49-6F10-4661-A249-D45AF0E9AD42},   !- name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Sunday Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Monday Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Thursday Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Friday Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Saturday Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Holiday Schedule:Day Name
-  Schedule Day 3,   !- - SummerDesignDay Schedule:Day Name
-  Schedule Day 2,   !- - WinterDesignDay Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  MidriseApartment Apartment ClgSetp Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {209DD2E3-012E-4D8D-9BEC-2729F2339963},   !- name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Sunday Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Monday Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Tuesday Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Wednesday Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Thursday Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Friday Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Saturday Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - Holiday Schedule:Day Name
-  MidriseApartment Apartment Equip Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  MidriseApartment Apartment Equip Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  MidriseApartment Apartment Equip Default Schedule;   !- 
-
-Schedule:Week:Daily,
-  SCHEDULE:WEEK:DAILY {FDB76EC8-7C93-4E32-825E-2E157AFA2A94},   !- name
-  MidriseApartment Activity Default Schedule,   !- - Sunday Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - Monday Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - Tuesday Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - Wednesday Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - Thursday Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - Friday Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - Saturday Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - Holiday Schedule:Day Name
-  MidriseApartment Activity Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
-  MidriseApartment Activity Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
-  MidriseApartment Activity Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  MidriseApartment Activity Default Schedule;   !- 
+  SCHEDULE:WEEK:DAILY {B8D879BB-1900-4581-A760-14C6E59CF715},   !- name
+  Schedule Day 6,   !- - Sunday Schedule:Day Name
+  Schedule Day 6,   !- - Monday Schedule:Day Name
+  Schedule Day 6,   !- - Tuesday Schedule:Day Name
+  Schedule Day 6,   !- - Wednesday Schedule:Day Name
+  Schedule Day 6,   !- - Thursday Schedule:Day Name
+  Schedule Day 6,   !- - Friday Schedule:Day Name
+  Schedule Day 6,   !- - Saturday Schedule:Day Name
+  Schedule Day 6,   !- - Holiday Schedule:Day Name
+  Schedule Day 11,   !- - SummerDesignDay Schedule:Day Name
+  Schedule Day 10,   !- - WinterDesignDay Schedule:Day Name
+  Schedule Day 6,   !- - CustomDay1 Schedule:Day Name
+  Schedule Day 6;   !-
 
 Schedule:Week:Daily,
   SCHEDULE:WEEK:DAILY {1B2951D3-8A6D-40B0-A578-F54D283818BD},   !- name
@@ -1377,414 +1269,391 @@ Schedule:Week:Daily,
   MidriseApartment Infil Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
   MidriseApartment Infil Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
   MidriseApartment Infil Default Schedule,   !- - CustomDay1 Schedule:Day Name
-  MidriseApartment Infil Default Schedule;   !- 
+  MidriseApartment Infil Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {4E5573DE-4297-45A0-9D21-9559A796CC95},   !- name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Sunday Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Monday Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Tuesday Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Wednesday Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Thursday Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Friday Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Saturday Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - Holiday Schedule:Day Name
+  MidriseApartment Apartment Occ Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  MidriseApartment Apartment Occ Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  MidriseApartment Apartment Occ Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {2F6130A9-5B56-4DB1-A7BB-6BBA8A5CDAB1},   !- name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Sunday Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Monday Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Thursday Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Friday Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Saturday Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - Holiday Schedule:Day Name
+  Schedule Day 5,   !- - SummerDesignDay Schedule:Day Name
+  Schedule Day 4,   !- - WinterDesignDay Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  MidriseApartment Apartment HtgSetp Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {9C0406D9-E4D3-4426-BF7F-223E9201C084},   !- name
+  MidriseApartment Apartment Light Default Schedule,   !- - Sunday Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - Monday Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - Tuesday Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - Wednesday Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - Thursday Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - Friday Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - Saturday Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - Holiday Schedule:Day Name
+  MidriseApartment Apartment Light Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  MidriseApartment Apartment Light Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  MidriseApartment Apartment Light Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {BF63BC49-6F10-4661-A249-D45AF0E9AD42},   !- name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Sunday Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Monday Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Thursday Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Friday Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Saturday Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - Holiday Schedule:Day Name
+  Schedule Day 3,   !- - SummerDesignDay Schedule:Day Name
+  Schedule Day 2,   !- - WinterDesignDay Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  MidriseApartment Apartment ClgSetp Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {209DD2E3-012E-4D8D-9BEC-2729F2339963},   !- name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Sunday Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Monday Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Tuesday Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Wednesday Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Thursday Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Friday Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Saturday Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - Holiday Schedule:Day Name
+  MidriseApartment Apartment Equip Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  MidriseApartment Apartment Equip Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  MidriseApartment Apartment Equip Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {FDB76EC8-7C93-4E32-825E-2E157AFA2A94},   !- name
+  MidriseApartment Activity Default Schedule,   !- - Sunday Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - Monday Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - Tuesday Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - Wednesday Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - Thursday Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - Friday Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - Saturday Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - Holiday Schedule:Day Name
+  MidriseApartment Activity Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  MidriseApartment Activity Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  MidriseApartment Activity Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  MidriseApartment Activity Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {45F111D1-E0F8-4F38-8FE1-FECE9DDE4FE4},   !- name
+  Retail Bldg Occ Default Schedule,   !- - Sunday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Bldg Occ Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Bldg Occ Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Bldg Occ Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Bldg Occ Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {FBC49BAB-6A7C-4ED1-BD58-B3B60E4278EC},   !- name
+  Retail Bldg Occ Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Bldg Occ Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Bldg Occ Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Bldg Occ Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Bldg Occ Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Bldg Occ Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {5E160C4F-94FB-4CEF-81F0-9748DA7D29CA},   !- name
+  Retail HtgSetp Default Schedule,   !- - Sunday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Monday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Friday Schedule:Day Name
+  Retail HtgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail HtgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail HtgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail HtgSetp Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {2E39F5DD-828D-43BB-B458-A0FAF9A92E8F},   !- name
+  Retail HtgSetp Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Monday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Friday Schedule:Day Name
+  Retail HtgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail HtgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail HtgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail HtgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail HtgSetp Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {11A29B8F-5E9E-410B-A522-B0CB5DA8A86C},   !- name
+  Retail Bldg Light Default Schedule,   !- - Sunday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Bldg Light Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Bldg Light Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Bldg Light Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Bldg Light Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {A80E466F-323F-4812-BC86-E5BCCB1AF104},   !- name
+  Retail Bldg Light Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Bldg Light Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Bldg Light Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Bldg Light Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Bldg Light Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Bldg Light Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {0F05FD2C-8433-4BE4-A970-1FB925EAD863},   !- name
+  Retail ClgSetp Default Schedule,   !- - Sunday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Monday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Friday Schedule:Day Name
+  Retail ClgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail ClgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail ClgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail ClgSetp Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {ECD5075E-FEEA-48EB-A89C-C9E2A29CCC9C},   !- name
+  Retail ClgSetp Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Monday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Friday Schedule:Day Name
+  Retail ClgSetp Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail ClgSetp Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail ClgSetp Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail ClgSetp Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail ClgSetp Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {EDE86DBD-AF2F-4A7A-AFF4-26BA35BF11E3},   !- name
+  Retail Bldg Equip Default Schedule,   !- - Sunday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Bldg Equip Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Bldg Equip Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Bldg Equip Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Bldg Equip Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {8E155032-F190-443D-B29E-FBBD2255B34D},   !- name
+  Retail Bldg Equip Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Bldg Equip Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Bldg Equip Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Bldg Equip Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Bldg Equip Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Bldg Equip Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {C6404C75-CC6F-4577-8093-3149B12904C4},   !- name
+  Retail Activity Default Schedule,   !- - Sunday Schedule:Day Name
+  Retail Activity Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Activity Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Activity Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Activity Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Activity Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Activity Default Schedule,   !- - Saturday Schedule:Day Name
+  Retail Activity Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Activity Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Activity Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Activity Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Activity Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {D62AB6BF-5EE9-47D3-9350-0C549515A3CF},   !- name
+  Retail Infil Half On Default Schedule,   !- - Sunday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Infil Half On Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Infil Half On Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Infil Half On Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Infil Half On Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {4627193A-7A55-4082-AD61-69FAC76CBDF3},   !- name
+  Retail Infil Half On Rule 1 Day Schedule,   !- - Sunday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Monday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Tuesday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Wednesday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Thursday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Friday Schedule:Day Name
+  Retail Infil Half On Rule 2 Day Schedule,   !- - Saturday Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - Holiday Schedule:Day Name
+  Retail Infil Half On Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Retail Infil Half On Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Retail Infil Half On Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Retail Infil Half On Default Schedule;   !-
+
+Schedule:Week:Daily,
+  SCHEDULE:WEEK:DAILY {C1FBC509-BD2C-4EAC-BBFE-959D5C6E26D5},   !- name
+  Always On Default Schedule,   !- - Sunday Schedule:Day Name
+  Always On Default Schedule,   !- - Monday Schedule:Day Name
+  Always On Default Schedule,   !- - Tuesday Schedule:Day Name
+  Always On Default Schedule,   !- - Wednesday Schedule:Day Name
+  Always On Default Schedule,   !- - Thursday Schedule:Day Name
+  Always On Default Schedule,   !- - Friday Schedule:Day Name
+  Always On Default Schedule,   !- - Saturday Schedule:Day Name
+  Always On Default Schedule,   !- - Holiday Schedule:Day Name
+  Always On Summer Design Day,   !- - SummerDesignDay Schedule:Day Name
+  Always On Winter Design Day,   !- - WinterDesignDay Schedule:Day Name
+  Always On Default Schedule,   !- - CustomDay1 Schedule:Day Name
+  Always On Default Schedule;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG OCC DEFAULT SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
+  SCHEDULE DAY 1,   !- name
+  Temperature 60,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
-  07:00,   !- - Time 1 {hh:mm}
-  0,   !- - Value Until Time 1
-  08:00,   !- - Time 2 {hh:mm}
-  0.1,   !- - Value Until Time 2
-  09:00,   !- - Time 3 {hh:mm}
-  0.2,   !- - Value Until Time 3
-  11:00,   !- - Time 4 {hh:mm}
-  0.5,   !- - Value Until Time 4
-  15:00,   !- - Time 5 {hh:mm}
-  0.7,   !- - Value Until Time 5
-  16:00,   !- - Time 6 {hh:mm}
-  0.8,   !- - Value Until Time 6
-  17:00,   !- - Time 7 {hh:mm}
-  0.7,   !- - Value Until Time 7
-  19:00,   !- - Time 8 {hh:mm}
-  0.5,   !- - Value Until Time 8
-  21:00,   !- - Time 9 {hh:mm}
-  0.3,   !- - Value Until Time 9
-  24:00,   !- - Time 10 {hh:mm}
-  0;   !- 
+  24:00,   !- - Time 1 {hh:mm}
+  15.6000003814697;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG OCC RULE 2 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
+  SCHEDULE DAY 8,   !- name
+  Temperature 60,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
-  07:00,   !- - Time 1 {hh:mm}
-  0,   !- - Value Until Time 1
-  08:00,   !- - Time 2 {hh:mm}
-  0.1,   !- - Value Until Time 2
-  09:00,   !- - Time 3 {hh:mm}
-  0.2,   !- - Value Until Time 3
-  10:00,   !- - Time 4 {hh:mm}
-  0.5,   !- - Value Until Time 4
-  11:00,   !- - Time 5 {hh:mm}
-  0.6,   !- - Value Until Time 5
-  17:00,   !- - Time 6 {hh:mm}
-  0.8,   !- - Value Until Time 6
-  18:00,   !- - Time 7 {hh:mm}
-  0.6,   !- - Value Until Time 7
-  21:00,   !- - Time 8 {hh:mm}
-  0.2,   !- - Value Until Time 8
-  22:00,   !- - Time 9 {hh:mm}
-  0.1,   !- - Value Until Time 9
-  24:00,   !- - Time 10 {hh:mm}
-  0;   !- 
+  24:00,   !- - Time 1 {hh:mm}
+  15.6000003814697;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG OCC SUMMER DESIGN DAY,   !- name
+  SCHEDULE DAY 7,   !- name
+  Temperature 60,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  15.6000003814697;   !-
+
+Schedule:Day:Interval,
+  MIDRISEAPARTMENT CORRIDOR LIGHT DEFAULT SCHEDULE,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG OCC WINTER DESIGN DAY,   !- name
+  MIDRISEAPARTMENT CORRIDOR LIGHT SUMMER DESIGN DAY,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG OCC RULE 1 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  09:00,   !- - Time 1 {hh:mm}
-  0,   !- - Value Until Time 1
-  10:00,   !- - Time 2 {hh:mm}
-  0.1,   !- - Value Until Time 2
-  12:00,   !- - Time 3 {hh:mm}
-  0.2,   !- - Value Until Time 3
-  17:00,   !- - Time 4 {hh:mm}
-  0.4,   !- - Value Until Time 4
-  18:00,   !- - Time 5 {hh:mm}
-  0.2,   !- - Value Until Time 5
-  19:00,   !- - Time 6 {hh:mm}
-  0.1,   !- - Value Until Time 6
-  24:00,   !- - Time 7 {hh:mm}
-  0;   !- 
-
-Schedule:Day:Interval,
-  RETAIL HTGSETP DEFAULT SCHEDULE,   !- name
-  Temperature 31,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  15.6,   !- - Value Until Time 1
-  21:00,   !- - Time 2 {hh:mm}
-  21,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  15.6;   !- 
-
-Schedule:Day:Interval,
-  RETAIL HTGSETP RULE 2 DAY SCHEDULE,   !- name
-  Temperature 31,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  15.6,   !- - Value Until Time 1
-  22:00,   !- - Time 2 {hh:mm}
-  21,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  15.6;   !- 
-
-Schedule:Day:Interval,
-  RETAIL HTGSETP SUMMER DESIGN DAY,   !- name
-  Temperature 31,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  15.6;   !- 
-
-Schedule:Day:Interval,
-  RETAIL HTGSETP WINTER DESIGN DAY,   !- name
-  Temperature 31,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  21;   !- 
-
-Schedule:Day:Interval,
-  RETAIL HTGSETP RULE 1 DAY SCHEDULE,   !- name
-  Temperature 31,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  08:00,   !- - Time 1 {hh:mm}
-  15.6,   !- - Value Until Time 1
-  19:00,   !- - Time 2 {hh:mm}
-  21,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  15.6;   !- 
-
-Schedule:Day:Interval,
-  RETAIL BLDG LIGHT DEFAULT SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  07:00,   !- - Time 1 {hh:mm}
-  0.05,   !- - Value Until Time 1
-  08:00,   !- - Time 2 {hh:mm}
-  0.2,   !- - Value Until Time 2
-  09:00,   !- - Time 3 {hh:mm}
-  0.5,   !- - Value Until Time 3
-  18:00,   !- - Time 4 {hh:mm}
-  0.9,   !- - Value Until Time 4
-  20:00,   !- - Time 5 {hh:mm}
-  0.6,   !- - Value Until Time 5
-  21:00,   !- - Time 6 {hh:mm}
-  0.5,   !- - Value Until Time 6
-  22:00,   !- - Time 7 {hh:mm}
-  0.2,   !- - Value Until Time 7
-  24:00,   !- - Time 8 {hh:mm}
-  0.05;   !- 
-
-Schedule:Day:Interval,
-  RETAIL BLDG LIGHT RULE 2 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  07:00,   !- - Time 1 {hh:mm}
-  0.05,   !- - Value Until Time 1
-  08:00,   !- - Time 2 {hh:mm}
-  0.1,   !- - Value Until Time 2
-  09:00,   !- - Time 3 {hh:mm}
-  0.3,   !- - Value Until Time 3
-  10:00,   !- - Time 4 {hh:mm}
-  0.6,   !- - Value Until Time 4
-  18:00,   !- - Time 5 {hh:mm}
-  0.9,   !- - Value Until Time 5
-  19:00,   !- - Time 6 {hh:mm}
-  0.5,   !- - Value Until Time 6
-  21:00,   !- - Time 7 {hh:mm}
-  0.3,   !- - Value Until Time 7
-  22:00,   !- - Time 8 {hh:mm}
-  0.1,   !- - Value Until Time 8
-  24:00,   !- - Time 9 {hh:mm}
-  0.05;   !- 
-
-Schedule:Day:Interval,
-  RETAIL BLDG LIGHT SUMMER DESIGN DAY,   !- name
+  MIDRISEAPARTMENT CORRIDOR LIGHT WINTER DESIGN DAY,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG LIGHT WINTER DESIGN DAY,   !- name
+  SCHEDULE DAY 6,   !- name
+  Temperature 61,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  40;   !-
+
+Schedule:Day:Interval,
+  SCHEDULE DAY 11,   !- name
+  Temperature 61,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  40;   !-
+
+Schedule:Day:Interval,
+  SCHEDULE DAY 10,   !- name
+  Temperature 61,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  40;   !-
+
+Schedule:Day:Interval,
+  MIDRISEAPARTMENT INFIL DEFAULT SCHEDULE,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  0;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG LIGHT RULE 1 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  08:00,   !- - Time 1 {hh:mm}
-  0.05,   !- - Value Until Time 1
-  10:00,   !- - Time 2 {hh:mm}
-  0.1,   !- - Value Until Time 2
-  12:00,   !- - Time 3 {hh:mm}
-  0.4,   !- - Value Until Time 3
-  17:00,   !- - Time 4 {hh:mm}
-  0.6,   !- - Value Until Time 4
-  18:00,   !- - Time 5 {hh:mm}
-  0.4,   !- - Value Until Time 5
-  19:00,   !- - Time 6 {hh:mm}
-  0.2,   !- - Value Until Time 6
-  24:00,   !- - Time 7 {hh:mm}
-  0.05;   !- 
-
-Schedule:Day:Interval,
-  RETAIL CLGSETP DEFAULT SCHEDULE,   !- name
-  Temperature 6,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  30,   !- - Value Until Time 1
-  21:00,   !- - Time 2 {hh:mm}
-  24,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  30;   !- 
-
-Schedule:Day:Interval,
-  RETAIL CLGSETP RULE 2 DAY SCHEDULE,   !- name
-  Temperature 6,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  30,   !- - Value Until Time 1
-  22:00,   !- - Time 2 {hh:mm}
-  24,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  30;   !- 
-
-Schedule:Day:Interval,
-  RETAIL CLGSETP SUMMER DESIGN DAY,   !- name
-  Temperature 6,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  30,   !- - Value Until Time 1
-  21:00,   !- - Time 2 {hh:mm}
-  24,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  30;   !- 
-
-Schedule:Day:Interval,
-  RETAIL CLGSETP WINTER DESIGN DAY,   !- name
-  Temperature 6,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  30;   !- 
-
-Schedule:Day:Interval,
-  RETAIL CLGSETP RULE 1 DAY SCHEDULE,   !- name
-  Temperature 6,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  08:00,   !- - Time 1 {hh:mm}
-  30,   !- - Value Until Time 1
-  19:00,   !- - Time 2 {hh:mm}
-  24,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  30;   !- 
-
-Schedule:Day:Interval,
-  RETAIL BLDG EQUIP DEFAULT SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  07:00,   !- - Time 1 {hh:mm}
-  0.2,   !- - Value Until Time 1
-  08:00,   !- - Time 2 {hh:mm}
-  0.4,   !- - Value Until Time 2
-  09:00,   !- - Time 3 {hh:mm}
-  0.7,   !- - Value Until Time 3
-  18:00,   !- - Time 4 {hh:mm}
-  0.9,   !- - Value Until Time 4
-  20:00,   !- - Time 5 {hh:mm}
-  0.8,   !- - Value Until Time 5
-  21:00,   !- - Time 6 {hh:mm}
-  0.7,   !- - Value Until Time 6
-  22:00,   !- - Time 7 {hh:mm}
-  0.4,   !- - Value Until Time 7
-  24:00,   !- - Time 8 {hh:mm}
-  0.2;   !- 
-
-Schedule:Day:Interval,
-  RETAIL BLDG EQUIP RULE 2 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  07:00,   !- - Time 1 {hh:mm}
-  0.15,   !- - Value Until Time 1
-  08:00,   !- - Time 2 {hh:mm}
-  0.3,   !- - Value Until Time 2
-  09:00,   !- - Time 3 {hh:mm}
-  0.5,   !- - Value Until Time 3
-  10:00,   !- - Time 4 {hh:mm}
-  0.8,   !- - Value Until Time 4
-  18:00,   !- - Time 5 {hh:mm}
-  0.9,   !- - Value Until Time 5
-  19:00,   !- - Time 6 {hh:mm}
-  0.7,   !- - Value Until Time 6
-  21:00,   !- - Time 7 {hh:mm}
-  0.5,   !- - Value Until Time 7
-  22:00,   !- - Time 8 {hh:mm}
-  0.3,   !- - Value Until Time 8
-  24:00,   !- - Time 9 {hh:mm}
-  0.15;   !- 
-
-Schedule:Day:Interval,
-  RETAIL BLDG EQUIP SUMMER DESIGN DAY,   !- name
+  MIDRISEAPARTMENT INFIL SUMMER DESIGN DAY,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
-  RETAIL BLDG EQUIP WINTER DESIGN DAY,   !- name
+  MIDRISEAPARTMENT INFIL WINTER DESIGN DAY,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  0;   !- 
-
-Schedule:Day:Interval,
-  RETAIL BLDG EQUIP RULE 1 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  08:00,   !- - Time 1 {hh:mm}
-  0.15,   !- - Value Until Time 1
-  10:00,   !- - Time 2 {hh:mm}
-  0.3,   !- - Value Until Time 2
-  12:00,   !- - Time 3 {hh:mm}
-  0.6,   !- - Value Until Time 3
-  17:00,   !- - Time 4 {hh:mm}
-  0.8,   !- - Value Until Time 4
-  18:00,   !- - Time 5 {hh:mm}
-  0.6,   !- - Value Until Time 5
-  19:00,   !- - Time 6 {hh:mm}
-  0.4,   !- - Value Until Time 6
-  24:00,   !- - Time 7 {hh:mm}
-  0.15;   !- 
-
-Schedule:Day:Interval,
-  RETAIL ACTIVITY DEFAULT SCHEDULE,   !- name
-  ActivityLevel 11,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  120;   !- 
-
-Schedule:Day:Interval,
-  RETAIL ACTIVITY SUMMER DESIGN DAY,   !- name
-  ActivityLevel 11,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  120;   !- 
-
-Schedule:Day:Interval,
-  RETAIL ACTIVITY WINTER DESIGN DAY,   !- name
-  ActivityLevel 11,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  120;   !- 
-
-Schedule:Day:Interval,
-  RETAIL INFIL HALF ON DEFAULT SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  1,   !- - Value Until Time 1
-  21:00,   !- - Time 2 {hh:mm}
-  0.5,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  1;   !- 
-
-Schedule:Day:Interval,
-  RETAIL INFIL HALF ON RULE 2 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  1,   !- - Value Until Time 1
-  22:00,   !- - Time 2 {hh:mm}
-  0.5,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  1;   !- 
-
-Schedule:Day:Interval,
-  RETAIL INFIL HALF ON SUMMER DESIGN DAY,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  06:00,   !- - Time 1 {hh:mm}
-  1,   !- - Value Until Time 1
-  21:00,   !- - Time 2 {hh:mm}
-  0.5,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  1;   !- 
-
-Schedule:Day:Interval,
-  RETAIL INFIL HALF ON WINTER DESIGN DAY,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  1;   !- 
-
-Schedule:Day:Interval,
-  RETAIL INFIL HALF ON RULE 1 DAY SCHEDULE,   !- name
-  Fraction,   !- - Schedule Type Limits Name
-  No,   !- - Interpolate to Timestep
-  08:00,   !- - Time 1 {hh:mm}
-  1,   !- - Value Until Time 1
-  17:00,   !- - Time 2 {hh:mm}
-  0.5,   !- - Value Until Time 2
-  24:00,   !- - Time 3 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT OCC DEFAULT SCHEDULE,   !- name
@@ -1805,7 +1674,7 @@ Schedule:Day:Interval,
   21:00,   !- - Time 7 {hh:mm}
   0.87,   !- - Value Until Time 7
   24:00,   !- - Time 8 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT OCC SUMMER DESIGN DAY,   !- name
@@ -1826,7 +1695,7 @@ Schedule:Day:Interval,
   21:00,   !- - Time 7 {hh:mm}
   0.87,   !- - Value Until Time 7
   24:00,   !- - Time 8 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT OCC WINTER DESIGN DAY,   !- name
@@ -1847,28 +1716,28 @@ Schedule:Day:Interval,
   21:00,   !- - Time 7 {hh:mm}
   0.87,   !- - Value Until Time 7
   24:00,   !- - Time 8 {hh:mm}
-  1;   !- 
+  1;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT HTGSETP DEFAULT SCHEDULE,   !- name
   Temperature 25,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  21.1000003814697;   !- 
+  21.1000003814697;   !-
 
 Schedule:Day:Interval,
   SCHEDULE DAY 5,   !- name
   Temperature 25,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  21.1000003814697;   !- 
+  21.1000003814697;   !-
 
 Schedule:Day:Interval,
   SCHEDULE DAY 4,   !- name
   Temperature 25,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  21.1000003814697;   !- 
+  21.1000003814697;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT LIGHT DEFAULT SCHEDULE,   !- name
@@ -1905,7 +1774,7 @@ Schedule:Day:Interval,
   23:00,   !- - Time 15 {hh:mm}
   0.384,   !- - Value Until Time 15
   24:00,   !- - Time 16 {hh:mm}
-  0.16;   !- 
+  0.16;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT LIGHT SUMMER DESIGN DAY,   !- name
@@ -1942,7 +1811,7 @@ Schedule:Day:Interval,
   23:00,   !- - Time 15 {hh:mm}
   0.384,   !- - Value Until Time 15
   24:00,   !- - Time 16 {hh:mm}
-  0.16;   !- 
+  0.16;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT LIGHT WINTER DESIGN DAY,   !- name
@@ -1979,28 +1848,28 @@ Schedule:Day:Interval,
   23:00,   !- - Time 15 {hh:mm}
   0.384,   !- - Value Until Time 15
   24:00,   !- - Time 16 {hh:mm}
-  0.16;   !- 
+  0.16;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT CLGSETP DEFAULT SCHEDULE,   !- name
   Temperature 18,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  23.8999996185303;   !- 
+  23.8999996185303;   !-
 
 Schedule:Day:Interval,
   SCHEDULE DAY 3,   !- name
   Temperature 18,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  23.8999996185303;   !- 
+  23.8999996185303;   !-
 
 Schedule:Day:Interval,
   SCHEDULE DAY 2,   !- name
   Temperature 18,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  23.8999996185303;   !- 
+  23.8999996185303;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT EQUIP DEFAULT SCHEDULE,   !- name
@@ -2049,7 +1918,7 @@ Schedule:Day:Interval,
   23:00,   !- - Time 21 {hh:mm}
   0.71,   !- - Value Until Time 21
   24:00,   !- - Time 22 {hh:mm}
-  0.58;   !- 
+  0.58;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT EQUIP SUMMER DESIGN DAY,   !- name
@@ -2098,7 +1967,7 @@ Schedule:Day:Interval,
   23:00,   !- - Time 21 {hh:mm}
   0.71,   !- - Value Until Time 21
   24:00,   !- - Time 22 {hh:mm}
-  0.58;   !- 
+  0.58;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT APARTMENT EQUIP WINTER DESIGN DAY,   !- name
@@ -2147,50 +2016,361 @@ Schedule:Day:Interval,
   23:00,   !- - Time 21 {hh:mm}
   0.71,   !- - Value Until Time 21
   24:00,   !- - Time 22 {hh:mm}
-  0.58;   !- 
+  0.58;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT ACTIVITY DEFAULT SCHEDULE,   !- name
   ActivityLevel 1,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  120;   !- 
+  120;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT ACTIVITY SUMMER DESIGN DAY,   !- name
   ActivityLevel 1,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  120;   !- 
+  120;   !-
 
 Schedule:Day:Interval,
   MIDRISEAPARTMENT ACTIVITY WINTER DESIGN DAY,   !- name
   ActivityLevel 1,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
-  120;   !- 
+  120;   !-
 
 Schedule:Day:Interval,
-  MIDRISEAPARTMENT INFIL DEFAULT SCHEDULE,   !- name
+  RETAIL BLDG OCC DEFAULT SCHEDULE,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  1;   !- 
+  07:00,   !- - Time 1 {hh:mm}
+  0,   !- - Value Until Time 1
+  08:00,   !- - Time 2 {hh:mm}
+  0.1,   !- - Value Until Time 2
+  09:00,   !- - Time 3 {hh:mm}
+  0.2,   !- - Value Until Time 3
+  11:00,   !- - Time 4 {hh:mm}
+  0.5,   !- - Value Until Time 4
+  15:00,   !- - Time 5 {hh:mm}
+  0.7,   !- - Value Until Time 5
+  16:00,   !- - Time 6 {hh:mm}
+  0.8,   !- - Value Until Time 6
+  17:00,   !- - Time 7 {hh:mm}
+  0.7,   !- - Value Until Time 7
+  19:00,   !- - Time 8 {hh:mm}
+  0.5,   !- - Value Until Time 8
+  21:00,   !- - Time 9 {hh:mm}
+  0.3,   !- - Value Until Time 9
+  24:00,   !- - Time 10 {hh:mm}
+  0;   !-
 
 Schedule:Day:Interval,
-  MIDRISEAPARTMENT INFIL SUMMER DESIGN DAY,   !- name
+  RETAIL BLDG OCC RULE 2 DAY SCHEDULE,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
-  24:00,   !- - Time 1 {hh:mm}
-  1;   !- 
+  07:00,   !- - Time 1 {hh:mm}
+  0,   !- - Value Until Time 1
+  08:00,   !- - Time 2 {hh:mm}
+  0.1,   !- - Value Until Time 2
+  09:00,   !- - Time 3 {hh:mm}
+  0.2,   !- - Value Until Time 3
+  10:00,   !- - Time 4 {hh:mm}
+  0.5,   !- - Value Until Time 4
+  11:00,   !- - Time 5 {hh:mm}
+  0.6,   !- - Value Until Time 5
+  17:00,   !- - Time 6 {hh:mm}
+  0.8,   !- - Value Until Time 6
+  18:00,   !- - Time 7 {hh:mm}
+  0.6,   !- - Value Until Time 7
+  21:00,   !- - Time 8 {hh:mm}
+  0.2,   !- - Value Until Time 8
+  22:00,   !- - Time 9 {hh:mm}
+  0.1,   !- - Value Until Time 9
+  24:00,   !- - Time 10 {hh:mm}
+  0;   !-
 
 Schedule:Day:Interval,
-  MIDRISEAPARTMENT INFIL WINTER DESIGN DAY,   !- name
+  RETAIL BLDG OCC SUMMER DESIGN DAY,   !- name
   Fraction,   !- - Schedule Type Limits Name
   No,   !- - Interpolate to Timestep
   24:00,   !- - Time 1 {hh:mm}
   1;   !-
 
+Schedule:Day:Interval,
+  RETAIL BLDG OCC WINTER DESIGN DAY,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG OCC RULE 1 DAY SCHEDULE,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  09:00,   !- - Time 1 {hh:mm}
+  0,   !- - Value Until Time 1
+  10:00,   !- - Time 2 {hh:mm}
+  0.1,   !- - Value Until Time 2
+  12:00,   !- - Time 3 {hh:mm}
+  0.2,   !- - Value Until Time 3
+  17:00,   !- - Time 4 {hh:mm}
+  0.4,   !- - Value Until Time 4
+  18:00,   !- - Time 5 {hh:mm}
+  0.2,   !- - Value Until Time 5
+  19:00,   !- - Time 6 {hh:mm}
+  0.1,   !- - Value Until Time 6
+  24:00,   !- - Time 7 {hh:mm}
+  0;   !-
+
+Schedule:Day:Interval,
+  RETAIL HTGSETP DEFAULT SCHEDULE,   !- name
+  Temperature 31,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  06:00,   !- - Time 1 {hh:mm}
+  15.6,   !- - Value Until Time 1
+  21:00,   !- - Time 2 {hh:mm}
+  21,   !- - Value Until Time 2
+  24:00,   !- - Time 3 {hh:mm}
+  15.6;   !-
+
+Schedule:Day:Interval,
+  RETAIL HTGSETP RULE 2 DAY SCHEDULE,   !- name
+  Temperature 31,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  06:00,   !- - Time 1 {hh:mm}
+  15.6,   !- - Value Until Time 1
+  22:00,   !- - Time 2 {hh:mm}
+  21,   !- - Value Until Time 2
+  24:00,   !- - Time 3 {hh:mm}
+  15.6;   !-
+
+Schedule:Day:Interval,
+  RETAIL HTGSETP SUMMER DESIGN DAY,   !- name
+  Temperature 31,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  15.6;   !-
+
+Schedule:Day:Interval,
+  RETAIL HTGSETP WINTER DESIGN DAY,   !- name
+  Temperature 31,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  21;   !-
+
+Schedule:Day:Interval,
+  RETAIL HTGSETP RULE 1 DAY SCHEDULE,   !- name
+  Temperature 31,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  08:00,   !- - Time 1 {hh:mm}
+  15.6,   !- - Value Until Time 1
+  19:00,   !- - Time 2 {hh:mm}
+  21,   !- - Value Until Time 2
+  24:00,   !- - Time 3 {hh:mm}
+  15.6;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG LIGHT DEFAULT SCHEDULE,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  07:00,   !- - Time 1 {hh:mm}
+  0.05,   !- - Value Until Time 1
+  08:00,   !- - Time 2 {hh:mm}
+  0.2,   !- - Value Until Time 2
+  09:00,   !- - Time 3 {hh:mm}
+  0.5,   !- - Value Until Time 3
+  18:00,   !- - Time 4 {hh:mm}
+  0.9,   !- - Value Until Time 4
+  20:00,   !- - Time 5 {hh:mm}
+  0.6,   !- - Value Until Time 5
+  21:00,   !- - Time 6 {hh:mm}
+  0.5,   !- - Value Until Time 6
+  22:00,   !- - Time 7 {hh:mm}
+  0.2,   !- - Value Until Time 7
+  24:00,   !- - Time 8 {hh:mm}
+  0.05;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG LIGHT RULE 2 DAY SCHEDULE,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  07:00,   !- - Time 1 {hh:mm}
+  0.05,   !- - Value Until Time 1
+  08:00,   !- - Time 2 {hh:mm}
+  0.1,   !- - Value Until Time 2
+  09:00,   !- - Time 3 {hh:mm}
+  0.3,   !- - Value Until Time 3
+  10:00,   !- - Time 4 {hh:mm}
+  0.6,   !- - Value Until Time 4
+  18:00,   !- - Time 5 {hh:mm}
+  0.9,   !- - Value Until Time 5
+  19:00,   !- - Time 6 {hh:mm}
+  0.5,   !- - Value Until Time 6
+  21:00,   !- - Time 7 {hh:mm}
+  0.3,   !- - Value Until Time 7
+  22:00,   !- - Time 8 {hh:mm}
+  0.1,   !- - Value Until Time 8
+  24:00,   !- - Time 9 {hh:mm}
+  0.05;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG LIGHT SUMMER DESIGN DAY,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG LIGHT WINTER DESIGN DAY,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  0;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG LIGHT Rule 1 Day Schedule,  !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  08:00,                                  !- Time 1 {hh:mm}
+  0.05,                                   !- Value Until Time 1
+  10:00,                                  !- Time 2 {hh:mm}
+  0.1,                                    !- Value Until Time 2
+  12:00,                                  !- Time 3 {hh:mm}
+  0.4,                                    !- Value Until Time 3
+  17:00,                                  !- Time 4 {hh:mm}
+  0.6,                                    !- Value Until Time 4
+  18:00,                                  !- Time 5 {hh:mm}
+  0.4,                                    !- Value Until Time 5
+  19:00,                                  !- Time 6 {hh:mm}
+  0.2,                                    !- Value Until Time 6
+  24:00,                                  !- Time 7 {hh:mm}
+  0.05;                                   !- Value Until Time 7
+
+Schedule:Day:Interval,
+  RETAIL BLDG EQUIP SUMMER DESIGN DAY,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG EQUIP WINTER DESIGN DAY,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  0;   !-
+
+Schedule:Day:Interval,
+  RETAIL BLDG EQUIP RULE 1 DAY SCHEDULE,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  08:00,   !- - Time 1 {hh:mm}
+  0.15,   !- - Value Until Time 1
+  10:00,   !- - Time 2 {hh:mm}
+  0.3,   !- - Value Until Time 2
+  12:00,   !- - Time 3 {hh:mm}
+  0.6,   !- - Value Until Time 3
+  17:00,   !- - Time 4 {hh:mm}
+  0.8,   !- - Value Until Time 4
+  18:00,   !- - Time 5 {hh:mm}
+  0.6,   !- - Value Until Time 5
+  19:00,   !- - Time 6 {hh:mm}
+  0.4,   !- - Value Until Time 6
+  24:00,   !- - Time 7 {hh:mm}
+  0.15;   !-
+
+Schedule:Day:Interval,
+  RETAIL ACTIVITY DEFAULT SCHEDULE,   !- name
+  ActivityLevel 11,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  120;   !-
+
+Schedule:Day:Interval,
+  RETAIL ACTIVITY SUMMER DESIGN DAY,   !- name
+  ActivityLevel 11,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  120;   !-
+
+Schedule:Day:Interval,
+  RETAIL ACTIVITY WINTER DESIGN DAY,   !- name
+  ActivityLevel 11,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  120;   !-
+
+Schedule:Day:Interval,
+  RETAIL INFIL HALF ON DEFAULT SCHEDULE,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  06:00,   !- - Time 1 {hh:mm}
+  1,   !- - Value Until Time 1
+  21:00,   !- - Time 2 {hh:mm}
+  0.5,   !- - Value Until Time 2
+  24:00,   !- - Time 3 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  RETAIL INFIL HALF ON RULE 2 DAY SCHEDULE,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  06:00,   !- - Time 1 {hh:mm}
+  1,   !- - Value Until Time 1
+  22:00,   !- - Time 2 {hh:mm}
+  0.5,   !- - Value Until Time 2
+  24:00,   !- - Time 3 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  RETAIL INFIL HALF ON SUMMER DESIGN DAY,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  06:00,   !- - Time 1 {hh:mm}
+  1,   !- - Value Until Time 1
+  21:00,   !- - Time 2 {hh:mm}
+  0.5,   !- - Value Until Time 2
+  24:00,   !- - Time 3 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  RETAIL INFIL HALF ON WINTER DESIGN DAY,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  RETAIL INFIL HALF ON RULE 1 DAY SCHEDULE,   !- name
+  Fraction,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  08:00,   !- - Time 1 {hh:mm}
+  1,   !- - Value Until Time 1
+  17:00,   !- - Time 2 {hh:mm}
+  0.5,   !- - Value Until Time 2
+  24:00,   !- - Time 3 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  ALWAYS ON DEFAULT SCHEDULE,   !- name
+  On/Off,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  ALWAYS ON SUMMER DESIGN DAY,   !- name
+  On/Off,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  1;   !-
+
+Schedule:Day:Interval,
+  ALWAYS ON WINTER DESIGN DAY,   !- name
+  On/Off,   !- - Schedule Type Limits Name
+  No,   !- - Interpolate to Timestep
+  24:00,   !- - Time 1 {hh:mm}
+  1;   !-
 
 Output:Surfaces:List,
 	Details;                 !- Report Type
