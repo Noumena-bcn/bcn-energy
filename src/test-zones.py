@@ -353,7 +353,7 @@ for i in range(len(windows)):
 #######################################################################################################################
 
 # idf.printidf()
-# idf.to_obj('test-zones.obj')
-# idf.view_model()
-# idf.saveas("test-zones.idf")
+idf.to_obj('test-zones.obj')
+idf.view_model()
+idf.saveas("test-zones.idf")
 idf.run()

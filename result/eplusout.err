@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2019.10.02 16:46,IDD_Version 8.8.0
+Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2019.10.02 17:29,IDD_Version 8.8.0
    ** Warning ** ManageSizing: For a zone sizing run, there must be at least 1 Sizing:Zone input object. SimulationControl Zone Sizing option ignored.
    ** Warning ** ManageSizing: For a plant sizing run, there must be at least 1 Sizing:Plant object input. SimulationControl Plant Sizing option ignored.
    ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
@@ -23309,7 +23309,7 @@ Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2019.10.02 16:46,IDD_V
    **   ~~~   **    because vertex 5 of back surface=BLOCK COMUN1_1 STOREY 0 ROOF 0001 is in front of receiving surface=BLOCK COMUN1_1 STOREY 0 WALL 0007
    **   ~~~   **    (Dot Product indicator=0.0135)
    **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead.
-   ** Warning ** DetermineShadowingCombinations: There are 124 surfaces which are receiving surfaces and are non-convex.
+   ** Warning ** DetermineShadowingCombinations: There are 115 surfaces which are receiving surfaces and are non-convex.
    **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details
    **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual warnings for each surface.
    ** Severe  ** DetermineShadowingCombinations: There are 33 surfaces which are casting surfaces and are non-convex.
@@ -23361,4 +23361,4 @@ Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2019.10.02 16:46,IDD_V
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 2 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 139 Warning; 4693 Severe Errors; Elapsed Time=00hr 18min 17.37sec
+   ************* EnergyPlus Completed Successfully-- 130 Warning; 4693 Severe Errors; Elapsed Time=00hr 18min 26.33sec

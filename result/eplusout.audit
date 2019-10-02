@@ -68,13 +68,13 @@
  numTableEntry=       14300
  sizeCompSizeTableEntry=           0
  numCompSizeTableEntry=           0
- NumOfRVariable=       79882
- NumOfRVariable(Total)=       79882
+ NumOfRVariable=       79711
+ NumOfRVariable(Total)=       79711
  NumOfRVariable(Actual)=         260
  NumOfRVariable(Summed)=         260
  NumOfRVariable(Meter)=         183
- NumOfIVariable=        6233
- NumOfIVariable(Total)=        6233
+ NumOfIVariable=        6224
+ NumOfIVariable(Total)=        6224
  NumOfIVariable(Actual)=           0
  NumOfIVariable(Summed)=           0
  MaxRVariable=        1000
