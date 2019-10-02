@@ -172,7 +172,7 @@ def add_people (zone_name):
                         People_per_Zone_Floor_Area = 0.028309217430000002,
                         Fraction_Radiant = 0.3,
                         Activity_Level_Schedule_Name = "MidriseApartment Activity")
-    if "comercio" in zone_name:
+    elif "comercio" in zone_name:
         idf.newidfobject("PEOPLE",
                         Name = zone_name + "People",
                         Zone_or_ZoneList_Name = zone_name ,
@@ -190,7 +190,7 @@ def add_zone_infiltration (zone_name):
                         Schedule_Name = "MidriseApartment Infil",
                         Design_Flow_Rate_Calculation_Method = "Flow/Area",
                         Flow_per_Zone_Floor_Area = 0.000226568446)
-    if "comercio" in zone_name:
+    elif "comercio" in zone_name:
         idf.newidfobject("ZONEINFILTRATION:DESIGNFLOWRATE",
                          Name=zone_name + "ZoneInfiltration",
                          Zone_or_ZoneList_Name=zone_name,
@@ -268,7 +268,7 @@ for folder in polygons:
 for folder in range(len(folders)):
     for placemark in range(len(folders[folder])):
         zone_name = zone_folder[folder][placemark]
-        b_name = zone_name + str(len(folders)-folder) + '-' + str(placemark)
+        b_name = zone_name + str(len(folders)-folder) + '_' + str(placemark)
         idf.add_block(
             name=b_name,
             coordinates=folders[folder][placemark][2],
@@ -291,7 +291,7 @@ for i in srfs:
 for zone in zones:
     i = zone.Name
     i = i.lower()
-    print (i)
+    # print (i)
     add_electric_equipment(i)
     add_light(i)
     add_people(i)
@@ -356,4 +356,4 @@ for i in range(len(windows)):
 # idf.to_obj('test-zones.obj')
 # idf.view_model()
 # idf.saveas("test-zones.idf")
-# idf.run()
+idf.run()

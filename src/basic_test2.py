@@ -32,8 +32,8 @@ idf.add_block(
     height=3
 )
 
-idf.intersect_match()
-idf.set_default_constructions()
+# idf.intersect_match()
+# idf.set_default_constructions()
 
 zones = idf.idfobjects["ZONE"]
 target_zone_names = ["vivienda0", "vivienda1", "comercio0", "comercio1"]
@@ -47,15 +47,8 @@ for srf in srfs:
         if target_zone_names[index] in srf.Zone_Name:
             srf.Zone_Name = target_zone_names[index]
 
+
 # idf.view_model()
-
-srfs = idf.getsurfaces()
-
-print (srfs)
-
-for i in srfs:
-    print (i.Name)
-    print (i.coords)
 
 # idf.printidf()
 # idf.saveas("basic_test2.idf")
