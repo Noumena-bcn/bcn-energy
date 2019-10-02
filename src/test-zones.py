@@ -211,7 +211,6 @@ def add_outdoor_air (zone_name):
                          Outdoor_Air_Method="Sum",
                          Outdoor_Air_Flow_per_Person=0,
                          Outdoor_Air_Flow_per_Zone_Floor_Area=0.0003048006)
-        print ("added outdoor air")
     elif "comercio" in zone_name:
         idf.newidfobject("DESIGNSPECIFICATION:OUTDOORAIR",
                          Name=zone_name + "OutdoorAirCntrl",
@@ -292,6 +291,7 @@ for i in srfs:
 for zone in zones:
     i = zone.Name
     i = i.lower()
+    print (i)
     add_electric_equipment(i)
     add_light(i)
     add_people(i)
@@ -356,4 +356,4 @@ for i in range(len(windows)):
 # idf.to_obj('test-zones.obj')
 # idf.view_model()
 # idf.saveas("test-zones.idf")
-idf.run()
+# idf.run()

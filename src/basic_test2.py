@@ -48,6 +48,15 @@ for srf in srfs:
             srf.Zone_Name = target_zone_names[index]
 
 # idf.view_model()
-idf.printidf()
-idf.saveas("basic_test2.idf")
-idf.run()
+
+srfs = idf.getsurfaces()
+
+print (srfs)
+
+for i in srfs:
+    print (i.Name)
+    print (i.coords)
+
+# idf.printidf()
+# idf.saveas("basic_test2.idf")
+# idf.run()
