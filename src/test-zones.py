@@ -334,10 +334,11 @@ polygons.reverse()
 folders = []
 coordinates = []
 zone_folder = []
-
+balconies_coordinates = []
 for folder in polygons:
     placemarks = []
     zone_names = []
+    balcony = []
     for placemark in folder:
         if placemark [0] != "Terraza":
             placemark[2] = element_to_coordinates(placemark[2])
@@ -352,9 +353,18 @@ for folder in polygons:
                     zone_names.append("comercio")
                 for i in placemark[2]:
                     coordinates.append(i)
+        elif placemark[0] == "Terraza":
+            placemark[2] = element_to_coordinates(placemark[2])
+            placemark[2] = [row [0:2] for row in placemark[2]]
+            for i in placemark[2]:
+                balcony.append(i)
+        balconies_coordinates.append(balcony)
     folders.append(placemarks)
     zone_folder.append(zone_names)
 
+print(balconies_coordinates)
+
+"""
 for folder in range(len(folders)):
     for placemark in range(len(folders[folder])):
         zone_name = zone_folder[folder][placemark]
@@ -449,3 +459,4 @@ idf.to_obj('test-zones.obj')
 idf.view_model()
 idf.saveas("test-zones.idf")
 idf.run()
+"""
