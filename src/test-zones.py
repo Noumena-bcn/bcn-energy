@@ -217,6 +217,38 @@ def add_outdoor_air (zone_name):
                          Outdoor_Air_Flow_per_Person=0.00353925,
                          Outdoor_Air_Flow_per_Zone_Floor_Area=0.0006096012)
 
+def add_hvac_thermostat (zone_name):
+    if "vivienda" in zone_name:
+        idf.newidfobject("HVACTemplate:Thermostat",
+                        Name = zone_name + "_HVAC",
+                        Heating_Setpoint_Schedule_Name = "MidriseApartment Apartment HtgSetp",
+                        Cooling_Setpoint_Schedule_Name = "MidriseApartment Apartment ClgSetp")
+    elif "comercio" in zone_name:
+        idf.newidfobject("HVACTemplate:Thermostat",
+                        Name = zone_name + "_HVAC",
+                        Heating_Setpoint_Schedule_Name = "Retail HtgSetp",
+                        Cooling_Setpoint_Schedule_Name = "Retail ClgSetp")
+    elif "comun" in zone_name:
+        idf.newidfobject("HVACTemplate:Thermostat",
+                        Name = zone_name + "_HVAC",
+                        Heating_Setpoint_Schedule_Name = "MidriseApartment Corridor HtgSetp",
+                        Cooling_Setpoint_Schedule_Name = "MidriseApartment Corridor ClgSetp")
+
+def add_hvac_template(zone_name):
+    idf.newidfobject("HVACTemplate:Zone:IdealLoadsAirSystem",
+                     Zone_Name = zone_name,
+                     Template_Thermostat_Name = zone_name + "_HVAC",
+                     Heating_Supply_Air_Temp = 40,
+                     Max_Heating_Supply_Air_Humidity_Ratio = 0.008,
+                     Min_Cooling_Supply_Air_Humidity_Ratio = 0.0085,
+                     Cooling_Limit = "LimitFlowRate",
+                     Maximum_Cooling_Air_Flow_Rate = "autosize",
+                     Dehumidification_Control_Type = None,
+                     Humidification_Control_Type=None,
+                     Outdoor_Air_Method = "DetailedSpecification",
+                     Design_Specification_Outdoor_Air_Object_Name = zone_name + "OutdoorAirCntrl",
+                     Outdoor_Air_Economizer_Type = "DifferentialDryBulb")
+
 def _is_window(subsurface):
     if subsurface.key.lower() in {"window", "fenestrationsurface:detailed"}:
         return True
@@ -310,16 +342,16 @@ def custom_wwr (wwr_zones, construction=None):
 #######################################################################################################################
 # DEFINE HERE THE MAIN PATH
 
-path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
-# path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
+# path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
+path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
 
-IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
-idf = IDF('/Users/soroush/Desktop/Noumena/bcn-energy/src/gh_template.idf')
+# IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
+# idf = IDF('/Users/soroush/Desktop/Noumena/bcn-energy/src/gh_template.idf')
 
-# IDF.setiddname("C:/EnergyPlusV8-8-0/Energy+.idd")
-# idf = IDF("C:/EnergyPlusV8-8-0/ExampleFiles/Minimal.idf")
+IDF.setiddname("C:/EnergyPlusV8-8-0/Energy+.idd")
+idf = IDF("C:/Users/Coroush/Desktop/git-noumena/bcn-energy/src/gh_template.idf")
 
-idf.epw = '/Users/soroush/Desktop/Noumena/bcn-energy/src/ESP_Barcelona.081810_IWEC.epw'
+idf.epw = 'C:/ladybug/ESP_Barcelona.081810_IWEC/ESP_Barcelona.081810_IWEC.epw'
 
 #######################################################################################################################
 # Making H building
@@ -402,12 +434,12 @@ for i in srfs:
 for zone in zones:
     i = zone.Name
     i = i.lower()
-    # print (i)
     add_electric_equipment(i)
     add_light(i)
     add_people(i)
     add_zone_infiltration(i)
     add_outdoor_air(i)
+    add_hvac_thermostat(i)
 
 #######################################################################################################################
 # Making L blocks
@@ -462,7 +494,7 @@ for i in range(len(windows)):
 
 #######################################################################################################################
 
-idf.printidf()
+# idf.printidf()
 # idf.to_obj('test-zones.obj')
 # idf.view_model()
 # idf.saveas("test-zones.idf")
