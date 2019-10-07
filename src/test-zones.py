@@ -4,7 +4,6 @@ import xml.etree.ElementTree as et
 from xml.etree.ElementTree import tostring
 import pyproj
 from geomeppy import IDF
-from geomeppy.geom.polygons import Polygon3D
 from geomeppy.utilities import almostequal
 from geomeppy.geom.polygons import Polygon3D
 
@@ -84,8 +83,8 @@ def element_to_coordinates(coords):
 
 def make_L_blocks(polygon_coordinates):
     for index in range(len(polygon_coordinates)):
-        block_name = 'L_block' + str(index)
-        roof_name = 'Shading' + str(index)
+        block_name = 'L_block{}'.format(index)
+        roof_name = 'Shading{}'.format(index)
         polygon_xy = []
         polygon_z = []
         for point in polygon_coordinates[index]:
@@ -335,14 +334,16 @@ folders = []
 coordinates = []
 zone_folder = []
 balconies_coordinates = []
+balconies_level = []
+
 for folder in polygons:
     placemarks = []
     zone_names = []
-    balcony = []
+    balconies_coordinates = []
     for placemark in folder:
+        placemark[2] = element_to_coordinates(placemark[2])
+        placemark[2] = [row [0:2] for row in placemark[2]]
         if placemark [0] != "Terraza":
-            placemark[2] = element_to_coordinates(placemark[2])
-            placemark[2] = [row [0:2] for row in placemark[2]]
             if placemark[0:3] not in placemarks:
                 placemarks.append(placemark[0:3])
                 if "COMUN" in placemark[0]:
@@ -354,25 +355,35 @@ for folder in polygons:
                 for i in placemark[2]:
                     coordinates.append(i)
         elif placemark[0] == "Terraza":
-            placemark[2] = element_to_coordinates(placemark[2])
-            placemark[2] = [row [0:2] for row in placemark[2]]
-            for i in placemark[2]:
-                balcony.append(i)
-        balconies_coordinates.append(balcony)
+            if placemark[2] not in balconies_coordinates:
+                balconies_coordinates.append(placemark[2])
+    balconies_level.append(balconies_coordinates)
     folders.append(placemarks)
     zone_folder.append(zone_names)
 
-print(balconies_coordinates)
-
-"""
 for folder in range(len(folders)):
     for placemark in range(len(folders[folder])):
         zone_name = zone_folder[folder][placemark]
-        b_name = zone_name + str(len(folders)-folder) + '_' + str(placemark)
+        b_name = "{}{}_{}".format(zone_name, len(folders)-folder, placemark)
         idf.add_block(
             name=b_name,
             coordinates=folders[folder][placemark][2],
             height=3)
+    idf.translate([0,0,3])
+
+idf.translate([0,0,-3*len(folders)])
+
+for i in range(len(balconies_level)):
+    for j in range(len(balconies_level[i])):
+        idf.add_shading_block(
+            name = "Terrace{}_{}".format(i,j),
+            coordinates = balconies_level[i][j],
+            height = 1.5)
+        terrace_floor = idf.newidfobject(
+            'SHADING:SITE:DETAILED',
+            Name= "TerraceFloor{}_{}".format(i,j)
+        )
+        terrace_floor.setcoords(balconies_level[i][j])
     idf.translate([0,0,3])
 idf.translate([0,0,-3])
 
@@ -428,7 +439,6 @@ idf.match()
 wwr_zones = {"vivienda":0.2, "comercio":0.7, "comun":0.2}
 custom_wwr(wwr_zones, construction="Project External Window")
 
-
 shading_srfs = idf.getshadingsurfaces()
 block_srfs = idf.getsurfaces("Wall")
 windows = idf.getsubsurfaces("window")
@@ -450,13 +460,10 @@ for i in range(len(windows)):
             m += 1
             break
 
-
-
 #######################################################################################################################
 
-# idf.printidf()
-idf.to_obj('test-zones.obj')
-idf.view_model()
-idf.saveas("test-zones.idf")
+idf.printidf()
+# idf.to_obj('test-zones.obj')
+# idf.view_model()
+# idf.saveas("test-zones.idf")
 idf.run()
-"""
