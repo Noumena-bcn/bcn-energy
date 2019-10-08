@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2019.10.08 10:10
+Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2019.10.08 12:41
 ! <Version>, Version ID
  Version, 8.8.0
 ! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
@@ -4202,6 +4202,314 @@ RoomAir Model,COMUN1_8,Mixing/Well-Stirred
 AirflowNetwork Model:Control,NoMultizoneOrDistribution
 ! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
 Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
+ Load Timesteps in Zone Design Calculation Averaging Window,    6
+! <Heating Sizing Factor Information>, Sizing Factor ID, Value
+ Heating Sizing Factor Information, Global,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA10_0,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN10_1,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN10_2,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA9_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA9_1,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN9_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN9_3,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA8_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA8_1,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA8_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN8_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN8_4,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA7_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA7_1,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA7_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN7_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN7_4,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA6_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA6_1,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA6_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN6_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN6_4,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA5_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA5_1,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA5_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN5_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN5_4,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA4_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA4_1,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA4_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN4_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN4_4,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA3_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA3_1,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA3_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN3_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN3_4,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA2_0,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA2_1,   1.2500    
+ Heating Sizing Factor Information, Zone VIVIENDA2_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN2_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMERCIO1_0,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN1_1,   1.2500    
+ Heating Sizing Factor Information, Zone COMERCIO1_2,   1.2500    
+ Heating Sizing Factor Information, Zone COMERCIO1_3,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN1_4,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN1_5,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN1_6,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN1_7,   1.2500    
+ Heating Sizing Factor Information, Zone COMUN1_8,   1.2500    
+! <Cooling Sizing Factor Information>, Sizing Factor ID, Value
+ Cooling Sizing Factor Information, Global,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA10_0,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN10_1,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN10_2,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA9_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA9_1,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN9_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN9_3,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA8_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA8_1,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA8_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN8_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN8_4,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA7_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA7_1,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA7_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN7_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN7_4,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA6_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA6_1,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA6_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN6_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN6_4,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA5_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA5_1,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA5_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN5_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN5_4,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA4_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA4_1,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA4_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN4_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN4_4,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA3_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA3_1,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA3_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN3_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN3_4,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA2_0,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA2_1,   1.1500    
+ Cooling Sizing Factor Information, Zone VIVIENDA2_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN2_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMERCIO1_0,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN1_1,   1.1500    
+ Cooling Sizing Factor Information, Zone COMERCIO1_2,   1.1500    
+ Cooling Sizing Factor Information, Zone COMERCIO1_3,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN1_4,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN1_5,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN1_6,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN1_7,   1.1500    
+ Cooling Sizing Factor Information, Zone COMUN1_8,   1.1500    
+! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}, Calc DOAS Heat Addition Rate {W}
+ Zone Sizing Information, VIVIENDA10_0, Cooling, 3361.30318, 3865.49866, 0.25109, 0.28875, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 65.55945, 1.85594, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA10_0, Heating, 4064.48323, 5080.60403, 0.17523, 0.21904, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.55945, 1.85594, 0.00000, 0.00000
+ Zone Sizing Information, COMUN10_1, Cooling, 12.72091, 14.62905, 3.83603E-004, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 18:20:00, 27.96700, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN10_1, Heating, 234.64530, 293.30662, 7.83590E-003, 9.79487E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 03:30:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN10_2, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN10_2, Heating, 256.91241, 321.14052, 8.57937E-003, 1.07242E-002, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA9_0, Cooling, 3373.67944, 3879.73136, 0.25202, 0.28982, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 20:00:00, 26.35000, 1.59678E-002, 79.31180, 2.24525, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA9_0, Heating, 4623.28550, 5779.10687, 0.19932, 0.24915, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 79.31180, 2.24525, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA9_1, Cooling, 2211.13670, 2542.80721, 0.16517, 0.18994, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 42.67271, 1.20803, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA9_1, Heating, 2617.16948, 3271.46185, 0.11283, 0.14104, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 42.67271, 1.20803, 0.00000, 0.00000
+ Zone Sizing Information, COMUN9_2, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN9_2, Heating, 175.89302, 219.86627, 5.87387E-003, 7.34234E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN9_3, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN9_3, Heating, 192.23867, 240.29834, 6.41966E-003, 8.02458E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA8_0, Cooling, 2426.40083, 2790.36096, 0.18125, 0.20844, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA8_0, Heating, 2765.21744, 3456.52180, 0.11922, 0.14902, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA8_1, Cooling, 2562.24947, 2946.58689, 0.19140, 0.22011, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:10:00, 27.05583, 1.59678E-002, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA8_1, Heating, 3532.30017, 4415.37521, 0.15229, 0.19036, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA8_2, Cooling, 3141.67986, 3612.93184, 0.23468, 0.26988, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 18:50:00, 27.38950, 1.59678E-002, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA8_2, Heating, 3734.70722, 4668.38402, 0.16101, 0.20127, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, COMUN8_3, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN8_3, Heating, 172.87136, 216.08920, 5.77297E-003, 7.21621E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN8_4, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN8_4, Heating, 186.18121, 232.72651, 6.21738E-003, 7.77173E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA7_0, Cooling, 2266.43367, 2606.39872, 0.16930, 0.19470, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA7_0, Heating, 2747.94841, 3434.93551, 0.11847, 0.14809, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA7_1, Cooling, 2384.79605, 2742.51546, 0.17814, 0.20486, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:20:00, 26.91467, 1.59678E-002, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA7_1, Heating, 3471.98032, 4339.97540, 0.14969, 0.18711, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA7_2, Cooling, 3175.33392, 3651.63401, 0.23719, 0.27277, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA7_2, Heating, 3710.64082, 4638.30103, 0.15998, 0.19997, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, COMUN7_3, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN7_3, Heating, 170.02413, 212.53016, 5.67789E-003, 7.09736E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN7_4, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN7_4, Heating, 181.76682, 227.20852, 6.06997E-003, 7.58746E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA6_0, Cooling, 2229.65872, 2564.10753, 0.16655, 0.19154, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA6_0, Heating, 2733.18093, 3416.47616, 0.11783, 0.14729, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA6_1, Cooling, 2299.65754, 2644.60617, 0.17178, 0.19755, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:20:00, 26.91467, 1.59678E-002, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA6_1, Heating, 3437.66103, 4297.07628, 0.14821, 0.18526, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA6_2, Cooling, 2991.20987, 3439.89135, 0.22344, 0.25696, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:10:00, 27.05583, 1.59678E-002, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA6_2, Heating, 3671.95838, 4589.94797, 0.15831, 0.19789, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, COMUN6_3, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN6_3, Heating, 169.67873, 212.09841, 5.66635E-003, 7.08294E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN6_4, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN6_4, Heating, 177.95020, 222.43775, 5.94252E-003, 7.42814E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA5_0, Cooling, 2216.14996, 2548.57245, 0.16554, 0.19038, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA5_0, Heating, 2717.39750, 3396.74687, 0.11715, 0.14644, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA5_1, Cooling, 2185.35811, 2513.16183, 0.16325, 0.18774, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:50:00, 26.49117, 1.59678E-002, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA5_1, Heating, 3405.53529, 4256.91911, 0.14682, 0.18353, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA5_2, Cooling, 2731.72676, 3141.48578, 0.20406, 0.23467, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:10:00, 27.05583, 1.59678E-002, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA5_2, Heating, 3606.08231, 4507.60288, 0.15547, 0.19434, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, COMUN5_3, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN5_3, Heating, 167.91513, 209.89391, 5.60746E-003, 7.00932E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN5_4, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN5_4, Heating, 174.48307, 218.10383, 5.82673E-003, 7.28342E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA4_0, Cooling, 2132.81623, 2452.73867, 0.15932, 0.18322, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 19:00:00, 27.19700, 1.59678E-002, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA4_0, Heating, 2698.62780, 3373.28475, 0.11635, 0.14543, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA4_1, Cooling, 2108.66026, 2424.95930, 0.15752, 0.18115, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 20:00:00, 26.35000, 1.59678E-002, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA4_1, Heating, 3382.75952, 4228.44939, 0.14584, 0.18230, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA4_2, Cooling, 2539.13351, 2920.00354, 0.18968, 0.21813, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 20:00:00, 26.35000, 1.59678E-002, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA4_2, Heating, 3562.33249, 4452.91561, 0.15358, 0.19198, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, COMUN4_3, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN4_3, Heating, 166.43342, 208.04178, 5.55797E-003, 6.94747E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN4_4, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN4_4, Heating, 170.60682, 213.25853, 5.69729E-003, 7.12161E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA3_0, Cooling, 2017.60601, 2320.24692, 0.15072, 0.17333, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 20:00:00, 26.35000, 1.59678E-002, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA3_0, Heating, 2680.96351, 3351.20439, 0.11558, 0.14448, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 60.27225, 1.70626, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA3_1, Cooling, 2083.83274, 2396.40765, 0.15567, 0.17902, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 20:00:00, 26.35000, 1.59678E-002, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA3_1, Heating, 3356.99779, 4196.24724, 0.14473, 0.18091, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.62334, 1.85775, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA3_2, Cooling, 2457.14912, 2825.72149, 0.18355, 0.21109, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 20:00:00, 26.35000, 1.59678E-002, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA3_2, Heating, 3528.16341, 4410.20426, 0.15211, 0.19014, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 67.11496, 1.89997, 0.00000, 0.00000
+ Zone Sizing Information, COMUN3_3, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN3_3, Heating, 164.68870, 205.86088, 5.49971E-003, 6.87464E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN3_4, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN3_4, Heating, 168.01500, 210.01876, 5.61074E-003, 7.01343E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, VIVIENDA2_0, Cooling, 2639.54118, 3035.47235, 0.19717, 0.22674, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 18:00:00, 28.35200, 1.59678E-002, 60.28330, 1.70657, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA2_0, Heating, 2768.99436, 3461.24296, 0.11938, 0.14922, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 60.28330, 1.70657, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA2_1, Cooling, 2483.45176, 2855.96953, 0.18551, 0.21333, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 17:50:00, 28.48033, 1.59678E-002, 65.63712, 1.85814, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA2_1, Heating, 3386.15147, 4232.68934, 0.14599, 0.18248, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 65.63712, 1.85814, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA2_2, Cooling, 2747.19930, 3159.27920, 0.20521, 0.23599, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 18:10:00, 28.15950, 1.59678E-002, 67.12416, 1.90023, 0.00000, 0.00000
+ Zone Sizing Information, VIVIENDA2_2, Heating, 3567.18201, 4458.97751, 0.15379, 0.19224, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 04:00:00, 0.90000, 4.03328E-003, 67.12416, 1.90023, 0.00000, 0.00000
+ Zone Sizing Information, COMUN2_3, Cooling, 0.00000, 0.00000, 0.00000, 2.92352E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMUN2_3, Heating, 226.56997, 283.21247, 7.56612E-003, 9.45765E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 20:40:00, 0.90000, 4.03328E-003, 9.59157, 0.00000, 2.92352E-003, 0.00000
+ Zone Sizing Information, COMERCIO1_0, Cooling, 2261.45152, 2600.66925, 0.15394, 0.17703, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 07:00:00, 23.19300, 1.59678E-002, 44.91983, 7.25273, 5.30524E-002, 0.00000
+ Zone Sizing Information, COMERCIO1_0, Heating, 909.96683, 1137.45854, 3.90307E-002, 5.30524E-002, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 44.91983, 7.25273, 5.30524E-002, 0.00000
+ Zone Sizing Information, COMUN1_1, Cooling, 0.00000, 0.00000, 0.00000, 1.03855E-002, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 34.07318, 0.00000, 1.03855E-002, 0.00000
+ Zone Sizing Information, COMUN1_1, Heating, 649.72108, 812.15136, 2.16968E-002, 2.71210E-002, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 34.07318, 0.00000, 1.03855E-002, 0.00000
+ Zone Sizing Information, COMERCIO1_2, Cooling, 4131.84831, 4751.62556, 0.30587, 0.35175, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 17:00:00, 29.12200, 1.59678E-002, 29.71614, 4.79795, 3.50961E-002, 0.00000
+ Zone Sizing Information, COMERCIO1_2, Heating, 842.35281, 1052.94101, 3.61306E-002, 4.51632E-002, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 29.71614, 4.79795, 3.50961E-002, 0.00000
+ Zone Sizing Information, COMERCIO1_3, Cooling, 5692.06734, 6545.87744, 0.42137, 0.48458, BARCELONA ANN CLG .4% CONDNS DB=>MWB, 8/21 17:20:00, 28.86533, 1.59678E-002, 73.16352, 11.81294, 8.64095E-002, 0.00000
+ Zone Sizing Information, COMERCIO1_3, Heating, 2129.97189, 2662.46486, 9.13606E-002, 0.11420, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 73.16352, 11.81294, 8.64095E-002, 0.00000
+ Zone Sizing Information, COMUN1_4, Cooling, 0.00000, 0.00000, 0.00000, 3.04629E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 9.99437, 0.00000, 3.04629E-003, 0.00000
+ Zone Sizing Information, COMUN1_4, Heating, 37.08697, 46.35871, 1.23853E-003, 3.04629E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 9.99437, 0.00000, 3.04629E-003, 0.00000
+ Zone Sizing Information, COMUN1_5, Cooling, 0.00000, 0.00000, 0.00000, 7.76631E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN1_5, Heating, 12.09034, 15.11292, 4.03761E-004, 7.76631E-004, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 2.54800, 0.00000, 7.76631E-004, 0.00000
+ Zone Sizing Information, COMUN1_6, Cooling, 0.00000, 0.00000, 0.00000, 7.55295E-004, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 2.47800, 0.00000, 7.55295E-004, 0.00000
+ Zone Sizing Information, COMUN1_6, Heating, 24.57996, 30.72495, 8.20846E-004, 1.02606E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 2.47800, 0.00000, 7.55295E-004, 0.00000
+ Zone Sizing Information, COMUN1_7, Cooling, 0.00000, 0.00000, 0.00000, 3.27669E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 10.75029, 0.00000, 3.27669E-003, 0.00000
+ Zone Sizing Information, COMUN1_7, Heating, 72.82820, 91.03526, 2.43209E-003, 3.27669E-003, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 10.75029, 0.00000, 3.27669E-003, 0.00000
+ Zone Sizing Information, COMUN1_8, Cooling, 0.00000, 0.00000, 0.00000, 3.64990E-003, BARCELONA ANN CLG .4% CONDNS DB=>MWB, , 30.20000, 1.59678E-002, 11.97473, 0.00000, 3.64990E-003, 0.00000
+ Zone Sizing Information, COMUN1_8, Heating, 309.61150, 387.01438, 1.03392E-002, 1.29240E-002, BARCELONA ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, 0.90000, 4.03328E-003, 11.97473, 0.00000, 3.64990E-003, 0.00000
+! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA10_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA10_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.28875
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN10_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN10_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN10_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN10_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA9_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA9_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.28982
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA9_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA9_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.18994
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN9_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN9_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN9_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN9_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA8_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA8_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.20844
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA8_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA8_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.22011
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA8_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA8_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.26988
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN8_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN8_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN8_4 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN8_4 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA7_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA7_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.19470
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA7_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA7_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.20486
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA7_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA7_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.27277
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN7_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN7_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN7_4 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN7_4 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA6_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA6_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.19154
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA6_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA6_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.19755
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA6_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA6_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.25696
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN6_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN6_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN6_4 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN6_4 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA5_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA5_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.19038
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA5_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA5_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.18774
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA5_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA5_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.23467
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN5_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN5_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN5_4 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN5_4 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA4_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA4_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.18322
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA4_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA4_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.18115
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA4_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA4_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.21813
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN4_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN4_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN4_4 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN4_4 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA3_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA3_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.17333
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA3_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA3_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.17902
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA3_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA3_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.21109
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN3_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN3_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN3_4 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN3_4 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA2_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA2_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.22674
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA2_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA2_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.21333
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA2_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, VIVIENDA2_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.23599
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN2_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN2_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 2.92352E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMERCIO1_0 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMERCIO1_0 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.17703
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_1 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_1 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 1.03855E-002
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMERCIO1_2 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMERCIO1_2 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.35175
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMERCIO1_3 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMERCIO1_3 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.48458
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_4 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_4 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 3.04629E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_5 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_5 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_6 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_6 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_7 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_7 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 3.27669E-003
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_8 IDEAL LOADS AIR SYSTEM, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, COMUN1_8 IDEAL LOADS AIR SYSTEM, Design Size Maximum Cooling Air Flow Rate [m3/s], 3.64990E-003
 ! <Zone Surfaces>,Zone Name,# Surfaces
 ! <Shading Surfaces>,Number of Shading Surfaces,# Surfaces
 ! <HeatTransfer Surface>,Surface Name,Surface Class,Base Surface,Heat Transfer Algorithm,Construction,Nominal U (w/o film coefs) {W/m2-K},Nominal U (with film coefs) {W/m2-K},Solar Diffusing,Area (Net) {m2},Area (Gross) {m2},Area (Sunlit Calc) {m2},Azimuth {deg},Tilt {deg},~Width {m},~Height {m},Reveal {m},ExtBoundCondition,ExtConvCoeffCalc,IntConvCoeffCalc,SunExposure,WindExposure,ViewFactorToGround,ViewFactorToSky,ViewFactorToGround-IR,ViewFactorToSky-IR,#Sides
@@ -8090,56 +8398,56 @@ Environment,CUSTOMRUN,WeatherFileRunPeriod,01/01,12/31,Sunday,365,UseWeatherFile
 Environment:Daylight Saving,No,
 Environment:WarmupDays,  6
 ! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
- Warmup Convergence Information,VIVIENDA10_0,RunPeriod: CUSTOMRUN,6.9367543640E-002,6.5495172148E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN10_1,RunPeriod: CUSTOMRUN,4.0586890374E-002,2.6672713831E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN10_2,RunPeriod: CUSTOMRUN,1.7507500877E-002,9.4607455839E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA9_0,RunPeriod: CUSTOMRUN,6.2452194915E-002,6.5069511331E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA9_1,RunPeriod: CUSTOMRUN,6.4744339702E-002,6.4042555861E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN9_2,RunPeriod: CUSTOMRUN,2.4538632175E-002,2.2501887468E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN9_3,RunPeriod: CUSTOMRUN,1.0255136803E-002,4.3725080881E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA8_0,RunPeriod: CUSTOMRUN,6.0479578553E-002,6.6385537837E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA8_1,RunPeriod: CUSTOMRUN,6.3403708330E-002,6.4365281888E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA8_2,RunPeriod: CUSTOMRUN,6.8970186517E-002,6.7137871090E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN8_3,RunPeriod: CUSTOMRUN,1.9976171315E-002,1.4846314201E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN8_4,RunPeriod: CUSTOMRUN,1.0073075196E-002,4.1325502273E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA7_0,RunPeriod: CUSTOMRUN,5.9877565963E-002,6.6259280937E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA7_1,RunPeriod: CUSTOMRUN,6.0551910717E-002,6.4405373856E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA7_2,RunPeriod: CUSTOMRUN,6.7776013241E-002,6.7140563783E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN7_3,RunPeriod: CUSTOMRUN,2.0495082625E-002,1.8137564805E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN7_4,RunPeriod: CUSTOMRUN,9.4277204852E-003,3.8280823148E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA6_0,RunPeriod: CUSTOMRUN,5.9676818949E-002,6.5643515030E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA6_1,RunPeriod: CUSTOMRUN,6.0845760089E-002,6.3504812778E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA6_2,RunPeriod: CUSTOMRUN,6.6355237281E-002,6.5959557190E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN6_3,RunPeriod: CUSTOMRUN,2.3056194372E-002,2.0699096819E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN6_4,RunPeriod: CUSTOMRUN,9.1400446299E-003,3.9393614414E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA5_0,RunPeriod: CUSTOMRUN,5.8760586266E-002,6.5513072914E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA5_1,RunPeriod: CUSTOMRUN,6.1514939633E-002,6.2939059158E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA5_2,RunPeriod: CUSTOMRUN,6.1555541000E-002,6.5796991588E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN5_3,RunPeriod: CUSTOMRUN,2.3593716687E-002,2.2819862611E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN5_4,RunPeriod: CUSTOMRUN,8.0503689918E-003,4.3917328536E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA4_0,RunPeriod: CUSTOMRUN,5.7331352686E-002,6.5923432795E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA4_1,RunPeriod: CUSTOMRUN,6.1729975961E-002,6.1407734663E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA4_2,RunPeriod: CUSTOMRUN,5.8455741511E-002,6.5675236754E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN4_3,RunPeriod: CUSTOMRUN,2.0493962700E-002,1.8640214718E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN4_4,RunPeriod: CUSTOMRUN,7.5138386359E-003,4.4422029084E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA3_0,RunPeriod: CUSTOMRUN,5.6584634164E-002,6.6689620260E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA3_1,RunPeriod: CUSTOMRUN,5.9656164366E-002,6.2382913390E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA3_2,RunPeriod: CUSTOMRUN,5.7644781627E-002,6.5647799463E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN3_3,RunPeriod: CUSTOMRUN,1.8125601732E-002,1.5784085396E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN3_4,RunPeriod: CUSTOMRUN,7.2816072585E-003,4.4316489452E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA2_0,RunPeriod: CUSTOMRUN,5.9043049945E-002,6.5271874289E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA2_1,RunPeriod: CUSTOMRUN,5.9466432921E-002,6.3431325657E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,VIVIENDA2_2,RunPeriod: CUSTOMRUN,5.8693425884E-002,6.4888254726E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN2_3,RunPeriod: CUSTOMRUN,9.6145523313E-003,5.7448133361E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMERCIO1_0,RunPeriod: CUSTOMRUN,8.7090116029E-002,0.1191108578,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN1_1,RunPeriod: CUSTOMRUN,1.2520396345E-002,6.3097269154E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMERCIO1_2,RunPeriod: CUSTOMRUN,0.1166414959,0.1328267424,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMERCIO1_3,RunPeriod: CUSTOMRUN,0.1179307513,0.1355834621,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN1_4,RunPeriod: CUSTOMRUN,8.8279159350E-003,4.8513770563E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN1_5,RunPeriod: CUSTOMRUN,4.8328885938E-003,3.3041112080E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN1_6,RunPeriod: CUSTOMRUN,3.3531845123E-003,3.1138451674E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN1_7,RunPeriod: CUSTOMRUN,1.0903201097E-002,5.4507216078E-003,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMUN1_8,RunPeriod: CUSTOMRUN,2.4878131388E-002,4.7709293196E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,VIVIENDA10_0,RunPeriod: CUSTOMRUN,5.9705327102E-014,6.0805855858E-014,Pass,Pass,1.7557654571E-002,3.6552403934E-002,Pass,Pass
+ Warmup Convergence Information,COMUN10_1,RunPeriod: CUSTOMRUN,5.3562093032E-014,4.5610130810E-014,Pass,Pass,1.9812902447E-002,1.7154080289E-002,Pass,Pass
+ Warmup Convergence Information,COMUN10_2,RunPeriod: CUSTOMRUN,1.5123704758E-014,1.4934118637E-014,Pass,Pass,2.9649135484E-002,2.6688965642E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA9_0,RunPeriod: CUSTOMRUN,6.4738338147E-014,6.0658886213E-014,Pass,Pass,1.7766994315E-002,3.5299455855E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA9_1,RunPeriod: CUSTOMRUN,7.5421150806E-014,6.9342056987E-014,Pass,Pass,1.6160518108E-002,3.5529216539E-002,Pass,Pass
+ Warmup Convergence Information,COMUN9_2,RunPeriod: CUSTOMRUN,4.2225482370E-014,3.5894521313E-014,Pass,Pass,1.7563331122E-002,2.8109102953E-002,Pass,Pass
+ Warmup Convergence Information,COMUN9_3,RunPeriod: CUSTOMRUN,1.0917193075E-014,1.1013986900E-014,Pass,Pass,2.7774737730E-002,2.5479503351E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA8_0,RunPeriod: CUSTOMRUN,5.7682254035E-014,5.7097256790E-014,Pass,Pass,1.8052661349E-002,4.7236778331E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA8_1,RunPeriod: CUSTOMRUN,5.5017718776E-014,5.9517506958E-014,Pass,Pass,2.1040867503E-002,3.9509059513E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA8_2,RunPeriod: CUSTOMRUN,6.7896305862E-014,5.8812512222E-014,Pass,Pass,1.8898471404E-002,4.3021258842E-002,Pass,Pass
+ Warmup Convergence Information,COMUN8_3,RunPeriod: CUSTOMRUN,4.4063518266E-014,3.7389321324E-014,Pass,Pass,1.3486928139E-002,2.0725385550E-002,Pass,Pass
+ Warmup Convergence Information,COMUN8_4,RunPeriod: CUSTOMRUN,1.0214051827E-014,9.7867697212E-015,Pass,Pass,3.3520061697E-002,3.1250649787E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA7_0,RunPeriod: CUSTOMRUN,5.3710122769E-014,5.5879994701E-014,Pass,Pass,1.8009114935E-002,4.7157990916E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA7_1,RunPeriod: CUSTOMRUN,5.9902700084E-014,5.5153918989E-014,Pass,Pass,2.0777336703E-002,3.9483777911E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA7_2,RunPeriod: CUSTOMRUN,5.8965178419E-014,6.1799632646E-014,Pass,Pass,1.8424654515E-002,4.2325755250E-002,Pass,Pass
+ Warmup Convergence Information,COMUN7_3,RunPeriod: CUSTOMRUN,4.2817601316E-014,3.7795281406E-014,Pass,Pass,1.4166307996E-002,2.2483999485E-002,Pass,Pass
+ Warmup Convergence Information,COMUN7_4,RunPeriod: CUSTOMRUN,8.0182774001E-015,8.2046037010E-015,Pass,Pass,3.3470849041E-002,2.9599443274E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA6_0,RunPeriod: CUSTOMRUN,5.9705327102E-014,4.8901421784E-014,Pass,Pass,1.8093202438E-002,4.7003594065E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA6_1,RunPeriod: CUSTOMRUN,6.0396132540E-014,5.4450802443E-014,Pass,Pass,2.1800885724E-002,3.9684273393E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA6_2,RunPeriod: CUSTOMRUN,7.4927718351E-014,6.8925180134E-014,Pass,Pass,1.7220323201E-002,4.0131361329E-002,Pass,Pass
+ Warmup Convergence Information,COMUN6_3,RunPeriod: CUSTOMRUN,3.7451523364E-014,3.1986414011E-014,Pass,Pass,2.0196319901E-002,3.3032123266E-002,Pass,Pass
+ Warmup Convergence Information,COMUN6_4,RunPeriod: CUSTOMRUN,7.2287854714E-015,6.9987006016E-015,Pass,Pass,3.6566726158E-002,3.3085995240E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA5_0,RunPeriod: CUSTOMRUN,5.0576826677E-014,4.6506761497E-014,Pass,Pass,1.7811039407E-002,4.6275377740E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA5_1,RunPeriod: CUSTOMRUN,6.3406070517E-014,5.5561962485E-014,Pass,Pass,2.0889741952E-002,3.9655314648E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA5_2,RunPeriod: CUSTOMRUN,7.2633257433E-014,6.4073149580E-014,Pass,Pass,1.5210423302E-002,3.7113591165E-002,Pass,Pass
+ Warmup Convergence Information,COMUN5_3,RunPeriod: CUSTOMRUN,4.4803666949E-014,3.4714437371E-014,Pass,Pass,1.7747249663E-002,3.0068307420E-002,Pass,Pass
+ Warmup Convergence Information,COMUN5_4,RunPeriod: CUSTOMRUN,8.8324409515E-015,7.6774347999E-015,Pass,Pass,3.0574231460E-002,2.7207747842E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA4_0,RunPeriod: CUSTOMRUN,5.8027656754E-014,5.5197428549E-014,Pass,Pass,1.7482029789E-002,4.5420905932E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA4_1,RunPeriod: CUSTOMRUN,7.1621720900E-014,5.8731309725E-014,Pass,Pass,2.0297110160E-002,3.8369737788E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA4_2,RunPeriod: CUSTOMRUN,6.2542563721E-014,5.7347291218E-014,Pass,Pass,1.4436434757E-002,3.5505381247E-002,Pass,Pass
+ Warmup Convergence Information,COMUN4_3,RunPeriod: CUSTOMRUN,4.2065116822E-014,3.5679559714E-014,Pass,Pass,1.4747922424E-002,2.4153726708E-002,Pass,Pass
+ Warmup Convergence Information,COMUN4_4,RunPeriod: CUSTOMRUN,6.6983455819E-015,6.5089964588E-015,Pass,Pass,3.0800956903E-002,2.7248048576E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA3_0,RunPeriod: CUSTOMRUN,5.8965178419E-014,5.2705770085E-014,Pass,Pass,1.7367854592E-002,4.5257158202E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA3_1,RunPeriod: CUSTOMRUN,5.8274372981E-014,5.3586469322E-014,Pass,Pass,2.1646396040E-002,3.8733334559E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA3_2,RunPeriod: CUSTOMRUN,6.8217036958E-014,6.7298140830E-014,Pass,Pass,1.4434518715E-002,3.5309966161E-002,Pass,Pass
+ Warmup Convergence Information,COMUN3_3,RunPeriod: CUSTOMRUN,4.3570085811E-014,3.6956443901E-014,Pass,Pass,1.2469929730E-002,1.8960976209E-002,Pass,Pass
+ Warmup Convergence Information,COMUN3_4,RunPeriod: CUSTOMRUN,7.0190766779E-015,6.3336313211E-015,Pass,Pass,3.2174440961E-002,2.9026337734E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA2_0,RunPeriod: CUSTOMRUN,5.2871287595E-014,5.0490938626E-014,Pass,Pass,1.7689499704E-002,4.4216520370E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA2_1,RunPeriod: CUSTOMRUN,6.1259639337E-014,5.6933162790E-014,Pass,Pass,1.9732794675E-002,3.7508846671E-002,Pass,Pass
+ Warmup Convergence Information,VIVIENDA2_2,RunPeriod: CUSTOMRUN,5.8200358113E-014,5.9682236319E-014,Pass,Pass,1.5170578044E-002,3.5383458759E-002,Pass,Pass
+ Warmup Convergence Information,COMUN2_3,RunPeriod: CUSTOMRUN,1.6566994690E-014,1.4850016572E-014,Pass,Pass,1.8871091354E-002,1.7179019777E-002,Pass,Pass
+ Warmup Convergence Information,COMERCIO1_0,RunPeriod: CUSTOMRUN,7.8463036462E-002,0.4995205812,Pass,Pass,0.3419572738,1.4345278417,Pass,Pass
+ Warmup Convergence Information,COMUN1_1,RunPeriod: CUSTOMRUN,1.4691951359E-014,1.3755170929E-014,Pass,Pass,1.6571746924E-002,1.2982446245E-002,Pass,Pass
+ Warmup Convergence Information,COMERCIO1_2,RunPeriod: CUSTOMRUN,7.8141745599E-002,0.4977054396,Pass,Pass,0.2278320102,0.7496432825,Pass,Pass
+ Warmup Convergence Information,COMERCIO1_3,RunPeriod: CUSTOMRUN,7.7539067545E-002,0.5013318478,Pass,Pass,0.3897280472,1.4616233275,Pass,Pass
+ Warmup Convergence Information,COMUN1_4,RunPeriod: CUSTOMRUN,5.7024755228E-003,1.1979741732E-002,Pass,Pass,3.0845208305E-002,2.1030048067E-002,Pass,Pass
+ Warmup Convergence Information,COMUN1_5,RunPeriod: CUSTOMRUN,2.6987728104E-003,7.0602014480E-003,Pass,Pass,3.2700653288E-002,2.0498797820E-002,Pass,Pass
+ Warmup Convergence Information,COMUN1_6,RunPeriod: CUSTOMRUN,2.2944609176E-015,1.9846476577E-015,Pass,Pass,4.8262570422E-002,5.5551806377E-002,Pass,Pass
+ Warmup Convergence Information,COMUN1_7,RunPeriod: CUSTOMRUN,2.2914071132E-003,6.8402974172E-003,Pass,Pass,0.2284394403,1.2155487675,Pass,Pass
+ Warmup Convergence Information,COMUN1_8,RunPeriod: CUSTOMRUN,2.1131244902E-014,1.5704718519E-014,Pass,Pass,0.1230729266,0.8495833323,Pass,Pass
 ! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
 Program Control:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
 End of Data

@@ -1,5 +1,5 @@
-python_file = open ("C:/Users/Coroush/Desktop/git-noumena/bcn-energy/result/eplusout.rdd","r")
-gh_file = open ("C:/Users/Coroush/Desktop/git_noumena/Comparison/gh_result5/unnamed/EnergyPlus/unnamed.rdd","r")
+python_file = open ("/Users/soroush/Desktop/Noumena/bcn-energy/result/eplusout.rdd","r")
+gh_file = open ("/Users/soroush/Desktop/unnamed.rdd","r")
 
 python = python_file.readlines()
 gh = gh_file.readlines()

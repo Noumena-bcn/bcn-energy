@@ -54713,351 +54713,1901 @@ HVACTEMPLATE:THERMOSTAT,
     vivienda10_0_HVAC,        !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun10_1_HVAC,           !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun10_2_HVAC,           !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda9_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda9_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun9_2_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun9_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda8_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda8_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda8_2_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun8_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun8_4_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda7_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda7_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda7_2_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun7_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun7_4_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda6_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda6_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda6_2_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun6_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun6_4_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda5_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda5_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda5_2_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun5_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun5_4_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda4_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda4_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda4_2_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun4_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun4_4_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda3_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda3_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda3_2_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun3_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun3_4_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda2_0_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda2_1_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     vivienda2_2_HVAC,         !- Name
     MidriseApartment Apartment HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Apartment ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Apartment ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun2_3_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comercio1_0_HVAC,         !- Name
     Retail HtgSetp,           !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    Retail ClgSetp,           !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    Retail ClgSetp;           !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun1_1_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comercio1_2_HVAC,         !- Name
     Retail HtgSetp,           !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    Retail ClgSetp,           !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    Retail ClgSetp;           !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comercio1_3_HVAC,         !- Name
     Retail HtgSetp,           !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    Retail ClgSetp,           !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    Retail ClgSetp;           !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun1_4_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun1_5_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun1_6_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun1_7_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
 
 HVACTEMPLATE:THERMOSTAT,
     comun1_8_HVAC,            !- Name
     MidriseApartment Corridor HtgSetp,    !- Heating Setpoint Schedule Name
     ,                         !- Constant Heating Setpoint
-    MidriseApartment Corridor ClgSetp,    !- Cooling Setpoint Schedule Name
-    ;                         !- Constant Cooling Setpoint
+    MidriseApartment Corridor ClgSetp;    !- Cooling Setpoint Schedule Name
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda10_0,             !- Zone Name
+    vivienda10_0_HVAC,        !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda10_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun10_1,                !- Zone Name
+    comun10_1_HVAC,           !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun10_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun10_2,                !- Zone Name
+    comun10_2_HVAC,           !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun10_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda9_0,              !- Zone Name
+    vivienda9_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda9_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda9_1,              !- Zone Name
+    vivienda9_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda9_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun9_2,                 !- Zone Name
+    comun9_2_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun9_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun9_3,                 !- Zone Name
+    comun9_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun9_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda8_0,              !- Zone Name
+    vivienda8_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda8_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda8_1,              !- Zone Name
+    vivienda8_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda8_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda8_2,              !- Zone Name
+    vivienda8_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda8_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun8_3,                 !- Zone Name
+    comun8_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun8_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun8_4,                 !- Zone Name
+    comun8_4_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun8_4OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda7_0,              !- Zone Name
+    vivienda7_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda7_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda7_1,              !- Zone Name
+    vivienda7_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda7_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda7_2,              !- Zone Name
+    vivienda7_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda7_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun7_3,                 !- Zone Name
+    comun7_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun7_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun7_4,                 !- Zone Name
+    comun7_4_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun7_4OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda6_0,              !- Zone Name
+    vivienda6_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda6_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda6_1,              !- Zone Name
+    vivienda6_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda6_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda6_2,              !- Zone Name
+    vivienda6_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda6_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun6_3,                 !- Zone Name
+    comun6_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun6_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun6_4,                 !- Zone Name
+    comun6_4_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun6_4OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda5_0,              !- Zone Name
+    vivienda5_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda5_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda5_1,              !- Zone Name
+    vivienda5_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda5_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda5_2,              !- Zone Name
+    vivienda5_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda5_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun5_3,                 !- Zone Name
+    comun5_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun5_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun5_4,                 !- Zone Name
+    comun5_4_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun5_4OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda4_0,              !- Zone Name
+    vivienda4_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda4_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda4_1,              !- Zone Name
+    vivienda4_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda4_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda4_2,              !- Zone Name
+    vivienda4_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda4_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun4_3,                 !- Zone Name
+    comun4_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun4_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun4_4,                 !- Zone Name
+    comun4_4_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun4_4OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda3_0,              !- Zone Name
+    vivienda3_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda3_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda3_1,              !- Zone Name
+    vivienda3_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda3_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda3_2,              !- Zone Name
+    vivienda3_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda3_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun3_3,                 !- Zone Name
+    comun3_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun3_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun3_4,                 !- Zone Name
+    comun3_4_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun3_4OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda2_0,              !- Zone Name
+    vivienda2_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda2_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda2_1,              !- Zone Name
+    vivienda2_1_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda2_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    vivienda2_2,              !- Zone Name
+    vivienda2_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    vivienda2_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun2_3,                 !- Zone Name
+    comun2_3_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun2_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comercio1_0,              !- Zone Name
+    comercio1_0_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comercio1_0OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun1_1,                 !- Zone Name
+    comun1_1_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun1_1OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comercio1_2,              !- Zone Name
+    comercio1_2_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comercio1_2OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comercio1_3,              !- Zone Name
+    comercio1_3_HVAC,         !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comercio1_3OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun1_4,                 !- Zone Name
+    comun1_4_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun1_4OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun1_5,                 !- Zone Name
+    comun1_5_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun1_5OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun1_6,                 !- Zone Name
+    comun1_6_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun1_6OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun1_7,                 !- Zone Name
+    comun1_7_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun1_7OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
+
+HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
+    comun1_8,                 !- Zone Name
+    comun1_8_HVAC,            !- Template Thermostat Name
+    ,                         !- System Availability Schedule Name
+    40,                       !- Maximum Heating Supply Air Temperature
+    13,                       !- Minimum Cooling Supply Air Temperature
+    0.008,                    !- Maximum Heating Supply Air Humidity Ratio
+    0.0085,                   !- Minimum Cooling Supply Air Humidity Ratio
+    NoLimit,                  !- Heating Limit
+    ,                         !- Maximum Heating Air Flow Rate
+    ,                         !- Maximum Sensible Heating Capacity
+    LimitFlowRate,            !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    ,                         !- Maximum Total Cooling Capacity
+    ,                         !- Heating Availability Schedule Name
+    ,                         !- Cooling Availability Schedule Name
+    ConstantSensibleHeatRatio,    !- Dehumidification Control Type
+    0.7,                      !- Cooling Sensible Heat Ratio
+    60,                       !- Dehumidification Setpoint
+    None,                     !- Humidification Control Type
+    30,                       !- Humidification Setpoint
+    DetailedSpecification,    !- Outdoor Air Method
+    0.00944,                  !- Outdoor Air Flow Rate per Person
+    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0,                        !- Outdoor Air Flow Rate per Zone
+    comun1_8OutdoorAirCntrl,    !- Design Specification Outdoor Air Object Name
+    None,                     !- Demand Controlled Ventilation Type
+    DifferentialDryBulb,      !- Outdoor Air Economizer Type
+    None,                     !- Heat Recovery Type
+    0.70,                     !- Sensible Heat Recovery Effectiveness
+    0.65;                     !- Latent Heat Recovery Effectiveness
 
 DESIGNSPECIFICATION:OUTDOORAIR,
     vivienda10_0OutdoorAirCntrl,    !- Name
