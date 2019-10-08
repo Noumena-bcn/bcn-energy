@@ -11,7 +11,7 @@
   Processing Input Data File -- Complete
   Maximum number of Alpha IDF Args=          25
   Maximum number of Numeric IDF Args=         100
-  Number of IDF "Lines"=        2823
+  Number of IDF "Lines"=        2873
   Number of Defaulted Fields=          10
   Number of Fields with Defaults=        6696
   Number of Autosized Fields=           0
@@ -51,6 +51,7 @@
  Getting object=ELECTRICEQUIPMENT
  Getting object=SHADOWCALCULATION
  Getting object=ZONEINFILTRATION:DESIGNFLOWRATE
+ Getting object=THERMOSTATSETPOINT:DUALSETPOINT
  Getting object=OUTPUTCONTROL:TABLE:STYLE
  MonthlyInputCount=           0
  sizeMonthlyInput=           0
@@ -65,7 +66,7 @@
  sizeColumnTag=         800
  numColumnTag=         434
  sizeTableEntry=       12800
- numTableEntry=       12299
+ numTableEntry=       12335
  sizeCompSizeTableEntry=           0
  numCompSizeTableEntry=           0
  NumOfRVariable=       71558
