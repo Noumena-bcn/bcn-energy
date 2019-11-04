@@ -485,9 +485,13 @@ shading_srfs = idf.getshadingsurfaces()
 block_srfs = idf.getsurfaces("Wall")
 windows = idf.getsubsurfaces("window")
 
+shading_block = []
+for i in shading_srfs:
+    if 'L_block' in i.Name: shading_block.append(i)
+
 adj_walls = []
 for i in range(len(block_srfs)):
-    for j in shading_srfs:
+    for j in shading_block:
         ad = (populate_adjacencies(block_srfs[i],j))
         if ad:
             adj_walls.append (block_srfs[i])
@@ -509,6 +513,6 @@ print ("- Made Windows")
 # idf.printidf()
 idf.to_obj(r"C:\Users\Coroush\Desktop\git-noumena\bcn-energy\result2\test-zones.obj")
 print ("- Exported OBJ")
-idf.view_model()
+# idf.view_model()
 idf.saveas(r"C:\Users\Coroush\Desktop\git-noumena\bcn-energy\result2\test-zones.idf")
 idf.run(expandobjects = True, output_directory = r"C:\Users\Coroush\Desktop\git-noumena\bcn-energy\result2")
