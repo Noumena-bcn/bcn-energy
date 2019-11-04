@@ -9,6 +9,25 @@ from geomeppy.geom.polygons import Polygon3D
 import platform as _platform
 
 #######################################################################################################################
+# DEFINE HERE THE MAIN PATH
+
+os_name = _platform.system()
+
+if os_name == "Darwin": # if running on Mac use these files
+    print("- Running on {}".format("Mac"))
+    path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
+    IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
+    idf = IDF('/Users/soroush/Desktop/Noumena/bcn-energy/src/gh_template.idf')
+    idf.epw = '/Users/soroush/Desktop/Noumena/bcn-energy/src/ESP_Barcelona.081810_IWEC.epw'
+
+elif os_name == "Windows": # if running on Windows use these files
+    print("- Running on {}".format("Windows"))
+    path = r"C:\Users\Coroush\Desktop\git-noumena\bcn-energy\src\db-kml"
+    IDF.setiddname("C:/EnergyPlusV8-8-0/Energy+.idd")
+    idf = IDF("C:/Users/Coroush/Desktop/git-noumena/bcn-energy/src/gh_template.idf")
+    idf.epw = 'C:/ladybug/ESP_Barcelona.081810_IWEC/ESP_Barcelona.081810_IWEC.epw'
+
+#######################################################################################################################
 # Functions
 
 def find_paths(res):  # block resolution, 'H' for High or 'L' for Low resolution
@@ -341,25 +360,6 @@ def custom_wwr (wwr_zones, construction=None):
         window.setcoords(coords, ggr)
 
 #######################################################################################################################
-# DEFINE HERE THE MAIN PATH
-
-os_name = _platform.system()
-
-if os_name == "Darwin": # if running on Mac use these files
-    print("- Running on {}".format("Mac"))
-    path = '/Users/soroush/Desktop/Noumena/eixample-sample1'
-    IDF.setiddname('/Applications/EnergyPlus-8-8-0/Energy+.idd')
-    idf = IDF('/Users/soroush/Desktop/Noumena/bcn-energy/src/gh_template.idf')
-    idf.epw = '/Users/soroush/Desktop/Noumena/bcn-energy/src/ESP_Barcelona.081810_IWEC.epw'
-
-elif os_name == "Windows": # if running on Windows use these files
-    print("- Running on {}".format("Windows"))
-    path = r'C:\Users\Coroush\Desktop\Noumena\bcn-energy-github\190531-Files\eixample-sample1'
-    IDF.setiddname("C:/EnergyPlusV8-8-0/Energy+.idd")
-    idf = IDF("C:/Users/Coroush/Desktop/git-noumena/bcn-energy/src/gh_template.idf")
-    idf.epw = 'C:/ladybug/ESP_Barcelona.081810_IWEC/ESP_Barcelona.081810_IWEC.epw'
-
-#######################################################################################################################
 # Making H building
 
 # Extracting the elements
@@ -507,8 +507,8 @@ print ("- Made Windows")
 # Outputs
 
 # idf.printidf()
-# idf.to_obj('test-zones.obj')
-# print ("- Exported OBJ")
-# idf.view_model()
-idf.saveas("test-zones.idf")
-idf.run(expandobjects = True)
+idf.to_obj(r"C:\Users\Coroush\Desktop\git-noumena\bcn-energy\result2\test-zones.obj")
+print ("- Exported OBJ")
+idf.view_model()
+idf.saveas(r"C:\Users\Coroush\Desktop\git-noumena\bcn-energy\result2\test-zones.idf")
+idf.run(expandobjects = True, output_directory = r"C:\Users\Coroush\Desktop\git-noumena\bcn-energy\result2")
