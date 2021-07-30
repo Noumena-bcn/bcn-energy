@@ -12,8 +12,8 @@ Development of a platform for energy analysis of buildings in Barcelona urban sc
 6. Storage of result in database (Mongodb)
 7. Web-based data visualisation platform
 
-![diagram](media\bcn-energy-diagram.jpg)
-![sample](media\sample.jpg)
+![diagram](media/bcn-energy-diagram.jpg)
+![sample](media/sample.jpg)
 
 ***
 
@@ -70,23 +70,23 @@ By 29th of July 2021, the lastest version of files are in [this folder](https://
 
 ### _H.kml file:
 This file includes the data for main building in High resolution details. (including balconies, stair-case, interior walls, etc. and the properties of each building)
-![main building](media\H_kml.jpg)
+![main building](media/H_kml.jpg)
 
 
 ### _L.kml file:
 This file includes the data for context building in Low resolution details. (outside geometry only - used to model the shading and adjacencies on main building)
-![context buildings](media\L_kml.jpg)
+![context buildings](media/L_kml.jpg)
 
 
 ### HB_.csv files:
 These files contain the information related to H building. Different properties of each zone is stored in these files, such as usage program, thermal bridge parameter, apperture ratio, etc. These information would be inputs for HB model properties.
-![context buildings](media\descriptions.jpg)
+![context buildings](media/descriptions.jpg)
 
 ### Grasshopper Script:
 This script reconstructs the geometries from H.kml and L.kml files. Then assigns programs, schedules, and other properties to the geometries to prepare the model for Honeybee and Ladybug analysis. Afterwards performs Thermal, Daylight and Radiation simulation and saves the results in different formats such as csv, json, image and 3d model.
 
 Here is the activity diagram for the script:
-![gh script](media\process_diagram.jpg)
+![gh script](media/process_diagram.jpg)
 
 ***
 ## Reports and Notes:
